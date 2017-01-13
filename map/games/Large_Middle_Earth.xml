@@ -8022,7 +8022,7 @@
 					<boolean/>
 				</property>
 
-				<property name="mapName" value="Large_Middle_Earth" editable="false">
+				<property name="mapName" value="large_middle_earth" editable="false">
 					<string/>
 				</property>
 
