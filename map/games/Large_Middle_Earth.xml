@@ -4796,7 +4796,7 @@
                    </attachment>
 				   
 				   
-				    <!--<attachment name="canalAttachmentHarnen" attachTo="sz Lower Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				    <attachment name="canalAttachmentHarnen" attachTo="sz Lower Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Crossings of Harnen Canal"/>
 						<option name="landTerritories" value="Crossings of Harnen"/>
 					</attachment>
@@ -4893,7 +4893,7 @@
 					<attachment name="canalAttachmentMithlond" attachTo="sz Gulf of Lhun" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Mithlond Canal"/>
 						<option name="landTerritories" value="Mithlond"/>
-					</attachment>-->
+					</attachment>
 				   
 				   
 				   
