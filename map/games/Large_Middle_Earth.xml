@@ -1581,7 +1581,7 @@
                 <connection t1="sz Bruinen" t2="The Angle"/>
                 <connection t1="sz Bruinen" t2="sz Mitheithel 1"/>
 					
-					<!--THEESE SHOULD BE CANALS-->
+					<!--CANALS-->
 					
 					<connection t1="sz Lhun" t2="sz Gulf of Lhun"/>
 					<connection t1="sz Baranduin 3" t2="sz Baranduin 4"/>
