@@ -3,7 +3,7 @@
 <!DOCTYPE game SYSTEM "game.dtd">
 
 <game>
-	<info name="Large Middle Earth - Third Age All Stars" version="1.2"/>
+	<info name="Large Middle Earth - Third Age All Stars" version="1.3"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
 	<triplea minimumVersion="1.9"/>
 	<diceSides value="12"/>
@@ -1581,7 +1581,7 @@
                 <connection t1="sz Bruinen" t2="The Angle"/>
                 <connection t1="sz Bruinen" t2="sz Mitheithel 1"/>
 					
-					<!--THEESE SHOULD BE CANALS-->
+					<!--CANALS-->
 					
 					<connection t1="sz Lhun" t2="sz Gulf of Lhun"/>
 					<connection t1="sz Baranduin 3" t2="sz Baranduin 4"/>
@@ -4796,7 +4796,7 @@
                    </attachment>
 				   
 				   
-				    <!--<attachment name="canalAttachmentHarnen" attachTo="sz Lower Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+				    <attachment name="canalAttachmentHarnen" attachTo="sz Lower Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Crossings of Harnen Canal"/>
 						<option name="landTerritories" value="Crossings of Harnen"/>
 					</attachment>
@@ -4893,7 +4893,7 @@
 					<attachment name="canalAttachmentMithlond" attachTo="sz Gulf of Lhun" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Mithlond Canal"/>
 						<option name="landTerritories" value="Mithlond"/>
-					</attachment>-->
+					</attachment>
 				   
 				   
 				   
@@ -8050,6 +8050,8 @@
 			<br/> - Units with 2 or 3 hitpoints regenerate one hitpoint each turn.
 			<br/> - Battles can not last more than 10 turns. This is only a technical rule, for infinite battles where neither side has firepower left can occur.
 			<br/> - On the map, undeeps (South Undeep and North Undeep) are connected to The Wold, and Belfalas is connected to Tolfolas. Water territories are connected through towns and fords (but not through the Falls of Rauros).
+			<br/> - Cities along rivers act as canals and must be allied controlled at the start of a player's turn to move ships through.
+
 		</div>
 		<div style="text-align: center;font-size:120%">
 			<br><br><b>Unit abilities</b>
@@ -8986,6 +8988,9 @@
 			<br><br><b></b>
 		</div>
 		<div style="text-align:left;font-size:100%">
+			<br/>Version 1.3 Changelog (work done by redrum)
+			<br/> - Add canals for cities along rivers
+			<br/>
 			<br/>Version 1.2 (for TripleA 1.9) Changelog
 			<br/> - Upgraded to 1.9
 			<br/> - Small changes to starting situation
