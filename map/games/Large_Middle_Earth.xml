@@ -4899,468 +4899,238 @@
 				   <attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
 						<option name="unitsNotAllowed" value="swordsman:spearman:archer:peasant:hobbit:tower_guard:goblin_stabber:goblin_archer:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_warden:olog_hai:spider:bear:oliphant:oathbreaker:wizard:balrog:nazgul:catapult:trebuchet:wall:fortress:tower"/>
-
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="2"/>
-						<option name="combatOffenseEffect" value="spearman" count="0"/><option name="combatDefenseEffect" value="spearman" count="2"/>
-						<option name="combatOffenseEffect" value="axeman" count="0"/><option name="combatDefenseEffect" value="axeman" count="2"/>
-						<option name="combatOffenseEffect" value="archer" count="0"/><option name="combatDefenseEffect" value="archer" count="3"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="2"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="2"/>
-						<option name="combatOffenseEffect" value="ranger" count="0"/><option name="combatDefenseEffect" value="ranger" count="3"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="0"/><option name="combatDefenseEffect" value="tower_guard" count="2"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="0"/><option name="combatDefenseEffect" value="goblin_stabber" count="2"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="0"/><option name="combatDefenseEffect" value="goblin_archer" count="3"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="0"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="3"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="0"/><option name="combatDefenseEffect" value="orc_marauder" count="2"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="0"/><option name="combatDefenseEffect" value="uruk_pikeman" count="2"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="0"/><option name="combatDefenseEffect" value="uruk_swordsman" count="2"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="0"/><option name="combatDefenseEffect" value="morannon_guard" count="2"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-3"/><option name="combatDefenseEffect" value="light_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-3"/><option name="combatDefenseEffect" value="horsearcher" count="0"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-3"/><option name="combatDefenseEffect" value="axe_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="lancer" count="-3"/><option name="combatDefenseEffect" value="lancer" count="-1"/>
-						<option name="combatOffenseEffect" value="knight" count="-3"/><option name="combatDefenseEffect" value="knight" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot" count="-3"/><option name="combatDefenseEffect" value="chariot" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-3"/><option name="combatDefenseEffect" value="chariot_archer" count="0"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-3"/><option name="combatDefenseEffect" value="war_wagon" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="0"/><option name="combatDefenseEffect" value="dwarven_axeman" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="0"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="3"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="0"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="0"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="2"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="0"/><option name="combatDefenseEffect" value="elven_archer" count="3"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="0"/><option name="combatDefenseEffect" value="elven_hunter" count="3"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="2"/>
 						
-						<option name="combatOffenseEffect" value="troll" count="1"/><option name="combatDefenseEffect" value="troll" count="3"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="1"/><option name="combatDefenseEffect" value="olog_hai" count="3"/>
-						<option name="combatOffenseEffect" value="spider" count="1"/><option name="combatDefenseEffect" value="spider" count="3"/>
-						<option name="combatOffenseEffect" value="bear" count="1"/><option name="combatDefenseEffect" value="bear" count="3"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-2"/><option name="combatDefenseEffect" value="oliphant" count="0"/>
-						<option name="combatOffenseEffect" value="warg" count="-2"/><option name="combatDefenseEffect" value="warg" count="0"/>
-						<option name="combatOffenseEffect" value="huorn" count="1"/><option name="combatDefenseEffect" value="huorn" count="3"/>
-						<option name="combatOffenseEffect" value="ent" count="1"/><option name="combatDefenseEffect" value="ent" count="3"/>
-						<option name="combatOffenseEffect" value="dragon" count="2"/><option name="combatDefenseEffect" value="dragon" count="4"/>
-						<option name="combatOffenseEffect" value="bat" count="2"/><option name="combatDefenseEffect" value="bat" count="4"/>
-						<option name="combatOffenseEffect" value="eagle" count="2"/><option name="combatDefenseEffect" value="eagle" count="4"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="2"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="2"/>
-						<option name="combatOffenseEffect" value="balrog" count="1"/><option name="combatDefenseEffect" value="balrog" count="3"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-3"/><option name="combatDefenseEffect" value="nazgul" count="-1"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="2"/><option name="combatDefenseEffect" value="winged_nazgul" count="4"/>
-						<option name="combatOffenseEffect" value="catapult" count="-3"/><option name="combatDefenseEffect" value="catapult" count="-1"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-3"/><option name="combatDefenseEffect" value="trebuchet" count="-1"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="4"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="4"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="4"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="2"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="0"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="2"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="3"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-3"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="3"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="1"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="3"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="4"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="spearman" count="0"/><option name="combatDefenseEffect" value="spearman" count="1"/>
-						<option name="combatOffenseEffect" value="axeman" count="0"/><option name="combatDefenseEffect" value="axeman" count="1"/>
-						<option name="combatOffenseEffect" value="archer" count="0"/><option name="combatDefenseEffect" value="archer" count="2"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="1"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="1"/>
-						<option name="combatOffenseEffect" value="ranger" count="0"/><option name="combatDefenseEffect" value="ranger" count="2"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="0"/><option name="combatDefenseEffect" value="tower_guard" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="0"/><option name="combatDefenseEffect" value="goblin_stabber" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="0"/><option name="combatDefenseEffect" value="goblin_archer" count="2"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="0"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="2"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="0"/><option name="combatDefenseEffect" value="orc_marauder" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="0"/><option name="combatDefenseEffect" value="uruk_pikeman" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="0"/><option name="combatDefenseEffect" value="uruk_swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="0"/><option name="combatDefenseEffect" value="morannon_guard" count="1"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="0"/><option name="combatDefenseEffect" value="light_cavalry" count="1"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="0"/><option name="combatDefenseEffect" value="horsearcher" count="2"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="0"/><option name="combatDefenseEffect" value="axe_cavalry" count="1"/>
-						<option name="combatOffenseEffect" value="lancer" count="0"/><option name="combatDefenseEffect" value="lancer" count="1"/>
-						<option name="combatOffenseEffect" value="knight" count="0"/><option name="combatDefenseEffect" value="knight" count="1"/>
-						<option name="combatOffenseEffect" value="chariot" count="0"/><option name="combatDefenseEffect" value="chariot" count="1"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="0"/><option name="combatDefenseEffect" value="chariot_archer" count="2"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="0"/><option name="combatDefenseEffect" value="war_wagon" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="0"/><option name="combatDefenseEffect" value="dwarven_axeman" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="0"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="0"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="0"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="1"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="0"/><option name="combatDefenseEffect" value="elven_archer" count="2"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="0"/><option name="combatDefenseEffect" value="elven_hunter" count="2"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="1"/>
-						
-						<option name="combatOffenseEffect" value="troll" count="1"/><option name="combatDefenseEffect" value="troll" count="2"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="1"/><option name="combatDefenseEffect" value="olog_hai" count="2"/>
-						<option name="combatOffenseEffect" value="spider" count="1"/><option name="combatDefenseEffect" value="spider" count="2"/>
-						<option name="combatOffenseEffect" value="bear" count="1"/><option name="combatDefenseEffect" value="bear" count="2"/>
-						<option name="combatOffenseEffect" value="oliphant" count="1"/><option name="combatDefenseEffect" value="oliphant" count="2"/>
-						<option name="combatOffenseEffect" value="warg" count="1"/><option name="combatDefenseEffect" value="warg" count="2"/>
-						<option name="combatOffenseEffect" value="huorn" count="1"/><option name="combatDefenseEffect" value="huorn" count="2"/>
-						<option name="combatOffenseEffect" value="ent" count="1"/><option name="combatDefenseEffect" value="ent" count="2"/>
-						<option name="combatOffenseEffect" value="dragon" count="2"/><option name="combatDefenseEffect" value="dragon" count="3"/>
-						<option name="combatOffenseEffect" value="bat" count="2"/><option name="combatDefenseEffect" value="bat" count="3"/>
-						<option name="combatOffenseEffect" value="eagle" count="2"/><option name="combatDefenseEffect" value="eagle" count="3"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="1"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="1"/>
-						<option name="combatOffenseEffect" value="balrog" count="1"/><option name="combatDefenseEffect" value="balrog" count="2"/>
-						<option name="combatOffenseEffect" value="nazgul" count="0"/><option name="combatDefenseEffect" value="nazgul" count="1"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="2"/><option name="combatDefenseEffect" value="winged_nazgul" count="3"/>
-						<option name="combatOffenseEffect" value="catapult" count="1"/><option name="combatDefenseEffect" value="catapult" count="2"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="1"/><option name="combatDefenseEffect" value="trebuchet" count="2"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="3"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="3"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="3"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="1"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="0"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="1"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="2"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-1"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="0"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="2"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="1"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="2"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="3"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
-						<option name="unitsNotAllowed" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:oliphant:warg:nazgul"/>
+						<!--<option name="unitsNotAllowed" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:oliphant:warg:nazgul"/>-->
 
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="spearman" count="0"/><option name="combatDefenseEffect" value="spearman" count="1"/>
-						<option name="combatOffenseEffect" value="axeman" count="0"/><option name="combatDefenseEffect" value="axeman" count="1"/>
-						<option name="combatOffenseEffect" value="archer" count="-2"/><option name="combatDefenseEffect" value="archer" count="-1"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="1"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="1"/>
-						<option name="combatOffenseEffect" value="ranger" count="-2"/><option name="combatDefenseEffect" value="ranger" count="-1"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="0"/><option name="combatDefenseEffect" value="tower_guard" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="1"/><option name="combatDefenseEffect" value="goblin_stabber" count="2"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="-1"/><option name="combatDefenseEffect" value="goblin_archer" count="0"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="-2"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="-1"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="0"/><option name="combatDefenseEffect" value="orc_marauder" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="0"/><option name="combatDefenseEffect" value="uruk_pikeman" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="0"/><option name="combatDefenseEffect" value="uruk_swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="0"/><option name="combatDefenseEffect" value="morannon_guard" count="1"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-3"/><option name="combatDefenseEffect" value="light_cavalry" count="-2"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-5"/><option name="combatDefenseEffect" value="horsearcher" count="-4"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-3"/><option name="combatDefenseEffect" value="axe_cavalry" count="-3"/>
-						<option name="combatOffenseEffect" value="lancer" count="-3"/><option name="combatDefenseEffect" value="lancer" count="-2"/>
-						<option name="combatOffenseEffect" value="knight" count="-3"/><option name="combatDefenseEffect" value="knight" count="-2"/>
-						<option name="combatOffenseEffect" value="chariot" count="-3"/><option name="combatDefenseEffect" value="chariot" count="-2"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-5"/><option name="combatDefenseEffect" value="chariot_archer" count="-4"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-3"/><option name="combatDefenseEffect" value="war_wagon" count="-2"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="1"/><option name="combatDefenseEffect" value="dwarven_axeman" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="-1"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="1"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="1"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="2"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="-2"/><option name="combatDefenseEffect" value="elven_archer" count="-1"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="-2"/><option name="combatDefenseEffect" value="elven_hunter" count="-1"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="1"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:orc_marauder" count="1"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:elven_warden" count="0"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:elven_warden" count="0"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:snaga_skirmisher:elven_archer:elven_hunter:catapult:trebuchet" count="-2"/>
+						<option name="combatDefenseEffect" value="archer:ranger:snaga_skirmisher:elven_archer:elven_hunter:catapult:trebuchet" count="-2"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-3"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="olog_hai:bear:oliphant:warg:huorn:ent" count="1"/>
+						<option name="combatDefenseEffect" value="olog_hai:bear:oliphant:warg:huorn:ent" count="2"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:eagle:winged_nazgul" count="-2"/>
+						<option name="combatDefenseEffect" value="dragon:eagle:winged_nazgul" count="-2"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="4"/>
 						
-						<option name="combatOffenseEffect" value="troll" count="2"/><option name="combatDefenseEffect" value="troll" count="3"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="1"/><option name="combatDefenseEffect" value="olog_hai" count="2"/>
-						<option name="combatOffenseEffect" value="spider" count="2"/><option name="combatDefenseEffect" value="spider" count="3"/>
-						<option name="combatOffenseEffect" value="bear" count="1"/><option name="combatDefenseEffect" value="bear" count="2"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-2"/><option name="combatDefenseEffect" value="oliphant" count="-1"/>
-						<option name="combatOffenseEffect" value="warg" count="-2"/><option name="combatDefenseEffect" value="warg" count="-1"/>
-						<option name="combatOffenseEffect" value="huorn" count="1"/><option name="combatDefenseEffect" value="huorn" count="2"/>
-						<option name="combatOffenseEffect" value="ent" count="1"/><option name="combatDefenseEffect" value="ent" count="2"/>
-						<option name="combatOffenseEffect" value="dragon" count="-1"/><option name="combatDefenseEffect" value="dragon" count="0"/>
-						<option name="combatOffenseEffect" value="bat" count="0"/><option name="combatDefenseEffect" value="bat" count="1"/>
-						<option name="combatOffenseEffect" value="eagle" count="-1"/><option name="combatDefenseEffect" value="eagle" count="0"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="1"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="1"/>
-						<option name="combatOffenseEffect" value="balrog" count="2"/><option name="combatDefenseEffect" value="balrog" count="3"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-3"/><option name="combatDefenseEffect" value="nazgul" count="-2"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="-1"/><option name="combatDefenseEffect" value="winged_nazgul" count="0"/>
-						<option name="combatOffenseEffect" value="catapult" count="-2"/><option name="combatDefenseEffect" value="catapult" count="-1"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-2"/><option name="combatDefenseEffect" value="trebuchet" count="-1"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="4"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="4"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="4"/>
+						<!--Light CD-->
+						<option name="combatOffenseEffect" value="goblin_stabber" count="1"/>
+						<option name="combatDefenseEffect" value="goblin_stabber" count="2"/>
+						<!--Heavy CD-->
+						<option name="combatOffenseEffect" value="dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="1"/>
+						<option name="combatDefenseEffect" value="dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="1"/>
+						<!--Ranged CD-->
+						<option name="combatOffenseEffect" value="goblin_archer:dwarven_axethrower" count="-1"/>
+						<option name="combatDefenseEffect" value="goblin_archer:dwarven_axethrower" count="-1"/>
+						<!--Creature CD-->
+						<option name="combatOffenseEffect" value="troll:spider:balrog" count="2"/>
+						<option name="combatDefenseEffect" value="troll:spider:balrog" count="3"/>
+						<!--Flying CD-->
+						<option name="combatOffenseEffect" value="bat" count="-1"/>
+						<option name="combatDefenseEffect" value="bat" count="-1"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
 						
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="spearman" count="0"/><option name="combatDefenseEffect" value="spearman" count="1"/>
-						<option name="combatOffenseEffect" value="axeman" count="0"/><option name="combatDefenseEffect" value="axeman" count="1"/>
-						<option name="combatOffenseEffect" value="archer" count="0"/><option name="combatDefenseEffect" value="archer" count="2"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="1"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="1"/>
-						<option name="combatOffenseEffect" value="ranger" count="0"/><option name="combatDefenseEffect" value="ranger" count="2"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="0"/><option name="combatDefenseEffect" value="tower_guard" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="0"/><option name="combatDefenseEffect" value="goblin_stabber" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="0"/><option name="combatDefenseEffect" value="goblin_archer" count="2"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="0"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="2"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="0"/><option name="combatDefenseEffect" value="orc_marauder" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="0"/><option name="combatDefenseEffect" value="uruk_pikeman" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="0"/><option name="combatDefenseEffect" value="uruk_swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="0"/><option name="combatDefenseEffect" value="morannon_guard" count="1"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-2"/><option name="combatDefenseEffect" value="light_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-2"/><option name="combatDefenseEffect" value="horsearcher" count="0"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-2"/><option name="combatDefenseEffect" value="axe_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="lancer" count="-2"/><option name="combatDefenseEffect" value="lancer" count="-1"/>
-						<option name="combatOffenseEffect" value="knight" count="-2"/><option name="combatDefenseEffect" value="knight" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot" count="-2"/><option name="combatDefenseEffect" value="chariot" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-2"/><option name="combatDefenseEffect" value="chariot_archer" count="0"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-2"/><option name="combatDefenseEffect" value="war_wagon" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="0"/><option name="combatDefenseEffect" value="dwarven_axeman" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="0"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="0"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="0"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="1"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="0"/><option name="combatDefenseEffect" value="elven_archer" count="2"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="0"/><option name="combatDefenseEffect" value="elven_hunter" count="2"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="1"/>
-						
-						<option name="combatOffenseEffect" value="troll" count="1"/><option name="combatDefenseEffect" value="troll" count="2"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="1"/><option name="combatDefenseEffect" value="olog_hai" count="2"/>
-						<option name="combatOffenseEffect" value="spider" count="1"/><option name="combatDefenseEffect" value="spider" count="2"/>
-						<option name="combatOffenseEffect" value="bear" count="1"/><option name="combatDefenseEffect" value="bear" count="2"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-1"/><option name="combatDefenseEffect" value="oliphant" count="0"/>
-						<option name="combatOffenseEffect" value="warg" count="-1"/><option name="combatDefenseEffect" value="warg" count="0"/>
-						<option name="combatOffenseEffect" value="huorn" count="1"/><option name="combatDefenseEffect" value="huorn" count="2"/>
-						<option name="combatOffenseEffect" value="ent" count="1"/><option name="combatDefenseEffect" value="ent" count="2"/>
-						<option name="combatOffenseEffect" value="dragon" count="2"/><option name="combatDefenseEffect" value="dragon" count="3"/>
-						<option name="combatOffenseEffect" value="bat" count="2"/><option name="combatDefenseEffect" value="bat" count="3"/>
-						<option name="combatOffenseEffect" value="eagle" count="2"/><option name="combatDefenseEffect" value="eagle" count="3"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="1"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="1"/>
-						<option name="combatOffenseEffect" value="balrog" count="1"/><option name="combatDefenseEffect" value="balrog" count="2"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-2"/><option name="combatDefenseEffect" value="nazgul" count="-1"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="2"/><option name="combatDefenseEffect" value="winged_nazgul" count="3"/>
-						<option name="combatOffenseEffect" value="catapult" count="-1"/><option name="combatDefenseEffect" value="catapult" count="0"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-1"/><option name="combatDefenseEffect" value="trebuchet" count="0"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="3"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="3"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="3"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="1"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="0"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="1"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="2"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-1"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="0"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="2"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="1"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="2"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="3"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
 						
-						<option name="combatOffenseEffect" value="swordsman" count="-1"/><option name="combatDefenseEffect" value="swordsman" count="0"/>
-						<option name="combatOffenseEffect" value="spearman" count="-2"/><option name="combatDefenseEffect" value="spearman" count="-1"/>
-						<option name="combatOffenseEffect" value="axeman" count="-1"/><option name="combatDefenseEffect" value="axeman" count="0"/>
-						<option name="combatOffenseEffect" value="archer" count="-1"/><option name="combatDefenseEffect" value="archer" count="0"/>
-						<option name="combatOffenseEffect" value="peasant" count="-1"/><option name="combatDefenseEffect" value="peasant" count="0"/>
-						<option name="combatOffenseEffect" value="hobbit" count="-1"/><option name="combatDefenseEffect" value="hobbit" count="0"/>
-						<option name="combatOffenseEffect" value="ranger" count="-1"/><option name="combatDefenseEffect" value="ranger" count="0"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="-2"/><option name="combatDefenseEffect" value="tower_guard" count="-1"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="-1"/><option name="combatDefenseEffect" value="goblin_stabber" count="0"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="-1"/><option name="combatDefenseEffect" value="goblin_archer" count="0"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="-1"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="0"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="-1"/><option name="combatDefenseEffect" value="orc_marauder" count="0"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="-2"/><option name="combatDefenseEffect" value="uruk_pikeman" count="-1"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="-2"/><option name="combatDefenseEffect" value="uruk_swordsman" count="-1"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="-2"/><option name="combatDefenseEffect" value="morannon_guard" count="-1"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-3"/><option name="combatDefenseEffect" value="light_cavalry" count="-2"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-3"/><option name="combatDefenseEffect" value="horsearcher" count="-2"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-3"/><option name="combatDefenseEffect" value="axe_cavalry" count="-2"/>
-						<option name="combatOffenseEffect" value="lancer" count="-4"/><option name="combatDefenseEffect" value="lancer" count="-3"/>
-						<option name="combatOffenseEffect" value="knight" count="-4"/><option name="combatDefenseEffect" value="knight" count="-3"/>
-						<option name="combatOffenseEffect" value="chariot" count="-3"/><option name="combatDefenseEffect" value="chariot" count="-2"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-3"/><option name="combatDefenseEffect" value="chariot_archer" count="-2"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-3"/><option name="combatDefenseEffect" value="war_wagon" count="-2"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="-2"/><option name="combatDefenseEffect" value="dwarven_axeman" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="-1"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="-2"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="-2"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="-1"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="-1"/><option name="combatDefenseEffect" value="elven_archer" count="0"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="-1"/><option name="combatDefenseEffect" value="elven_hunter" count="0"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="-2"/><option name="combatDefenseEffect" value="elven_warden" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="troll" count="-1"/><option name="combatDefenseEffect" value="troll" count="0"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="-1"/><option name="combatDefenseEffect" value="olog_hai" count="0"/>
-						<option name="combatOffenseEffect" value="spider" count="-1"/><option name="combatDefenseEffect" value="spider" count="0"/>
-						<option name="combatOffenseEffect" value="bear" count="-1"/><option name="combatDefenseEffect" value="bear" count="0"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-3"/><option name="combatDefenseEffect" value="oliphant" count="-2"/>
-						<option name="combatOffenseEffect" value="warg" count="-3"/><option name="combatDefenseEffect" value="warg" count="-2"/>
-						<option name="combatOffenseEffect" value="huorn" count="-1"/><option name="combatDefenseEffect" value="huorn" count="0"/>
-						<option name="combatOffenseEffect" value="ent" count="-1"/><option name="combatDefenseEffect" value="ent" count="0"/>
-						<option name="combatOffenseEffect" value="dragon" count="0"/><option name="combatDefenseEffect" value="dragon" count="1"/>
-						<option name="combatOffenseEffect" value="bat" count="0"/><option name="combatDefenseEffect" value="bat" count="1"/>
-						<option name="combatOffenseEffect" value="eagle" count="0"/><option name="combatDefenseEffect" value="eagle" count="1"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="-1"/><option name="combatDefenseEffect" value="oathbreaker" count="0"/>
-						<option name="combatOffenseEffect" value="wizard" count="-1"/><option name="combatDefenseEffect" value="wizard" count="0"/>
-						<option name="combatOffenseEffect" value="balrog" count="-1"/><option name="combatDefenseEffect" value="balrog" count="0"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-3"/><option name="combatDefenseEffect" value="nazgul" count="-2"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="0"/><option name="combatDefenseEffect" value="winged_nazgul" count="1"/>
-						<option name="combatOffenseEffect" value="catapult" count="-3"/><option name="combatDefenseEffect" value="catapult" count="-2"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-3"/><option name="combatDefenseEffect" value="trebuchet" count="-2"/>
-						<option name="combatOffenseEffect" value="wall" count="-1"/><option name="combatDefenseEffect" value="wall" count="0"/>
-						<option name="combatOffenseEffect" value="fortress" count="-1"/><option name="combatDefenseEffect" value="fortress" count="0"/>
-						<option name="combatOffenseEffect" value="tower" count="-1"/><option name="combatDefenseEffect" value="tower" count="0"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="-1"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="-2"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="-1"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="1"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-3"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="0"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="1"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="0"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="1"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="0"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="spearman" count="-1"/><option name="combatDefenseEffect" value="spearman" count="0"/>
-						<option name="combatOffenseEffect" value="axeman" count="0"/><option name="combatDefenseEffect" value="axeman" count="1"/>
-						<option name="combatOffenseEffect" value="archer" count="0"/><option name="combatDefenseEffect" value="archer" count="2"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="1"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="1"/>
-						<option name="combatOffenseEffect" value="ranger" count="0"/><option name="combatDefenseEffect" value="ranger" count="2"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="-1"/><option name="combatDefenseEffect" value="tower_guard" count="0"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="0"/><option name="combatDefenseEffect" value="goblin_stabber" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="0"/><option name="combatDefenseEffect" value="goblin_archer" count="2"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="0"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="2"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="0"/><option name="combatDefenseEffect" value="orc_marauder" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="-1"/><option name="combatDefenseEffect" value="uruk_pikeman" count="0"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="-1"/><option name="combatDefenseEffect" value="uruk_swordsman" count="0"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="-1"/><option name="combatDefenseEffect" value="morannon_guard" count="0"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-2"/><option name="combatDefenseEffect" value="light_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-2"/><option name="combatDefenseEffect" value="horsearcher" count="0"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-2"/><option name="combatDefenseEffect" value="axe_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="lancer" count="-3"/><option name="combatDefenseEffect" value="lancer" count="-2"/>
-						<option name="combatOffenseEffect" value="knight" count="-3"/><option name="combatDefenseEffect" value="knight" count="-2"/>
-						<option name="combatOffenseEffect" value="chariot" count="-2"/><option name="combatDefenseEffect" value="chariot" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-2"/><option name="combatDefenseEffect" value="chariot_archer" count="0"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-2"/><option name="combatDefenseEffect" value="war_wagon" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="-1"/><option name="combatDefenseEffect" value="dwarven_axeman" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="0"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="2"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="-1"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="-1"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="0"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="1"/><option name="combatDefenseEffect" value="elven_archer" count="3"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="1"/><option name="combatDefenseEffect" value="elven_hunter" count="3"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="1"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="2"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="-1"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="0"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="1"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-3"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="2"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="-2"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="-2"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="0"/>
 						
-						<option name="combatOffenseEffect" value="troll" count="1"/><option name="combatDefenseEffect" value="troll" count="2"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="1"/><option name="combatDefenseEffect" value="olog_hai" count="2"/>
-						<option name="combatOffenseEffect" value="spider" count="2"/><option name="combatDefenseEffect" value="spider" count="3"/>
-						<option name="combatOffenseEffect" value="bear" count="2"/><option name="combatDefenseEffect" value="bear" count="3"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-1"/><option name="combatDefenseEffect" value="oliphant" count="0"/>
-						<option name="combatOffenseEffect" value="warg" count="-1"/><option name="combatDefenseEffect" value="warg" count="0"/>
-						<option name="combatOffenseEffect" value="huorn" count="2"/><option name="combatDefenseEffect" value="huorn" count="3"/>
-						<option name="combatOffenseEffect" value="ent" count="2"/><option name="combatDefenseEffect" value="ent" count="3"/>
-						<option name="combatOffenseEffect" value="dragon" count="-1"/><option name="combatDefenseEffect" value="dragon" count="2"/>
-						<option name="combatOffenseEffect" value="bat" count="-1"/><option name="combatDefenseEffect" value="bat" count="2"/>
-						<option name="combatOffenseEffect" value="eagle" count="-1"/><option name="combatDefenseEffect" value="eagle" count="2"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="1"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="1"/>
-						<option name="combatOffenseEffect" value="balrog" count="1"/><option name="combatDefenseEffect" value="balrog" count="2"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-2"/><option name="combatDefenseEffect" value="nazgul" count="-1"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="-1"/><option name="combatDefenseEffect" value="winged_nazgul" count="2"/>
-						<option name="combatOffenseEffect" value="catapult" count="-1"/><option name="combatDefenseEffect" value="catapult" count="0"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-1"/><option name="combatDefenseEffect" value="trebuchet" count="0"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="1"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="1"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="1"/>
+						<!--Heavy FD-->
+						<option name="combatOffenseEffect" value="elven_warden" count="0"/>
+						<option name="combatDefenseEffect" value="elven_warden" count="1"/>
+						<!--Ranged FD-->
+						<option name="combatOffenseEffect" value="elven_archer:elven_hunter" count="1"/>
+						<option name="combatDefenseEffect" value="elven_archer:elven_hunter" count="2"/>
+						<!--Creature FD-->
+						<option name="combatOffenseEffect" value="spider:bear:huorn:ent" count="2"/>
+						<option name="combatDefenseEffect" value="spider:bear:huorn:ent" count="3"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
 						
-						<option name="combatOffenseEffect" value="swordsman" count="-1"/><option name="combatDefenseEffect" value="swordsman" count="0"/>
-						<option name="combatOffenseEffect" value="spearman" count="-2"/><option name="combatDefenseEffect" value="spearman" count="0"/>
-						<option name="combatOffenseEffect" value="axeman" count="-1"/><option name="combatDefenseEffect" value="axeman" count="0"/>
-						<option name="combatOffenseEffect" value="archer" count="-1"/><option name="combatDefenseEffect" value="archer" count="1"/>
-						<option name="combatOffenseEffect" value="peasant" count="-1"/><option name="combatDefenseEffect" value="peasant" count="0"/>
-						<option name="combatOffenseEffect" value="hobbit" count="-1"/><option name="combatDefenseEffect" value="hobbit" count="0"/>
-						<option name="combatOffenseEffect" value="ranger" count="-1"/><option name="combatDefenseEffect" value="ranger" count="1"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="-2"/><option name="combatDefenseEffect" value="tower_guard" count="0"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="-1"/><option name="combatDefenseEffect" value="goblin_stabber" count="0"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="-1"/><option name="combatDefenseEffect" value="goblin_archer" count="1"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="-1"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="1"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="-1"/><option name="combatDefenseEffect" value="orc_marauder" count="0"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="-2"/><option name="combatDefenseEffect" value="uruk_pikeman" count="0"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="-2"/><option name="combatDefenseEffect" value="uruk_swordsman" count="0"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="-2"/><option name="combatDefenseEffect" value="morannon_guard" count="0"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-2"/><option name="combatDefenseEffect" value="light_cavalry" count="0"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="-2"/><option name="combatDefenseEffect" value="horsearcher" count="1"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="-2"/><option name="combatDefenseEffect" value="axe_cavalry" count="0"/>
-						<option name="combatOffenseEffect" value="lancer" count="-3"/><option name="combatDefenseEffect" value="lancer" count="0"/>
-						<option name="combatOffenseEffect" value="knight" count="-3"/><option name="combatDefenseEffect" value="knight" count="0"/>
-						<option name="combatOffenseEffect" value="chariot" count="-2"/><option name="combatDefenseEffect" value="chariot" count="0"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-2"/><option name="combatDefenseEffect" value="chariot_archer" count="1"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-2"/><option name="combatDefenseEffect" value="war_wagon" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="-2"/><option name="combatDefenseEffect" value="dwarven_axeman" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="-1"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="-2"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="0"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="-2"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="0"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="-1"/><option name="combatDefenseEffect" value="elven_archer" count="1"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="-1"/><option name="combatDefenseEffect" value="elven_hunter" count="1"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="-2"/><option name="combatDefenseEffect" value="elven_warden" count="0"/>
-						
-						<option name="combatOffenseEffect" value="troll" count="-1"/><option name="combatDefenseEffect" value="troll" count="0"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="-1"/><option name="combatDefenseEffect" value="olog_hai" count="0"/>
-						<option name="combatOffenseEffect" value="spider" count="-1"/><option name="combatDefenseEffect" value="spider" count="0"/>
-						<option name="combatOffenseEffect" value="bear" count="-1"/><option name="combatDefenseEffect" value="bear" count="0"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-2"/><option name="combatDefenseEffect" value="oliphant" count="0"/>
-						<option name="combatOffenseEffect" value="warg" count="-2"/><option name="combatDefenseEffect" value="warg" count="0"/>
-						<option name="combatOffenseEffect" value="huorn" count="-1"/><option name="combatDefenseEffect" value="huorn" count="0"/>
-						<option name="combatOffenseEffect" value="ent" count="-1"/><option name="combatDefenseEffect" value="ent" count="0"/>
-						<option name="combatOffenseEffect" value="dragon" count="0"/><option name="combatDefenseEffect" value="dragon" count="1"/>
-						<option name="combatOffenseEffect" value="bat" count="0"/><option name="combatDefenseEffect" value="bat" count="1"/>
-						<option name="combatOffenseEffect" value="eagle" count="0"/><option name="combatDefenseEffect" value="eagle" count="1"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="-1"/><option name="combatDefenseEffect" value="oathbreaker" count="0"/>
-						<option name="combatOffenseEffect" value="wizard" count="-1"/><option name="combatDefenseEffect" value="wizard" count="0"/>
-						<option name="combatOffenseEffect" value="balrog" count="-1"/><option name="combatDefenseEffect" value="balrog" count="0"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-2"/><option name="combatDefenseEffect" value="nazgul" count="0"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="0"/><option name="combatDefenseEffect" value="winged_nazgul" count="1"/>
-						<option name="combatOffenseEffect" value="catapult" count="-1"/><option name="combatDefenseEffect" value="catapult" count="1"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="-1"/><option name="combatDefenseEffect" value="trebuchet" count="1"/>
-						<option name="combatOffenseEffect" value="wall" count="-1"/><option name="combatDefenseEffect" value="wall" count="0"/>
-						<option name="combatOffenseEffect" value="fortress" count="-1"/><option name="combatDefenseEffect" value="fortress" count="0"/>
-						<option name="combatOffenseEffect" value="tower" count="-1"/><option name="combatDefenseEffect" value="tower" count="0"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="-1"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="-2"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="0"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="-1"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="1"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="0"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="-1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="0"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="0"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="0"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="0"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="swordsman" count="0"/><option name="combatDefenseEffect" value="swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="spearman" count="0"/><option name="combatDefenseEffect" value="spearman" count="3"/>
-						<option name="combatOffenseEffect" value="axeman" count="2"/><option name="combatDefenseEffect" value="axeman" count="1"/>
-						<option name="combatOffenseEffect" value="archer" count="0"/><option name="combatDefenseEffect" value="archer" count="3"/>
-						<option name="combatOffenseEffect" value="peasant" count="0"/><option name="combatDefenseEffect" value="peasant" count="1"/>
-						<option name="combatOffenseEffect" value="hobbit" count="0"/><option name="combatDefenseEffect" value="hobbit" count="1"/>
-						<option name="combatOffenseEffect" value="ranger" count="0"/><option name="combatDefenseEffect" value="ranger" count="3"/>
-						<option name="combatOffenseEffect" value="tower_guard" count="0"/><option name="combatDefenseEffect" value="tower_guard" count="3"/>
-						<option name="combatOffenseEffect" value="goblin_stabber" count="0"/><option name="combatDefenseEffect" value="goblin_stabber" count="1"/>
-						<option name="combatOffenseEffect" value="goblin_archer" count="0"/><option name="combatDefenseEffect" value="goblin_archer" count="3"/>
-						<option name="combatOffenseEffect" value="snaga_skirmisher" count="0"/><option name="combatDefenseEffect" value="snaga_skirmisher" count="3"/>
-						<option name="combatOffenseEffect" value="orc_marauder" count="2"/><option name="combatDefenseEffect" value="orc_marauder" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_pikeman" count="0"/><option name="combatDefenseEffect" value="uruk_pikeman" count="1"/>
-						<option name="combatOffenseEffect" value="uruk_swordsman" count="0"/><option name="combatDefenseEffect" value="uruk_swordsman" count="1"/>
-						<option name="combatOffenseEffect" value="morannon_guard" count="0"/><option name="combatDefenseEffect" value="morannon_guard" count="3"/>
-						<option name="combatOffenseEffect" value="light_cavalry" count="-2"/><option name="combatDefenseEffect" value="light_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="horsearcher" count="0"/><option name="combatDefenseEffect" value="horsearcher" count="1"/>
-						<option name="combatOffenseEffect" value="axe_cavalry" count="0"/><option name="combatDefenseEffect" value="axe_cavalry" count="-1"/>
-						<option name="combatOffenseEffect" value="lancer" count="-2"/><option name="combatDefenseEffect" value="lancer" count="-1"/>
-						<option name="combatOffenseEffect" value="knight" count="-2"/><option name="combatDefenseEffect" value="knight" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot" count="-2"/><option name="combatDefenseEffect" value="chariot" count="-1"/>
-						<option name="combatOffenseEffect" value="chariot_archer" count="-2"/><option name="combatDefenseEffect" value="chariot_archer" count="1"/>
-						<option name="combatOffenseEffect" value="war_wagon" count="-2"/><option name="combatDefenseEffect" value="war_wagon" count="-1"/>
-						<option name="combatOffenseEffect" value="dwarven_axeman" count="0"/><option name="combatDefenseEffect" value="dwarven_axeman" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_axethrower" count="0"/><option name="combatDefenseEffect" value="dwarven_axethrower" count="3"/>
-						<option name="combatOffenseEffect" value="dwarven_phalangite" count="0"/><option name="combatDefenseEffect" value="dwarven_phalangite" count="1"/>
-						<option name="combatOffenseEffect" value="dwarven_halberdier" count="0"/><option name="combatDefenseEffect" value="dwarven_halberdier" count="1"/>
-						<option name="combatOffenseEffect" value="elven_archer" count="0"/><option name="combatDefenseEffect" value="elven_archer" count="3"/>
-						<option name="combatOffenseEffect" value="elven_hunter" count="0"/><option name="combatDefenseEffect" value="elven_hunter" count="3"/>
-						<option name="combatOffenseEffect" value="elven_warden" count="0"/><option name="combatDefenseEffect" value="elven_warden" count="3"/>
-						
-						<option name="combatOffenseEffect" value="troll" count="-1"/><option name="combatDefenseEffect" value="troll" count="0"/>
-						<option name="combatOffenseEffect" value="olog_hai" count="-1"/><option name="combatDefenseEffect" value="olog_hai" count="0"/>
-						<option name="combatOffenseEffect" value="spider" count="-1"/><option name="combatDefenseEffect" value="spider" count="0"/>
-						<option name="combatOffenseEffect" value="bear" count="-3"/><option name="combatDefenseEffect" value="bear" count="-2"/>
-						<option name="combatOffenseEffect" value="oliphant" count="-3"/><option name="combatDefenseEffect" value="oliphant" count="-2"/>
-						<option name="combatOffenseEffect" value="warg" count="-1"/><option name="combatDefenseEffect" value="warg" count="0"/>
-						<option name="combatOffenseEffect" value="huorn" count="-1"/><option name="combatDefenseEffect" value="huorn" count="0"/>
-						<option name="combatOffenseEffect" value="ent" count="-1"/><option name="combatDefenseEffect" value="ent" count="0"/>
-						<option name="combatOffenseEffect" value="dragon" count="-1"/><option name="combatDefenseEffect" value="dragon" count="0"/>
-						<option name="combatOffenseEffect" value="bat" count="-1"/><option name="combatDefenseEffect" value="bat" count="0"/>
-						<option name="combatOffenseEffect" value="eagle" count="-1"/><option name="combatDefenseEffect" value="eagle" count="0"/>
-						
-						<option name="combatOffenseEffect" value="oathbreaker" count="0"/><option name="combatDefenseEffect" value="oathbreaker" count="1"/>
-						<option name="combatOffenseEffect" value="wizard" count="0"/><option name="combatDefenseEffect" value="wizard" count="1"/>
-						<option name="combatOffenseEffect" value="balrog" count="-1"/><option name="combatDefenseEffect" value="balrog" count="0"/>
-						<option name="combatOffenseEffect" value="nazgul" count="-2"/><option name="combatDefenseEffect" value="nazgul" count="-1"/>
-						<option name="combatOffenseEffect" value="winged_nazgul" count="-1"/><option name="combatDefenseEffect" value="winged_nazgul" count="-1"/>
-						<option name="combatOffenseEffect" value="catapult" count="1"/><option name="combatDefenseEffect" value="catapult" count="1"/>
-						<option name="combatOffenseEffect" value="trebuchet" count="1"/><option name="combatDefenseEffect" value="trebuchet" count="1"/>
-						<option name="combatOffenseEffect" value="wall" count="0"/><option name="combatDefenseEffect" value="wall" count="2"/>
-						<option name="combatOffenseEffect" value="fortress" count="0"/><option name="combatDefenseEffect" value="fortress" count="2"/>
-						<option name="combatOffenseEffect" value="tower" count="0"/><option name="combatDefenseEffect" value="tower" count="2"/>
+						<!--Light-->
+						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="1"/>
+						<!--Heavy-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="1"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="2"/>
+						<!--Ranged-->
+						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
+						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="3"/>
+						<!--Cavalry-->
+						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-1"/>
+						<!--Creature-->
+						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="-1"/>
+						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="-1"/>
+						<!--Flying-->
+						<option name="combatOffenseEffect" value="dragon:bat:eagle:winged_nazgul" count="-1"/>
+						<option name="combatDefenseEffect" value="dragon:bat:eagle:winged_nazgul" count="-1"/>
+						<!--Fortification-->
+						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
+						<option name="combatDefenseEffect" value="wall:fortress:tower" count="1"/>
 					</attachment>
 					
 					
@@ -8855,119 +8625,110 @@
 			<br><br><b>Territory Effects</b>
 		</div>
 		<div style="text-align:left;font-size:100%">
-			<br/> Territory effects are comparatively complex in this game. There are eight of them, but a single territory can have up to three. This, together with the fact that multiple bonuses from territory effects are always cumulative, makes calculations troublesome, you must keep them in mind though. As a proof and also to present how it works, here is an example:
-			<br/> Suppose you want to attack Cerin Amroth which is defended by an elven archer and has forest, hill and settlement territory effects with a knight. Then you look up the table below. Your knight is a cavalry, and has armor support, so it is armored. Three columns have effect on your unit: all, cavalry and armored. For the hill, you only get 1 defense bonus, but no one cares since you are attacking. For the forest you get -3 attack penalty (-2 for cavalry and -1 for being armored). The settlement makes this even worse, adding -2 more penalty. Finally, you end up with -5 penalty, so you only have -1x2 attack left meaning you can't attack at all, opposed to the elven archer, which ends up boosted to 13 defense - sadly, this is capped at 12, because nothing can pass that limit (+2 for the forest, +2 for the hill, +3 for the settlement and +1 for forest dweller).
+			<br/> !!! REWORKED - GAME NOTES TO BE UPDATED
+			<br/> !!! table should be correct
 			<table border="1"bgcolor="757780">
 				<tr>
 					<th style="font-size:120%;000000"bgcolor="3D3D99"colspan="12">Territory Effects</th>
 				</tr>
 
 					<th bgcolor="3D3D99">Name</th>
-					<th bgcolor="3D3D99">All</th>
-					<th bgcolor="3D3D99">Cav</th>
-					<th bgcolor="3D3D99">Cre</th>
-					<th bgcolor="3D3D99">Arch</th>
-					<th bgcolor="3D3D99">Sie</th>
-					<th bgcolor="3D3D99">Fly</th>
+					<th bgcolor="3D3D99">Light</th>
+					<th bgcolor="3D3D99">Heavy</th>
+					<th bgcolor="3D3D99">Ranged</th>
+					<th bgcolor="3D3D99">Cavalry</th>
+					<th bgcolor="3D3D99">Creature</th>
+					<th bgcolor="3D3D99">Flying</th>
 					<th bgcolor="3D3D99">Fort</th>
-					<th bgcolor="3D3D99">Armored</th>
 					<th bgcolor="3D3D99">Other</th>
 				</tr>
 
 				<tr bgcolor="A0A0B2">
 					<td bgcolor="7C7CB2">mountain</td>
 					<td>+0|+2</td>
-					<td>-3|-3</td>
-					<td>+1|+1</td>
-					<td>+0|+1</td>
-					<td>-3|-3</td>
-					<td>+1|+1</td>
 					<td>+0|+2</td>
-					<td>-</td>
+					<td>+0|+3</td>
+					<td>-3|-2</td>
+					<td>+1|+3</td>
+					<td>+1|+3</td>
+					<td>+0|+4</td>
 					<td>No Blitzing, only mw and fly can enter</td>
 				</tr>
 				<tr bgcolor="72727F">
 					<td bgcolor="59597F">hill</td>
 					<td>+0|+1</td>
-					<td>-</td>
-					<td>+1|+1</td>
 					<td>+0|+1</td>
-					<td>+1|+1</td>
-					<td>+1|+1</td>
 					<td>+0|+2</td>
-					<td>-</td>
+					<td>-1|-0</td>
+					<td>+1|+2</td>
+					<td>+1|+2</td>
+					<td>+0|+3</td>
 					<td>-</td>
 				</tr>
 				<tr bgcolor="A0A0B2">
 					<td bgcolor="7C7CB2">cave</td>
 					<td>+0|+1</td>
-					<td>-3|-3</td>
-					<td>+1|+1</td>
+					<td>+0|+0</td>
 					<td>-2|-2</td>
+					<td>-3|-2</td>
+					<td>+1|+2</td>
 					<td>-2|-2</td>
-					<td>-2|-2</td>
-					<td>+0|+3</td>
-					<td>-</td>
-					<td>No Blitzing, cavalry can not enter</td>
+					<td>+0|+4</td>
+					<td>No Blitzing</td>
 				</tr>
 				<tr bgcolor="72727F">
 					<td bgcolor="59597F">pass</td>
 					<td>+0|+1</td>
-					<td>-2|-2</td>
-					<td>+1|+1</td>
 					<td>+0|+1</td>
-					<td>-1|-1</td>
-					<td>+1|+1</td>
 					<td>+0|+2</td>
-					<td>-</td>
+					<td>-1|-0</td>
+					<td>+1|+2</td>
+					<td>+1|+2</td>
+					<td>+0|+3</td>
 					<td>No Blitzing</td>
 				</tr>
 				<tr bgcolor="A0A0B2">
 					<td bgcolor="7C7CB2">marsh</td>
 					<td>-1|-0</td>
-					<td>-2|-2</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-2|-2</td>
-					<td>+1|+1</td>
-					<td>-</td>
-					<td>-1|-1</td>
+					<td>-2|-1</td>
+					<td>+0|+1</td>
+					<td>-3|-2</td>
+					<td>+0|+1</td>
+					<td>+0|+1</td>
+					<td>+0|+0</td>
 					<td>No Blitzing</td>
 				</tr>
 				<tr bgcolor="72727F">
 					<td bgcolor="59597F">forest</td>
+					<td>+0|+2</td>
+					<td>-1|-0</td>
 					<td>+0|+1</td>
+					<td>-3|-2</td>
+					<td>+1|+2</td>
 					<td>-2|-2</td>
-					<td>+1|+1</td>
-					<td>+0|+1</td>
-					<td>-1|-1</td>
-					<td>-2|-0</td>
-					<td>-</td>
-					<td>-1|-1</td>
+					<td>+0|+0</td>
 					<td>-</td>
 				</tr>
 				<tr bgcolor="A0A0B2">
 					<td bgcolor="7C7CB2">river</td>
 					<td>-1|-0</td>
+					<td>-2|-0</td>
+					<td>-1|+1</td>
+					<td>-2|-0</td>
 					<td>-1|-0</td>
-					<td>-</td>
-					<td>+0|+1</td>
-					<td>+0|+1</td>
-					<td>+1|+1</td>
-					<td>-</td>
-					<td>-1|-0</td>
+					<td>+0|+0</td>
+					<td>+0|+0</td>
 					<td>No Blitzing</td>
 				</tr>
 				<tr bgcolor="72727F">
 					<td bgcolor="59597F">settlement</td>
 					<td>+0|+1</td>
-					<td>-2|-2</td>
+					<td>+1|+2</td>
+					<td>+0|+3</td>
+					<td>-2|-1</td>
 					<td>-1|-1</td>
-					<td>+0|+2</td>
-					<td>+1|+0</td>
-					<td>-</td>
+					<td>-1|-1</td>
 					<td>+0|+1</td>
-					<td>-</td>
 					<td>-</td>
 				</tr>
 			</table>
