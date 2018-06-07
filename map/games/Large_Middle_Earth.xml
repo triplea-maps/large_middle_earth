@@ -669,7 +669,6 @@
                 <connection t1="Cair Andros" t2="Field of Cormallen"/>
                 <connection t1="Cair Andros" t2="Anorien"/>
                 <connection t1="Tolfolas" t2="sz Bay of Tolfolas"/>
-				<connection t1="Tolfolas" t2="Belfalas"/>
                 <connection t1="Tolfolas" t2="sz 4"/>
                 <connection t1="Tolfolas" t2="sz 5"/>
                 <connection t1="Lamedon" t2="Ciril"/>
@@ -910,8 +909,6 @@
                 <connection t1="The Wold" t2="Limlight"/>
                 <connection t1="The Wold" t2="Entwash"/>
                 <connection t1="The Wold" t2="Treebeards Hill"/>
-				<connection t1="The Wold" t2="North Undeep"/>
-				<connection t1="The Wold" t2="South Undeep"/>
                 <connection t1="Starkhorn" t2="Hornburg"/>
                 <connection t1="Starkhorn" t2="Paths of the Dead"/>
                 <connection t1="Starkhorn" t2="Snowbourn"/>
