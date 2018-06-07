@@ -4797,101 +4797,101 @@
 				   
 				   
 				    <attachment name="canalAttachmentHarnen" attachTo="sz Lower Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Crossings of Harnen Canal"/>
+						<option name="canalName" value="Crossings of Harnen"/>
 						<option name="landTerritories" value="Crossings of Harnen"/>
 					</attachment>
 					<attachment name="canalAttachmentHarnen" attachTo="sz Upper Harnen" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Crossings of Harnen Canal"/>
+						<option name="canalName" value="Crossings of Harnen"/>
 						<option name="landTerritories" value="Crossings of Harnen"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentOsgiliath" attachTo="sz Lower Anduin 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Osgiliath Canal"/>
+						<option name="canalName" value="Osgiliath"/>
 						<option name="landTerritories" value="Osgiliath"/>
 					</attachment>
 					<attachment name="canalAttachmentOsgiliath" attachTo="sz Lower Anduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Osgiliath Canal"/>
+						<option name="canalName" value="Osgiliath"/>
 						<option name="landTerritories" value="Osgiliath"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentCairAndros" attachTo="sz Lower Anduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Cair Andros Canal"/>
+						<option name="canalName" value="Cair Andros"/>
 						<option name="landTerritories" value="Cair Andros"/>
 					</attachment>
 					<attachment name="canalAttachmentCairAndros" attachTo="sz Lower Anduin 4" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Cair Andros Canal"/>
+						<option name="canalName" value="Cair Andros"/>
 						<option name="landTerritories" value="Cair Andros"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentOldFord" attachTo="sz Upper Anduin 4" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Old Ford Canal"/>
+						<option name="canalName" value="Old Ford"/>
 						<option name="landTerritories" value="Old Ford"/>
 					</attachment>
 					<attachment name="canalAttachmentOldFord" attachTo="sz Upper Anduin 5" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Old Ford Canal"/>
+						<option name="canalName" value="Old Ford"/>
 						<option name="landTerritories" value="Old Ford"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentCarrock" attachTo="sz Upper Anduin 5" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Carrock Canal"/>
+						<option name="canalName" value="Carrock"/>
 						<option name="landTerritories" value="Carrock"/>
 					</attachment>
 					<attachment name="canalAttachmentCarrock" attachTo="sz Upper Anduin 6" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Carrock Canal"/>
+						<option name="canalName" value="Carrock"/>
 						<option name="landTerritories" value="Carrock"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentDorwinion" attachTo="sz Celduin 1" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Dorwinion Canal"/>
+						<option name="canalName" value="Dorwinion"/>
 						<option name="landTerritories" value="Dorwinion"/>
 					</attachment>
 					<attachment name="canalAttachmentDorwinion" attachTo="sz Sea of Rhun" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Dorwinion Canal"/>
+						<option name="canalName" value="Dorwinion"/>
 						<option name="landTerritories" value="Dorwinion"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentTharbad" attachTo="sz Greyflood 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Tharbad Canal"/>
+						<option name="canalName" value="Tharbad"/>
 						<option name="landTerritories" value="Tharbad"/>
 					</attachment>
 					<attachment name="canalAttachmentTharbad" attachTo="sz Greyflood 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Tharbad Canal"/>
+						<option name="canalName" value="Tharbad"/>
 						<option name="landTerritories" value="Tharbad"/>
 					</attachment>
 					
 				   <attachment name="canalAttachmentLastBridge" attachTo="sz Mitheithel 1" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Last Bridge Canal"/>
+						<option name="canalName" value="Last Bridge"/>
 						<option name="landTerritories" value="Last Bridge"/>
 					</attachment>
 					<attachment name="canalAttachmentLastBridge" attachTo="sz Mitheithel 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Last Bridge Canal"/>
+						<option name="canalName" value="Last Bridge"/>
 						<option name="landTerritories" value="Last Bridge"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentSarnFord" attachTo="sz Baranduin 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Sarn Ford Canal"/>
+						<option name="canalName" value="Sarn Ford"/>
 						<option name="landTerritories" value="Sarn Ford"/>
 					</attachment>
 					<attachment name="canalAttachmentSarnFord" attachTo="sz Baranduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Sarn Ford Canal"/>
+						<option name="canalName" value="Sarn Ford"/>
 						<option name="landTerritories" value="Sarn Ford"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentBrandywineBridge" attachTo="sz Baranduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Brandywine Bridge Canal"/>
+						<option name="canalName" value="Brandywine Bridge"/>
 						<option name="landTerritories" value="Brandywine Bridge"/>
 					</attachment>
 					<attachment name="canalAttachmentBrandywineBridge" attachTo="sz Baranduin 4" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Brandywine Bridge Canal"/>
+						<option name="canalName" value="Brandywine Bridge"/>
 						<option name="landTerritories" value="Brandywine Bridge"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentMithlond" attachTo="sz Lhun" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Mithlond Canal"/>
+						<option name="canalName" value="Mithlond"/>
 						<option name="landTerritories" value="Mithlond"/>
 					</attachment>
 					<attachment name="canalAttachmentMithlond" attachTo="sz Gulf of Lhun" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-						<option name="canalName" value="Mithlond Canal"/>
+						<option name="canalName" value="Mithlond"/>
 						<option name="landTerritories" value="Mithlond"/>
 					</attachment>
 				   
