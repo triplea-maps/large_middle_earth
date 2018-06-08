@@ -5137,17 +5137,17 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<!--Light-->
-						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="0"/>
-						<option name="combatDefenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder" count="1"/>
+						<option name="combatOffenseEffect" value="swordsman:peasant:hobbit:goblin_stabber" count="0"/>
+						<option name="combatDefenseEffect" value="swordsman:peasant:hobbit:goblin_stabber" count="1"/>
 						<!--Heavy-->
-						<option name="combatOffenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="1"/>
-						<option name="combatDefenseEffect" value="spearman:tower_guard:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden" count="2"/>
+						<option name="combatOffenseEffect" value="uruk_pikeman:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="1"/>
+						<option name="combatDefenseEffect" value="uruk_pikeman:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="2"/>
 						<!--Ranged-->
 						<option name="combatOffenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="0"/>
 						<option name="combatDefenseEffect" value="archer:ranger:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter:catapult:trebuchet" count="3"/>
 						<!--Cavalry-->
-						<option name="combatOffenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
-						<option name="combatDefenseEffect" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-1"/>
+						<option name="combatOffenseEffect" value="light_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-2"/>
+						<option name="combatDefenseEffect" value="light_cavalry:lancer:knight:chariot:chariot_archer:war_wagon" count="-1"/>
 						<!--Creature-->
 						<option name="combatOffenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="-1"/>
 						<option name="combatDefenseEffect" value="troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:balrog" count="-1"/>
@@ -5157,6 +5157,18 @@
 						<!--Fortification-->
 						<option name="combatOffenseEffect" value="wall:fortress:tower" count="0"/>
 						<option name="combatDefenseEffect" value="wall:fortress:tower" count="1"/>
+						
+						<!--Heavy garrison-->
+						<option name="combatOffenseEffect" value="spearman:tower_guard:morannon_guard:elven_warden" count="1"/>
+						<option name="combatDefenseEffect" value="spearman:tower_guard:morannon_guard:elven_warden" count="4"/>
+						
+						
+						<!--Light raider-->
+						<option name="combatOffenseEffect" value="axeman:orc_marauder" count="2"/>
+						<option name="combatDefenseEffect" value="axeman:orc_marauder" count="1"/>
+						<!--Cavalry raider-->
+						<option name="combatOffenseEffect" value="horsearcher:axe_cavalry" count="0"/>
+						<option name="combatDefenseEffect" value="horsearcher:axe_cavalry" count="-1"/>
 					</attachment>
 					
 					
