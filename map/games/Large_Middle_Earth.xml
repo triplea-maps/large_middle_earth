@@ -2057,7 +2057,7 @@
 						<result resourceOrUnit="eagle" quantity="1"/>
 					</productionRule>
 					<productionRule name="buyoathbreaker">
-						<cost resource="PUs" quantity="3" />
+						<cost resource="PUs" quantity="4" />
 						<result resourceOrUnit="oathbreaker" quantity="1"/>
 					</productionRule>
 					<productionRule name="buywizard">
@@ -2160,6 +2160,7 @@
 							<frontierRules name="buyspearman"/>
 							<frontierRules name="buytower_guard"/>
 							<frontierRules name="buyranger"/>
+							<frontierRules name="buyoathbreaker"/>
 							<frontierRules name="buylight_cavalry"/>
 							<frontierRules name="buylancer"/>
 							<frontierRules name="buyknight"/>
@@ -2171,6 +2172,7 @@
 							<frontierRules name="buyuruk_swordsman"/>
 							<frontierRules name="buymorannon_guard"/>
 							<frontierRules name="buyolog_hai"/>
+							<frontierRules name="buyspider"/>
 							<frontierRules name="buycatapult"/>
 							<frontierRules name="buywinged_nazgul"/>
 					</productionFrontier>
