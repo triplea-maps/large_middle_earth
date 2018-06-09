@@ -6333,54 +6333,71 @@
 					
 					<attachment name="playerAttachment" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Freefolk" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="HighElves" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Lorien" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Harad" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Northmen" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Arnor" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Dale" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Rohan" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="WoodlandRealm" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
+						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 		</attachmentList>
 		
