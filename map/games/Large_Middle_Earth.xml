@@ -2185,6 +2185,7 @@
 					<productionFrontier name="LorienFrontier">
 							<frontierRules name="buyelven_archer"/>
 							<frontierRules name="buyelven_hunter"/>
+							<frontierRules name="buyelven_warden"/>
 							<frontierRules name="buyhuorn"/>
 							<frontierRules name="buyent"/>
 					</productionFrontier>
@@ -6902,12 +6903,14 @@
 					<unitPlacement unitType="elven_archer" territory="Fields of Celebrant" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="factory" territory="Caras Galadhon" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="wall" territory="Caras Galadhon" quantity="3" owner="Lorien"/>
-					<unitPlacement unitType="elven_archer" territory="Caras Galadhon" quantity="6" owner="Lorien"/>
+					<unitPlacement unitType="elven_archer" territory="Caras Galadhon" quantity="4" owner="Lorien"/>
+					<unitPlacement unitType="elven_warden" territory="Caras Galadhon" quantity="2" owner="Lorien"/>
 					<unitPlacement unitType="elven_hunter" territory="Nimrodel" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="elven_archer" territory="Nimrodel" quantity="2" owner="Lorien"/>
 					<unitPlacement unitType="factory" territory="Cerin Amroth" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="elven_hunter" territory="Cerin Amroth" quantity="1" owner="Lorien"/>
-					<unitPlacement unitType="elven_archer" territory="Cerin Amroth" quantity="4" owner="Lorien"/>
+					<unitPlacement unitType="elven_archer" territory="Cerin Amroth" quantity="3" owner="Lorien"/>
+					<unitPlacement unitType="elven_warden" territory="Cerin Amroth" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="elven_hunter" territory="Naith" quantity="2" owner="Lorien"/>
 					<unitPlacement unitType="elven_hunter" territory="South Lorien" quantity="1" owner="Lorien"/>
 					<unitPlacement unitType="elven_hunter" territory="North Lorien" quantity="2" owner="Lorien"/>
