@@ -478,6 +478,7 @@
 				
 				<connection t1="Realm of Vidugavia" t2="East Mirkwood"/>
 				<connection t1="Realm of Vidugavia" t2="South Rhovanion"/>
+				<connection t1="Realm of Vidugavia" t2="Kingdom of Rhovanion"/>
 				
 				<connection t1="South Rhovanion" t2="Southeast Mirkwood"/>
 				<connection t1="South Rhovanion" t2="North Brown Lands"/>
