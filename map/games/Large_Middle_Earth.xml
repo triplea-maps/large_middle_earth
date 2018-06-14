@@ -6638,276 +6638,297 @@
 		
 		<initialize>
 				<ownerInitialize>
-						<territoryOwner territory="West Ered Mithrin" owner="Dwarves"/>
-						<territoryOwner territory="South Ered Mithrin" owner="Dwarves"/>
-						<territoryOwner territory="Thorins Halls" owner="Dwarves"/>
-						<territoryOwner territory="North Ered Luin" owner="Dwarves"/>
-						<territoryOwner territory="Ered Mithrin" owner="Dwarves"/>
-						<territoryOwner territory="Erebor" owner="Dwarves"/>
-						<territoryOwner territory="East Iron Hills" owner="Dwarves"/>
-						<territoryOwner territory="North Ered Mithrin" owner="Dwarves"/>
-						<territoryOwner territory="Dains Halls" owner="Dwarves"/>
-						<territoryOwner territory="West Iron Hills" owner="Dwarves"/>
-						<territoryOwner territory="Blue Mountains" owner="Dwarves"/>
-						<territoryOwner territory="Ered Luin" owner="Dwarves"/>
-						<territoryOwner territory="Bree" owner="Freefolk"/>
-						<territoryOwner territory="Staddle" owner="Freefolk"/>
-						<territoryOwner territory="Far Downs" owner="Freefolk"/>
-						<territoryOwner territory="Westfarthing" owner="Freefolk"/>
-						<territoryOwner territory="South Downs" owner="Freefolk"/>
-						<territoryOwner territory="Eastfarthing" owner="Freefolk"/>
-						<territoryOwner territory="Northfarthing" owner="Freefolk"/>
-						<territoryOwner territory="Michel Delving" owner="Freefolk"/>
-						<territoryOwner territory="Andrath" owner="Freefolk"/>
-						<territoryOwner territory="Brandywine Bridge" owner="Freefolk"/>
-						<territoryOwner territory="Tookland" owner="Freefolk"/>
-						<territoryOwner territory="Archet" owner="Freefolk"/>
-						<territoryOwner territory="Southfarthing" owner="Freefolk"/>
-						<territoryOwner territory="Chetwood" owner="Freefolk"/>
-						<territoryOwner territory="Green Hills" owner="Freefolk"/>
-						<territoryOwner territory="White Downs" owner="Freefolk"/>
-						<territoryOwner territory="Old Winyards" owner="Freefolk"/>
-						<territoryOwner territory="Buckland" owner="Freefolk"/>
-						<territoryOwner territory="Sarn Ford" owner="Freefolk"/>
-						<territoryOwner territory="Hobbiton" owner="Freefolk"/>
-						<territoryOwner territory="Bree Hill" owner="Freefolk"/>
-						<territoryOwner territory="Shirebourn" owner="Freefolk"/>
-						<territoryOwner territory="Tuckborough" owner="Freefolk"/>
-						<territoryOwner territory="Southeast Mirkwood" owner="DolGuldur"/>
-						<territoryOwner territory="Dol Guldur" owner="DolGuldur"/>
-						<territoryOwner territory="Anduin Bank" owner="DolGuldur"/>
-						<territoryOwner territory="Narrows of Mirkwood" owner="DolGuldur"/>
-						<territoryOwner territory="South Anduin Bank" owner="DolGuldur"/>
-						<territoryOwner territory="Southwest Mirkwood" owner="DolGuldur"/>
-						<territoryOwner territory="North Forlindon" owner="HighElves"/>
-						<territoryOwner territory="Gulf of Lhun North Shore" owner="HighElves"/>
-						<territoryOwner territory="High Pass" owner="HighElves"/>
-						<territoryOwner territory="Mithlond" owner="HighElves"/>
-						<territoryOwner territory="Gulf of Lhun South Shore" owner="HighElves"/>
-						<territoryOwner territory="Rhudaur" owner="HighElves"/>
-						<territoryOwner territory="Ford of Bruinen" owner="HighElves"/>
-						<territoryOwner territory="Lhun West Bank" owner="HighElves"/>
-						<territoryOwner territory="North Harlindon" owner="HighElves"/>
-						<territoryOwner territory="Rivendell" owner="HighElves"/>
-						<territoryOwner territory="Lhun East Bank" owner="HighElves"/>
-						<territoryOwner territory="East Rhudaur" owner="HighElves"/>
-						<territoryOwner territory="Forlond" owner="HighElves"/>
-						<territoryOwner territory="River of Forlindon" owner="HighElves"/>
-						<territoryOwner territory="Harlond" owner="HighElves"/>
-						<territoryOwner territory="Tower Hills" owner="HighElves"/>
-						<territoryOwner territory="South Forlindon" owner="HighElves"/>
-						<territoryOwner territory="Bruinen Bank" owner="HighElves"/>
-						<territoryOwner territory="South Harlindon" owner="HighElves"/>
-						<territoryOwner territory="The Angle" owner="HighElves"/>
-						<territoryOwner territory="West Methedras" owner="Saruman"/>
-						<territoryOwner territory="Methedras" owner="Saruman"/>
-						<territoryOwner territory="South Dunland" owner="Saruman"/>
-						<territoryOwner territory="East Methedras" owner="Saruman"/>
-						<territoryOwner territory="Isen" owner="Saruman"/>
-						<territoryOwner territory="North South Road" owner="Saruman"/>
-						<territoryOwner territory="North Dunland" owner="Saruman"/>
-						<territoryOwner territory="Nan Curunir" owner="Saruman"/>
-						<territoryOwner territory="Dunland Hills" owner="Saruman"/>
-						<territoryOwner territory="Fords of Isen" owner="Saruman"/>
-						<territoryOwner territory="Isengard" owner="Saruman"/>
-						<territoryOwner territory="West Dunland" owner="Saruman"/>
-						<territoryOwner territory="Crossings of Poros" owner="Gondor"/>
-						<territoryOwner territory="Gilrain" owner="Gondor"/>
-						<territoryOwner territory="Henneth Annun" owner="Gondor"/>
-						<territoryOwner territory="Pelargir" owner="Gondor"/>
-						<territoryOwner territory="Mindoullin" owner="Gondor"/>
-						<territoryOwner territory="Emyn Arnen" owner="Gondor"/>
-						<territoryOwner territory="South Ithilien" owner="Gondor"/>
-						<territoryOwner territory="Edhellond" owner="Gondor"/>
-						<territoryOwner territory="Poros Bank" owner="Gondor"/>
-						<territoryOwner territory="West Gondor" owner="Gondor"/>
-						<territoryOwner territory="Cair Andros" owner="Gondor"/>
-						<territoryOwner territory="Tolfalas" owner="Gondor"/>
-						<territoryOwner territory="Lamedon" owner="Gondor"/>
-						<territoryOwner territory="West Osgiliath" owner="Gondor"/>
-						<territoryOwner territory="East Osgiliath" owner="Gondor"/>
-						<territoryOwner territory="Celos" owner="Gondor"/>
-						<territoryOwner territory="Crossroads" owner="Gondor"/>
-						<territoryOwner territory="Ethir Anduin" owner="Gondor"/>
-						<territoryOwner territory="Dol Amroth" owner="Gondor"/>
-						<territoryOwner territory="East Ered Nimrais" owner="Gondor"/>
-						<territoryOwner territory="Pelennor Fields" owner="Gondor"/>
-						<territoryOwner territory="Ciril" owner="Gondor"/>
-						<territoryOwner territory="Sirith" owner="Gondor"/>
-						<territoryOwner territory="Belfalas" owner="Gondor"/>
-						<territoryOwner territory="Dor en Ernil" owner="Gondor"/>
-						<territoryOwner territory="Linhir" owner="Gondor"/>
-						<territoryOwner territory="Ethring" owner="Gondor"/>
-						<territoryOwner territory="Morthond" owner="Gondor"/>
-						<territoryOwner territory="Field of Cormallen" owner="Gondor"/>
-						<territoryOwner territory="Minas Tirith" owner="Gondor"/>
-						<territoryOwner territory="Lebennin" owner="Gondor"/>
-						<territoryOwner territory="Erech" owner="Gondor"/>
-						<territoryOwner territory="Calembel" owner="Gondor"/>
-						<territoryOwner territory="Paths of the Dead" owner="Gondor"/>
-						<territoryOwner territory="North Ithilien" owner="Gondor"/>
-						<territoryOwner territory="Ringlo" owner="Gondor"/>
-						<territoryOwner territory="Ringlo Vale" owner="Gondor"/>
-						<territoryOwner territory="Serni" owner="Gondor"/>
-						<territoryOwner territory="Lossarnach" owner="Gondor"/>
-						<territoryOwner territory="Anorien" owner="Gondor"/>
-						<territoryOwner territory="Pinnath Gelin" owner="Gondor"/>
-						<territoryOwner territory="West Anfalas" owner="Gondor"/>
-						<territoryOwner territory="East Anfalas" owner="Gondor"/>
-						<territoryOwner territory="Durthang" owner="Mordor"/>
-						<territoryOwner territory="West Ephel Duath" owner="Mordor"/>
-						<territoryOwner territory="Orodruin" owner="Mordor"/>
-						<territoryOwner territory="East Nurn" owner="Mordor"/>
-						<territoryOwner territory="Ephel Duath" owner="Mordor"/>
-						<territoryOwner territory="Morgai" owner="Mordor"/>
-						<territoryOwner territory="Minas Morgul" owner="Mordor"/>
-						<territoryOwner territory="South Nurn" owner="Mordor"/>
-						<territoryOwner territory="East Ered Lithui" owner="Mordor"/>
-						<territoryOwner territory="Nurn" owner="Mordor"/>
-						<territoryOwner territory="Plateau of Gorgoroth" owner="Mordor"/>
-						<territoryOwner territory="Carach Angren" owner="Mordor"/>
-						<territoryOwner territory="Udun" owner="Mordor"/>
-						<territoryOwner territory="North Ephel Duath" owner="Mordor"/>
-						<territoryOwner territory="Desolation of the Morannon" owner="Mordor"/>
-						<territoryOwner territory="Morannon" owner="Mordor"/>
-						<territoryOwner territory="Gorgoroth" owner="Mordor"/>
-						<territoryOwner territory="West Plateau of Gorgoroth" owner="Mordor"/>
-						<territoryOwner territory="Carchost" owner="Mordor"/>
-						<territoryOwner territory="Barad Dur" owner="Mordor"/>
-						<territoryOwner territory="Narchost" owner="Mordor"/>
-						<territoryOwner territory="Cirith Ungol" owner="Mordor"/>
-						<territoryOwner territory="East Ephel Duath" owner="Mordor"/>
-						<territoryOwner territory="Ered Lithui" owner="Mordor"/>
-						<territoryOwner territory="Lithlad" owner="Mordor"/>
-						<territoryOwner territory="South Ered Lithui" owner="Mordor"/>
-						<territoryOwner territory="Fields of Celebrant" owner="Lorien"/>
-						<territoryOwner territory="Caras Galadhon" owner="Lorien"/>
-						<territoryOwner territory="Nimrodel" owner="Lorien"/>
-						<territoryOwner territory="Limlight" owner="Lorien"/>
-						<territoryOwner territory="Cerin Amroth" owner="Lorien"/>
-						<territoryOwner territory="Naith" owner="Lorien"/>
-						<territoryOwner territory="South Lorien" owner="Lorien"/>
-						<territoryOwner territory="North Lorien" owner="Lorien"/>
-						<territoryOwner territory="Harnen Bank" owner="Harad"/>
-						<territoryOwner territory="Harad Road" owner="Harad"/>
-						<territoryOwner territory="City of Corsairs" owner="Harad"/>
-						<territoryOwner territory="South Umbar" owner="Harad"/>
-						<territoryOwner territory="Haradwaith" owner="Harad"/>
-						<territoryOwner territory="Harondor" owner="Harad"/>
-						<territoryOwner territory="South Gondor" owner="Harad"/>
-						<territoryOwner territory="Near Harad" owner="Harad"/>
-						<territoryOwner territory="Crossings of Harnen" owner="Harad"/>
-						<territoryOwner territory="North Umbar" owner="Harad"/>
-						<territoryOwner territory="Far Harad" owner="Harad"/>
-						<territoryOwner territory="Khand" owner="Harad"/>
-						<territoryOwner territory="Misty Mountains Foothills" owner="Northmen"/>
-						<territoryOwner territory="Beorns Hall" owner="Northmen"/>
-						<territoryOwner territory="Framsburg" owner="Northmen"/>
-						<territoryOwner territory="Greylin" owner="Northmen"/>
-						<territoryOwner territory="Langwell" owner="Northmen"/>
-						<territoryOwner territory="Lands of the Eotheod" owner="Northmen"/>
-						<territoryOwner territory="Lands of the Beornings" owner="Northmen"/>
-						<territoryOwner territory="Rhimdath" owner="Northmen"/>
-						<territoryOwner territory="Upper Forest River" owner="Northmen"/>
-						<territoryOwner territory="Carrock" owner="Northmen"/>
-						<territoryOwner territory="North Anduin Bank" owner="Northmen"/>
-						<territoryOwner territory="Old Ford" owner="Northmen"/>
-						<territoryOwner territory="Dunharrow" owner="Rohan"/>
-						<territoryOwner territory="East Emnet" owner="Rohan"/>
-						<territoryOwner territory="The Wold" owner="Rohan"/>
-						<territoryOwner territory="Starkhorn" owner="Rohan"/>
-						<territoryOwner territory="Gap of Rohan" owner="Rohan"/>
-						<territoryOwner territory="Trihyrne" owner="Rohan"/>
-						<territoryOwner territory="West March" owner="Rohan"/>
-						<territoryOwner territory="East Wall of Rohan" owner="Rohan"/>
-						<territoryOwner territory="Aldburg" owner="Rohan"/>
-						<territoryOwner territory="Hornburg" owner="Rohan"/>
-						<territoryOwner territory="Entwash" owner="Rohan"/>
-						<territoryOwner territory="Mouths of Entwash" owner="Rohan"/>
-						<territoryOwner territory="Edoras" owner="Rohan"/>
-						<territoryOwner territory="Eastfold" owner="Rohan"/>
-						<territoryOwner territory="Entwade" owner="Rohan"/>
-						<territoryOwner territory="Snowbourn" owner="Rohan"/>
-						<territoryOwner territory="Helms Deep" owner="Rohan"/>
-						<territoryOwner territory="West Emnet" owner="Rohan"/>
-						<territoryOwner territory="Westfold" owner="Rohan"/>
-						<territoryOwner territory="Adorn" owner="Rohan"/>
-						<territoryOwner territory="Goblin Town" owner="Orcs"/>
-						<territoryOwner territory="Eregion" owner="Orcs"/>
-						<territoryOwner territory="North Misty Mountains" owner="Angmar"/>
-						<territoryOwner territory="Sirannon" owner="Orcs"/>
-						<territoryOwner territory="Moria" owner="Orcs"/>
-						<territoryOwner territory="Celebdil" owner="Orcs"/>
-						<territoryOwner territory="Front Porch" owner="Orcs"/>
-						<territoryOwner territory="Hollin Ridge" owner="Orcs"/>
-						<territoryOwner territory="Fanuidhol" owner="Orcs"/>
-						<territoryOwner territory="West Vales of Anduin" owner="Orcs"/>
-						<territoryOwner territory="Gladden Fields" owner="Orcs"/>
-						<territoryOwner territory="Glanduin" owner="Orcs"/>
-						<territoryOwner territory="Redhorn Gate" owner="Orcs"/>
-						<territoryOwner territory="East Vales of Anduin" owner="Orcs"/>
-						<territoryOwner territory="Dimrill Dale" owner="Orcs"/>
-						<territoryOwner territory="Hith Aeglir" owner="Orcs"/>
-						<territoryOwner territory="Gladden River" owner="Orcs"/>
-						<territoryOwner territory="Greenfields" owner="Arnor"/>
-						<territoryOwner territory="East Arthedain" owner="Arnor"/>
-						<territoryOwner territory="Weathertop" owner="Arnor"/>
-						<territoryOwner territory="North Downs" owner="Arnor"/>
-						<territoryOwner territory="West Rhudaur" owner="Arnor"/>
-						<territoryOwner territory="Nenuial Shore" owner="Arnor"/>
-						<territoryOwner territory="Weather Hills" owner="Arnor"/>
-						<territoryOwner territory="Annuminas" owner="Arnor"/>
-						<territoryOwner territory="South Emyn Uial" owner="Arnor"/>
-						<territoryOwner territory="North Arnor" owner="Arnor"/>
-						<territoryOwner territory="Fornost Road" owner="Arnor"/>
-						<territoryOwner territory="North Emyn Uial" owner="Arnor"/>
-						<territoryOwner territory="North Mitheithel Bank" owner="Arnor"/>
-						<territoryOwner territory="Baranduin East Bank" owner="Arnor"/>
-						<territoryOwner territory="South Mitheithel Bank" owner="Arnor"/>
-						<territoryOwner territory="Amon Sul" owner="Arnor"/>
-						<territoryOwner territory="North Arthedain" owner="Arnor"/>
-						<territoryOwner territory="Fornost" owner="Arnor"/>
-						<territoryOwner territory="East Angmar" owner="Angmar"/>
-						<territoryOwner territory="Ettendales" owner="Angmar"/>
-						<territoryOwner territory="West Mountains of Angmar" owner="Angmar"/>
-						<territoryOwner territory="West Angmar" owner="Angmar"/>
-						<territoryOwner territory="Hoarwell" owner="Angmar"/>
-						<territoryOwner territory="Mount Gundabad" owner="Angmar"/>
-						<territoryOwner territory="Carn Dum" owner="Angmar"/>
-						<territoryOwner territory="Forodwaith" owner="Angmar"/>
-						<territoryOwner territory="Trollfells" owner="Angmar"/>
-						<territoryOwner territory="Withered Heath" owner="Angmar"/>
-						<territoryOwner territory="South Angmar" owner="Angmar"/>
-						<territoryOwner territory="West Forodwaith" owner="Angmar"/>
-						<territoryOwner territory="Ettenmoors" owner="Angmar"/>
-						<territoryOwner territory="East Mountains of Angmar" owner="Angmar"/>
-						<territoryOwner territory="Kingdom of Dale" owner="Dale"/>
-						<territoryOwner territory="Dale" owner="Dale"/>
-						<territoryOwner territory="Esgaroth" owner="Dale"/>
-						<territoryOwner territory="Lands of the Bardings" owner="Dale"/>
-						<territoryOwner territory="Rhun" owner="Rhun"/>
-						<territoryOwner territory="Lands of Dorwinion" owner="Rhun"/>
-						<territoryOwner territory="Dorwinion" owner="Rhun"/>
-						<territoryOwner territory="South Rhun" owner="Rhun"/>
-						<territoryOwner territory="Lands of the Balcoth" owner="Rhun"/>
-						<territoryOwner territory="Mountains of Rhun" owner="Rhun"/>
-						<territoryOwner territory="North Fangorn" owner="Lorien"/>
-						<territoryOwner territory="Wellinghall" owner="Lorien"/>
-						<territoryOwner territory="Derndingle" owner="Lorien"/>
-						<territoryOwner territory="Treebeards Hill" owner="Lorien"/>
-						<territoryOwner territory="South Fangorn" owner="Lorien"/>
-						<territoryOwner territory="East Mirkwood" owner="WoodlandRealm"/>
-						<territoryOwner territory="North Woodland Realm" owner="WoodlandRealm"/>
-						<territoryOwner territory="Mountains of Mirkwood" owner="WoodlandRealm"/>
-						<territoryOwner territory="Elvenkings Halls" owner="WoodlandRealm"/>
-						<territoryOwner territory="Long Marshes" owner="WoodlandRealm"/>
-						<territoryOwner territory="West Mirkwood" owner="WoodlandRealm"/>
-						<territoryOwner territory="Lower Forest River" owner="WoodlandRealm"/>
-						<territoryOwner territory="Enchanted River" owner="WoodlandRealm"/>
-						<territoryOwner territory="Rhosgobel" owner="WoodlandRealm"/>
-						<territoryOwner territory="Old Forest Road" owner="WoodlandRealm"/>
-						<territoryOwner territory="Elf Path" owner="WoodlandRealm"/>
-                </ownerInitialize>
+					<territoryOwner territory="West Ered Mithrin" owner="Dwarves"/>
+					<territoryOwner territory="South Ered Mithrin" owner="Dwarves"/>
+					<territoryOwner territory="Thorins Halls" owner="Dwarves"/>
+					<territoryOwner territory="North Ered Luin" owner="Dwarves"/>
+					<territoryOwner territory="Ered Mithrin" owner="Dwarves"/>
+					<territoryOwner territory="Erebor" owner="Dwarves"/>
+					<territoryOwner territory="East Iron Hills" owner="Dwarves"/>
+					<territoryOwner territory="North Ered Mithrin" owner="Dwarves"/>
+					<territoryOwner territory="Dains Halls" owner="Dwarves"/>
+					<territoryOwner territory="West Iron Hills" owner="Dwarves"/>
+					<territoryOwner territory="Blue Mountains" owner="Dwarves"/>
+					<territoryOwner territory="Ered Luin" owner="Dwarves"/>
+					<territoryOwner territory="Bree" owner="Freefolk"/>
+					<territoryOwner territory="Staddle" owner="Freefolk"/>
+					<territoryOwner territory="Far Downs" owner="Freefolk"/>
+					<territoryOwner territory="Westfarthing" owner="Freefolk"/>
+					<territoryOwner territory="South Downs" owner="Freefolk"/>
+					<territoryOwner territory="Eastfarthing" owner="Freefolk"/>
+					<territoryOwner territory="Northfarthing" owner="Freefolk"/>
+					<territoryOwner territory="Michel Delving" owner="Freefolk"/>
+					<territoryOwner territory="Andrath" owner="Freefolk"/>
+					<territoryOwner territory="Brandywine Bridge" owner="Freefolk"/>
+					<territoryOwner territory="Tookland" owner="Freefolk"/>
+					<territoryOwner territory="Archet" owner="Freefolk"/>
+					<territoryOwner territory="Southfarthing" owner="Freefolk"/>
+					<territoryOwner territory="Chetwood" owner="Freefolk"/>
+					<territoryOwner territory="Green Hills" owner="Freefolk"/>
+					<territoryOwner territory="White Downs" owner="Freefolk"/>
+					<territoryOwner territory="Old Winyards" owner="Freefolk"/>
+					<territoryOwner territory="Buckland" owner="Freefolk"/>
+					<territoryOwner territory="Sarn Ford" owner="Freefolk"/>
+					<territoryOwner territory="Hobbiton" owner="Freefolk"/>
+					<territoryOwner territory="Bree Hill" owner="Freefolk"/>
+					<territoryOwner territory="Shirebourn" owner="Freefolk"/>
+					<territoryOwner territory="Tuckborough" owner="Freefolk"/>
+					<territoryOwner territory="Southeast Mirkwood" owner="DolGuldur"/>
+					<territoryOwner territory="Dol Guldur" owner="DolGuldur"/>
+					<territoryOwner territory="Anduin Bank" owner="DolGuldur"/>
+					<territoryOwner territory="Narrows of Mirkwood" owner="DolGuldur"/>
+					<territoryOwner territory="South Anduin Bank" owner="DolGuldur"/>
+					<territoryOwner territory="Southwest Mirkwood" owner="DolGuldur"/>
+					<territoryOwner territory="North Forlindon" owner="HighElves"/>
+					<territoryOwner territory="Gulf of Lhun North Shore" owner="HighElves"/>
+					<territoryOwner territory="High Pass" owner="HighElves"/>
+					<territoryOwner territory="Mithlond" owner="HighElves"/>
+					<territoryOwner territory="Gulf of Lhun South Shore" owner="HighElves"/>
+					<territoryOwner territory="Rhudaur" owner="HighElves"/>
+					<territoryOwner territory="Ford of Bruinen" owner="HighElves"/>
+					<territoryOwner territory="Lhun West Bank" owner="HighElves"/>
+					<territoryOwner territory="North Harlindon" owner="HighElves"/>
+					<territoryOwner territory="Rivendell" owner="HighElves"/>
+					<territoryOwner territory="Lhun East Bank" owner="HighElves"/>
+					<territoryOwner territory="East Rhudaur" owner="HighElves"/>
+					<territoryOwner territory="Forlond" owner="HighElves"/>
+					<territoryOwner territory="River of Forlindon" owner="HighElves"/>
+					<territoryOwner territory="Harlond" owner="HighElves"/>
+					<territoryOwner territory="Tower Hills" owner="HighElves"/>
+					<territoryOwner territory="South Forlindon" owner="HighElves"/>
+					<territoryOwner territory="Bruinen Bank" owner="HighElves"/>
+					<territoryOwner territory="South Harlindon" owner="HighElves"/>
+					<territoryOwner territory="The Angle" owner="HighElves"/>
+					<territoryOwner territory="West Methedras" owner="Saruman"/>
+					<territoryOwner territory="Methedras" owner="Saruman"/>
+					<territoryOwner territory="South Dunland" owner="Saruman"/>
+					<territoryOwner territory="East Methedras" owner="Saruman"/>
+					<territoryOwner territory="Isen" owner="Saruman"/>
+					<territoryOwner territory="North South Road" owner="Saruman"/>
+					<territoryOwner territory="North Dunland" owner="Saruman"/>
+					<territoryOwner territory="Nan Curunir" owner="Saruman"/>
+					<territoryOwner territory="Dunland Hills" owner="Saruman"/>
+					<territoryOwner territory="Fords of Isen" owner="Saruman"/>
+					<territoryOwner territory="Isengard" owner="Saruman"/>
+					<territoryOwner territory="West Dunland" owner="Saruman"/>
+					<territoryOwner territory="Crossings of Poros" owner="Gondor"/>
+					<territoryOwner territory="Gilrain" owner="Gondor"/>
+					<territoryOwner territory="Henneth Annun" owner="Gondor"/>
+					<territoryOwner territory="Pelargir" owner="Gondor"/>
+					<territoryOwner territory="Mindoullin" owner="Gondor"/>
+					<territoryOwner territory="Emyn Arnen" owner="Gondor"/>
+					<territoryOwner territory="South Ithilien" owner="Gondor"/>
+					<territoryOwner territory="Edhellond" owner="Gondor"/>
+					<territoryOwner territory="Poros Bank" owner="Gondor"/>
+					<territoryOwner territory="West Gondor" owner="Gondor"/>
+					<territoryOwner territory="Cair Andros" owner="Gondor"/>
+					<territoryOwner territory="Tolfalas" owner="Gondor"/>
+					<territoryOwner territory="Lamedon" owner="Gondor"/>
+					<territoryOwner territory="West Osgiliath" owner="Gondor"/>
+					<territoryOwner territory="East Osgiliath" owner="Gondor"/>
+					<territoryOwner territory="Celos" owner="Gondor"/>
+					<territoryOwner territory="Crossroads" owner="Gondor"/>
+					<territoryOwner territory="Ethir Anduin" owner="Gondor"/>
+					<territoryOwner territory="Dol Amroth" owner="Gondor"/>
+					<territoryOwner territory="East Ered Nimrais" owner="Gondor"/>
+					<territoryOwner territory="Pelennor Fields" owner="Gondor"/>
+					<territoryOwner territory="Ciril" owner="Gondor"/>
+					<territoryOwner territory="Sirith" owner="Gondor"/>
+					<territoryOwner territory="Belfalas" owner="Gondor"/>
+					<territoryOwner territory="Dor en Ernil" owner="Gondor"/>
+					<territoryOwner territory="Linhir" owner="Gondor"/>
+					<territoryOwner territory="Ethring" owner="Gondor"/>
+					<territoryOwner territory="Morthond" owner="Gondor"/>
+					<territoryOwner territory="Field of Cormallen" owner="Gondor"/>
+					<territoryOwner territory="Minas Tirith" owner="Gondor"/>
+					<territoryOwner territory="Lebennin" owner="Gondor"/>
+					<territoryOwner territory="Erech" owner="Gondor"/>
+					<territoryOwner territory="Calembel" owner="Gondor"/>
+					<territoryOwner territory="Paths of the Dead" owner="Gondor"/>
+					<territoryOwner territory="North Ithilien" owner="Gondor"/>
+					<territoryOwner territory="Ringlo" owner="Gondor"/>
+					<territoryOwner territory="Ringlo Vale" owner="Gondor"/>
+					<territoryOwner territory="Serni" owner="Gondor"/>
+					<territoryOwner territory="Lossarnach" owner="Gondor"/>
+					<territoryOwner territory="Anorien" owner="Gondor"/>
+					<territoryOwner territory="Durthang" owner="Mordor"/>
+					<territoryOwner territory="West Ephel Duath" owner="Mordor"/>
+					<territoryOwner territory="Orodruin" owner="Mordor"/>
+					<territoryOwner territory="East Nurn" owner="Mordor"/>
+					<territoryOwner territory="Ephel Duath" owner="Mordor"/>
+					<territoryOwner territory="Morgai" owner="Mordor"/>
+					<territoryOwner territory="Minas Morgul" owner="Mordor"/>
+					<territoryOwner territory="South Nurn" owner="Mordor"/>
+					<territoryOwner territory="East Ered Lithui" owner="Mordor"/>
+					<territoryOwner territory="Nurn" owner="Mordor"/>
+					<territoryOwner territory="Plateau of Gorgoroth" owner="Mordor"/>
+					<territoryOwner territory="Carach Angren" owner="Mordor"/>
+					<territoryOwner territory="Udun" owner="Mordor"/>
+					<territoryOwner territory="North Ephel Duath" owner="Mordor"/>
+					<territoryOwner territory="Desolation of the Morannon" owner="Mordor"/>
+					<territoryOwner territory="Morannon" owner="Mordor"/>
+					<territoryOwner territory="Gorgoroth" owner="Mordor"/>
+					<territoryOwner territory="West Plateau of Gorgoroth" owner="Mordor"/>
+					<territoryOwner territory="Carchost" owner="Mordor"/>
+					<territoryOwner territory="Barad Dur" owner="Mordor"/>
+					<territoryOwner territory="Narchost" owner="Mordor"/>
+					<territoryOwner territory="Cirith Ungol" owner="Mordor"/>
+					<territoryOwner territory="East Ephel Duath" owner="Mordor"/>
+					<territoryOwner territory="Ered Lithui" owner="Mordor"/>
+					<territoryOwner territory="Lithlad" owner="Mordor"/>
+					<territoryOwner territory="South Ered Lithui" owner="Mordor"/>
+					<territoryOwner territory="Fields of Celebrant" owner="Lorien"/>
+					<territoryOwner territory="Caras Galadhon" owner="Lorien"/>
+					<territoryOwner territory="Nimrodel" owner="Lorien"/>
+					<territoryOwner territory="Limlight" owner="Lorien"/>
+					<territoryOwner territory="Cerin Amroth" owner="Lorien"/>
+					<territoryOwner territory="Naith" owner="Lorien"/>
+					<territoryOwner territory="South Lorien" owner="Lorien"/>
+					<territoryOwner territory="North Lorien" owner="Lorien"/>
+					<territoryOwner territory="Harnen Bank" owner="Harad"/>
+					<territoryOwner territory="Harad Road" owner="Harad"/>
+					<territoryOwner territory="City of Corsairs" owner="Harad"/>
+					<territoryOwner territory="South Umbar" owner="Harad"/>
+					<territoryOwner territory="Haradwaith" owner="Harad"/>
+					<territoryOwner territory="Harondor" owner="Harad"/>
+					<territoryOwner territory="South Gondor" owner="Harad"/>
+					<territoryOwner territory="Near Harad" owner="Harad"/>
+					<territoryOwner territory="Crossings of Harnen" owner="Harad"/>
+					<territoryOwner territory="North Umbar" owner="Harad"/>
+					<territoryOwner territory="Far Harad" owner="Harad"/>
+					<territoryOwner territory="Khand" owner="Harad"/>
+					<territoryOwner territory="Misty Mountains Foothills" owner="Northmen"/>
+					<territoryOwner territory="Beorns Hall" owner="Northmen"/>
+					<territoryOwner territory="Framsburg" owner="Northmen"/>
+					<territoryOwner territory="Greylin" owner="Northmen"/>
+					<territoryOwner territory="Langwell" owner="Northmen"/>
+					<territoryOwner territory="Lands of the Eotheod" owner="Northmen"/>
+					<territoryOwner territory="Lands of the Beornings" owner="Northmen"/>
+					<territoryOwner territory="Rhimdath" owner="Northmen"/>
+					<territoryOwner territory="Upper Forest River" owner="Northmen"/>
+					<territoryOwner territory="Carrock" owner="Northmen"/>
+					<territoryOwner territory="North Anduin Bank" owner="Northmen"/>
+					<territoryOwner territory="Old Ford" owner="Northmen"/>
+					<territoryOwner territory="Dunharrow" owner="Rohan"/>
+					<territoryOwner territory="East Emnet" owner="Rohan"/>
+					<territoryOwner territory="The Wold" owner="Rohan"/>
+					<territoryOwner territory="Starkhorn" owner="Rohan"/>
+					<territoryOwner territory="Gap of Rohan" owner="Rohan"/>
+					<territoryOwner territory="Trihyrne" owner="Rohan"/>
+					<territoryOwner territory="West March" owner="Rohan"/>
+					<territoryOwner territory="East Wall of Rohan" owner="Rohan"/>
+					<territoryOwner territory="Aldburg" owner="Rohan"/>
+					<territoryOwner territory="Hornburg" owner="Rohan"/>
+					<territoryOwner territory="Entwash" owner="Rohan"/>
+					<territoryOwner territory="Mouths of Entwash" owner="Rohan"/>
+					<territoryOwner territory="Edoras" owner="Rohan"/>
+					<territoryOwner territory="Eastfold" owner="Rohan"/>
+					<territoryOwner territory="Entwade" owner="Rohan"/>
+					<territoryOwner territory="Snowbourn" owner="Rohan"/>
+					<territoryOwner territory="Helms Deep" owner="Rohan"/>
+					<territoryOwner territory="West Emnet" owner="Rohan"/>
+					<territoryOwner territory="Westfold" owner="Rohan"/>
+					<territoryOwner territory="Adorn" owner="Rohan"/>
+					<territoryOwner territory="Goblin Town" owner="Orcs"/>
+					<territoryOwner territory="Eregion" owner="Orcs"/>
+					<territoryOwner territory="North Misty Mountains" owner="Angmar"/>
+					<territoryOwner territory="Sirannon" owner="Orcs"/>
+					<territoryOwner territory="Moria" owner="Orcs"/>
+					<territoryOwner territory="Celebdil" owner="Orcs"/>
+					<territoryOwner territory="Front Porch" owner="Orcs"/>
+					<territoryOwner territory="Hollin Ridge" owner="Orcs"/>
+					<territoryOwner territory="Fanuidhol" owner="Orcs"/>
+					<territoryOwner territory="West Vales of Anduin" owner="Orcs"/>
+					<territoryOwner territory="Gladden Fields" owner="Orcs"/>
+					<territoryOwner territory="Glanduin" owner="Orcs"/>
+					<territoryOwner territory="Redhorn Gate" owner="Orcs"/>
+					<territoryOwner territory="East Vales of Anduin" owner="Orcs"/>
+					<territoryOwner territory="Dimrill Dale" owner="Orcs"/>
+					<territoryOwner territory="Hith Aeglir" owner="Orcs"/>
+					<territoryOwner territory="Gladden River" owner="Orcs"/>
+					<territoryOwner territory="Greenfields" owner="Arnor"/>
+					<territoryOwner territory="East Arthedain" owner="Arnor"/>
+					<territoryOwner territory="Weathertop" owner="Arnor"/>
+					<territoryOwner territory="North Downs" owner="Arnor"/>
+					<territoryOwner territory="West Rhudaur" owner="Arnor"/>
+					<territoryOwner territory="Nenuial Shore" owner="Arnor"/>
+					<territoryOwner territory="Weather Hills" owner="Arnor"/>
+					<territoryOwner territory="Annuminas" owner="Arnor"/>
+					<territoryOwner territory="South Emyn Uial" owner="Arnor"/>
+					<territoryOwner territory="North Arnor" owner="Arnor"/>
+					<territoryOwner territory="Fornost Road" owner="Arnor"/>
+					<territoryOwner territory="North Emyn Uial" owner="Arnor"/>
+					<territoryOwner territory="North Mitheithel Bank" owner="Arnor"/>
+					<territoryOwner territory="Baranduin East Bank" owner="Arnor"/>
+					<territoryOwner territory="South Mitheithel Bank" owner="Arnor"/>
+					<territoryOwner territory="Amon Sul" owner="Arnor"/>
+					<territoryOwner territory="North Arthedain" owner="Arnor"/>
+					<territoryOwner territory="Fornost" owner="Arnor"/>
+					<territoryOwner territory="East Angmar" owner="Angmar"/>
+					<territoryOwner territory="Ettendales" owner="Angmar"/>
+					<territoryOwner territory="West Mountains of Angmar" owner="Angmar"/>
+					<territoryOwner territory="West Angmar" owner="Angmar"/>
+					<territoryOwner territory="Hoarwell" owner="Angmar"/>
+					<territoryOwner territory="Mount Gundabad" owner="Angmar"/>
+					<territoryOwner territory="Carn Dum" owner="Angmar"/>
+					<territoryOwner territory="Forodwaith" owner="Angmar"/>
+					<territoryOwner territory="Trollfells" owner="Angmar"/>
+					<territoryOwner territory="Withered Heath" owner="Angmar"/>
+					<territoryOwner territory="South Angmar" owner="Angmar"/>
+					<territoryOwner territory="West Forodwaith" owner="Angmar"/>
+					<territoryOwner territory="Ettenmoors" owner="Angmar"/>
+					<territoryOwner territory="East Mountains of Angmar" owner="Angmar"/>
+					<territoryOwner territory="Kingdom of Dale" owner="Dale"/>
+					<territoryOwner territory="Dale" owner="Dale"/>
+					<territoryOwner territory="Esgaroth" owner="Dale"/>
+					<territoryOwner territory="Lands of the Bardings" owner="Dale"/>
+					<territoryOwner territory="Rhun" owner="Rhun"/>
+					<territoryOwner territory="Lands of Dorwinion" owner="Rhun"/>
+					<territoryOwner territory="Dorwinion" owner="Rhun"/>
+					<territoryOwner territory="South Rhun" owner="Rhun"/>
+					<territoryOwner territory="Lands of the Balcoth" owner="Rhun"/>
+					<territoryOwner territory="Mountains of Rhun" owner="Rhun"/>
+					<territoryOwner territory="North Fangorn" owner="Lorien"/>
+					<territoryOwner territory="Wellinghall" owner="Lorien"/>
+					<territoryOwner territory="Derndingle" owner="Lorien"/>
+					<territoryOwner territory="Treebeards Hill" owner="Lorien"/>
+					<territoryOwner territory="South Fangorn" owner="Lorien"/>
+					<territoryOwner territory="East Mirkwood" owner="WoodlandRealm"/>
+					<territoryOwner territory="North Woodland Realm" owner="WoodlandRealm"/>
+					<territoryOwner territory="Mountains of Mirkwood" owner="WoodlandRealm"/>
+					<territoryOwner territory="Elvenkings Halls" owner="WoodlandRealm"/>
+					<territoryOwner territory="Long Marshes" owner="WoodlandRealm"/>
+					<territoryOwner territory="West Mirkwood" owner="WoodlandRealm"/>
+					<territoryOwner territory="Lower Forest River" owner="WoodlandRealm"/>
+					<territoryOwner territory="Enchanted River" owner="WoodlandRealm"/>
+					<territoryOwner territory="Rhosgobel" owner="WoodlandRealm"/>
+					<territoryOwner territory="Old Forest Road" owner="WoodlandRealm"/>
+					<territoryOwner territory="Elf Path" owner="WoodlandRealm"/>
+					<territoryOwner territory="North Rhun" owner="Rhun"/>
+					<territoryOwner territory="East Anfalas" owner="Gondor"/>
+					<territoryOwner territory="West Anfalas" owner="Gondor"/>
+					<territoryOwner territory="Pinnath Gelin" owner="Gondor"/>
+					<territoryOwner territory="Halifirien" owner="Gondor"/>
+					<territoryOwner territory="Amon Din" owner="Gondor"/>
+					<territoryOwner territory="Firienholt" owner="Rohan"/>
+					<territoryOwner territory="South Misty Mountains" owner="Orcs"/>
+					<territoryOwner territory="Eagles Eyrie" owner="HighElves"/>
+					<territoryOwner territory="Lands of the Lossoth" owner="Angmar"/>
+					<territoryOwner territory="Halls of Gror" owner="Dwarves"/>
+					<territoryOwner territory="North Dale" owner="Dale"/>
+					<territoryOwner territory="East Dale" owner="Dale"/>
+					<territoryOwner territory="West Dale" owner="Dale"/>
+					<territoryOwner territory="River Running Bank" owner="Dale"/>
+					<territoryOwner territory="Carnen West Bank" owner="Dale"/>
+					<territoryOwner territory="Northeast Rhun" owner="Rhun"/>
+					<territoryOwner territory="Carnen East Bank" owner="Rhun"/>
+					<territoryOwner territory="Celduin North Bank" owner="Rhun"/>
+					<territoryOwner territory="Celduin South Bank" owner="Rhun"/>
+					<territoryOwner territory="West Rhun" owner="Rhun"/>
+					<territoryOwner territory="South Wilderland" owner="Rhun"/>
+					<territoryOwner territory="Sea of Rhun Coast" owner="Rhun"/>
+					<territoryOwner territory="Southeast Rhun" owner="Rhun"/>
+				</ownerInitialize>
 				<unitInitialize>
 					<unitPlacement unitType="dwarven_axethrower" territory="West Ered Mithrin" quantity="3" owner="Dwarves"/>
 					<unitPlacement unitType="dwarven_axeman" territory="West Ered Mithrin" quantity="1" owner="Dwarves"/>
@@ -6969,19 +6990,18 @@
 					<unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
 					<unitPlacement unitType="warg" territory="South Anduin Bank" quantity="1" owner="DolGuldur"/>
 					<unitPlacement unitType="orc_marauder" territory="South Anduin Bank" quantity="1" owner="DolGuldur"/>
-					<unitPlacement unitType="eagle" territory="High Pass" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_hunter" territory="High Pass" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="Mithlond" quantity="3" owner="HighElves"/>
 					<unitPlacement unitType="noldorin_warrior" territory="Mithlond" quantity="2" owner="HighElves"/>
 					<unitPlacement unitType="elven_hunter" territory="Rhudaur" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="Rhudaur" quantity="1" owner="HighElves"/>
+					<unitPlacement unitType="flood_of_Bruinen" territory="Ford of Bruinen" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="factory" territory="Rivendell" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="wizard" territory="Rivendell" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="Rivendell" quantity="6" owner="HighElves"/>
 					<unitPlacement unitType="noldorin_warrior" territory="Rivendell" quantity="3" owner="HighElves"/>
 					<unitPlacement unitType="flood_of_Bruinen" territory="Rivendell" quantity="1" owner="HighElves"/>
-					<unitPlacement unitType="flood_of_Bruinen" territory="Ford of Bruinen" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_hunter" territory="Lhun East Bank" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="factory" territory="Forlond" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="Forlond" quantity="2" owner="HighElves"/>
@@ -7034,13 +7054,15 @@
 					<unitPlacement unitType="spearman" territory="Cair Andros" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Cair Andros" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Cair Andros" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="West Osgiliath" quantity="7" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="West Osgiliath" quantity="5" owner="Gondor"/>
 					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="4" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="wall" territory="East Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="tower" territory="Dol Amroth" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="Dol Amroth" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Dol Amroth" quantity="1" owner="Gondor"/>
@@ -7070,8 +7092,6 @@
 					<unitPlacement unitType="ranger" territory="North Ithilien" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Lossarnach" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="lancer" territory="Anorien" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="West Anfalas" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="West Anfalas" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Durthang" quantity="2" owner="Mordor"/>
 					<unitPlacement unitType="fortress" territory="Durthang" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="West Ephel Duath" quantity="2" owner="Mordor"/>
@@ -7263,6 +7283,10 @@
 					<unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="warg" territory="East Mountains of Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="swordsman" territory="Kingdom of Dale" quantity="1" owner="Dale"/>
+					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Dale"/>
+					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Dale"/>
+					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Dale"/>
@@ -7280,9 +7304,11 @@
 					<unitPlacement unitType="axe_cavalry" territory="Lands of Dorwinion" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="axeman" territory="Lands of Dorwinion" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="archer" territory="Dorwinion" quantity="2" owner="Rhun"/>
-					<unitPlacement unitType="axeman" territory="Dorwinion" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="axeman" territory="Dorwinion" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="factory" territory="Dorwinion" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="wall" territory="Dorwinion" quantity="3" owner="Rhun"/>
+					<unitPlacement unitType="axe_cavalry" territory="Dorwinion" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="chariot_archer" territory="Dorwinion" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="horsearcher" territory="South Rhun" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="axe_cavalry" territory="South Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="archer" territory="Lands of the Balcoth" quantity="5" owner="Rhun"/>
@@ -7307,6 +7333,9 @@
 					<unitPlacement unitType="axeman" territory="Last Bridge" quantity="2"/>
 					<unitPlacement unitType="factory" territory="Ost in Edhil" quantity="1"/>
 					<unitPlacement unitType="wall" territory="Ost in Edhil" quantity="1"/>
+					<unitPlacement unitType="archer" territory="North Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="horsearcher" territory="North Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="chariot" territory="North Rhun" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="peasant" territory="Lefnui Vale" quantity="1"/>
 					<unitPlacement unitType="axeman" territory="Barrow Downs" quantity="5"/>
 					<unitPlacement unitType="troll" territory="Trollshaws" quantity="3"/>
@@ -7320,6 +7349,8 @@
 					<unitPlacement unitType="axeman" territory="Eryn Vorn" quantity="5"/>
 					<unitPlacement unitType="axeman" territory="South Minhiriath" quantity="1"/>
 					<unitPlacement unitType="light_cavalry" territory="South Minhiriath" quantity="2"/>
+					<unitPlacement unitType="swordsman" territory="West Anfalas" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="West Anfalas" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="axeman" territory="Druadan Forest" quantity="4"/>
 					<unitPlacement unitType="peasant" territory="North Enedwaith" quantity="1"/>
 					<unitPlacement unitType="peasant" territory="West Brown Lands" quantity="4"/>
@@ -7338,73 +7369,27 @@
 					<unitPlacement unitType="peasant" territory="North Brown Lands" quantity="2"/>
 					<unitPlacement unitType="huorn" territory="Old Forest" quantity="4"/>
 					<unitPlacement unitType="peasant" territory="South Cardolan" quantity="3"/>
-					<!--<unitPlacement unitType="factory" territory="Thorins Halls" quantity="1" owner="Dwarves"/>
-					<unitPlacement unitType="factory" territory="Dains Halls" quantity="1" owner="Dwarves"/>
-					<unitPlacement unitType="factory" territory="Erebor" quantity="1" owner="Dwarves"/>
-					
-					<unitPlacement unitType="factory" territory="Bree" quantity="1" owner="Freefolk"/>
-					<unitPlacement unitType="factory" territory="Staddle" quantity="1" owner="Freefolk"/>
-					<unitPlacement unitType="factory" territory="Michel Delving" quantity="1" owner="Freefolk"/>
-					<unitPlacement unitType="factory" territory="Archet" quantity="1" owner="Freefolk"/>
-					<unitPlacement unitType="factory" territory="Hobbiton" quantity="1" owner="Freefolk"/>
-					<unitPlacement unitType="factory" territory="Tuckborough" quantity="1" owner="Freefolk"/>
-					
-					<unitPlacement unitType="factory" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
-					
-					<unitPlacement unitType="factory" territory="Rivendell" quantity="1" owner="HighElves"/>
-					<unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves"/>
-					<unitPlacement unitType="factory" territory="Harlond" quantity="1" owner="HighElves"/>
-					<unitPlacement unitType="factory" territory="Forlond" quantity="1" owner="HighElves"/>
-					
-					<unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman"/>
-					
-					<unitPlacement unitType="factory" territory="Minas Tirith" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Henneth Annun" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Pelargir" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Linhir" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Dol Amroth" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Ethring" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Calembel" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Edhellond" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Erech" quantity="1" owner="Gondor"/>
-					
-					<unitPlacement unitType="factory" territory="Minas Morgul" quantity="1" owner="Mordor"/>
-					<unitPlacement unitType="factory" territory="Carach Angren" quantity="1" owner="Mordor"/>
-					<unitPlacement unitType="factory" territory="Morannon" quantity="1" owner="Mordor"/>
-					<unitPlacement unitType="factory" territory="Barad Dur" quantity="1" owner="Mordor"/>
-					<unitPlacement unitType="factory" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
-					
-					<unitPlacement unitType="factory" territory="Caras Galadhon" quantity="1" owner="Lorien"/>
-					<unitPlacement unitType="factory" territory="Cerin Amroth" quantity="1" owner="Lorien"/>
-					<unitPlacement unitType="factory" territory="Wellinghall" quantity="1" owner="Lorien"/>
-					
-					<unitPlacement unitType="factory" territory="City of Corsairs" quantity="1" owner="Harad"/>
-					
-					<unitPlacement unitType="factory" territory="Beorns Hall" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="factory" territory="Framsburg" quantity="1" owner="Northmen"/>
-					
-					<unitPlacement unitType="factory" territory="Aldburg" quantity="1" owner="Rohan"/>
-					<unitPlacement unitType="factory" territory="Hornburg" quantity="1" owner="Rohan"/>
-					<unitPlacement unitType="factory" territory="Edoras" quantity="1" owner="Rohan"/>
-					
-					<unitPlacement unitType="factory" territory="Goblin Town" quantity="1" owner="Orcs"/>
-					<unitPlacement unitType="factory" territory="Moria" quantity="1" owner="Orcs"/>
-					
-					<unitPlacement unitType="factory" territory="Annuminas" quantity="1" owner="Arnor"/>
-					<unitPlacement unitType="factory" territory="Amon Sul" quantity="1" owner="Arnor"/>
-					<unitPlacement unitType="factory" territory="Fornost" quantity="1" owner="Arnor"/>
-					
-					<unitPlacement unitType="factory" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="factory" territory="Carn Dum" quantity="1" owner="Angmar"/>
-					
-					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="factory" territory="Esgaroth" quantity="1" owner="Dale"/>
-					
-					<unitPlacement unitType="factory" territory="Dorwinion" quantity="1" owner="Rhun"/>
-					
-					<unitPlacement unitType="factory" territory="Elvenkings Halls" quantity="1" owner="WoodlandRealm"/>
-					<unitPlacement unitType="factory" territory="Rhosgobel" quantity="1" owner="WoodlandRealm"/>-->
+					<unitPlacement unitType="ranger" territory="Halifirien" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="Amon Din" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="Firienholt" quantity="1" owner="Rohan"/>
+					<unitPlacement unitType="axeman" territory="Firienholt" quantity="2" owner="Rohan"/>
+					<unitPlacement unitType="archer" territory="Firienholt" quantity="2" owner="Rohan"/>
+					<unitPlacement unitType="snaga_skirmisher" territory="South Misty Mountains" quantity="1" owner="Orcs"/>
+					<unitPlacement unitType="eagle" territory="Eagles Eyrie" quantity="2" owner="HighElves"/>
+					<unitPlacement unitType="orc_marauder" territory="Lands of the Lossoth" quantity="3" owner="Angmar"/>
+					<unitPlacement unitType="peasant" territory="South Forodwaith" quantity="1"/>
+					<unitPlacement unitType="dwarven_axeman" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="dwarven_phalangite" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="dwarven_halberdier" territory="Halls of Gror" quantity="2" owner="Dwarves"/>
+					<unitPlacement unitType="catapult" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="factory" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="wall" territory="Halls of Gror" quantity="2" owner="Dwarves"/>
+					<unitPlacement unitType="fortress" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="axeman" territory="Northeast Rhun" quantity="2" owner="Rhun"/>
+					<unitPlacement unitType="war_wagon" territory="Northeast Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="axeman" territory="West Wilderland" quantity="1"/>
+					<unitPlacement unitType="archer" territory="West Wilderland" quantity="1"/>
+					<unitPlacement unitType="axe_cavalry" territory="West Rhun" quantity="1" owner="Rhun"/>
 				</unitInitialize>
 				<resourceInitialize>
 					<resourceGiven player="Dwarves" resource="PUs" quantity="33"/>
