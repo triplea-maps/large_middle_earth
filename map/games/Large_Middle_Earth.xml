@@ -3287,7 +3287,7 @@
                         <option name="production" value="3"/>
 						<option name="unitProduction" value="3"/>
 						<option name="territoryEffect" value="settlement"/>
-						<option name="territoryEffect" value="hills"/>
+						<option name="territoryEffect" value="hill"/>
                    </attachment>
 				   <attachment name="territoryAttachment" attachTo="North Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
