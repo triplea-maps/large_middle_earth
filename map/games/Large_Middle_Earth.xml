@@ -94,9 +94,10 @@
                 <territory name="Poros Bank"/>
                 <territory name="West Gondor"/>
                 <territory name="Cair Andros"/>
-                <territory name="Tolfolas"/>
+                <territory name="Tolfalas"/>
                 <territory name="Lamedon"/>
-                <territory name="Osgiliath"/>
+                <territory name="West Osgiliath"/>
+				<territory name="East Osgiliath"/>
                 <territory name="Celos"/>
                 <territory name="Crossroads"/>
                 <territory name="Ethir Anduin"/>
@@ -105,7 +106,6 @@
                 <territory name="Pelennor Fields"/>
                 <territory name="Ciril"/>
                 <territory name="Sirith"/>
-                <territory name="Warning Beacons of Gondor"/>
                 <territory name="Belfalas"/>
                 <territory name="Dor en Ernil"/>
                 <territory name="Linhir"/>
@@ -192,7 +192,6 @@
                 <territory name="Aldburg"/>
                 <territory name="Hornburg"/>
                 <territory name="Entwash"/>
-                <territory name="Merring Stream"/>
                 <territory name="Mouths of Entwash"/>
                 <territory name="Edoras"/>
                 <territory name="Eastfold"/>
@@ -251,17 +250,13 @@
                 <territory name="West Forodwaith"/>
                 <territory name="Ettenmoors"/>
                 <territory name="East Mountains of Angmar"/>
-                <territory name="Carnen Bank"/>
-                <territory name="South Kingdom of Dale"/>
                 <territory name="Kingdom of Dale"/>
                 <territory name="Dale"/>
                 <territory name="Esgaroth"/>
                 <territory name="Lands of the Bardings"/>
-                <territory name="East Kingdom of Dale"/>
                 <territory name="Rhun"/>
                 <territory name="Lands of Dorwinion"/>
                 <territory name="Dorwinion"/>
-                <territory name="East Rhun"/>
                 <territory name="South Rhun"/>
                 <territory name="Lands of the Balcoth"/>
                 <territory name="Mountains of Rhun"/>
@@ -315,7 +310,7 @@
                 <territory name="sz 21" water="true"/>
                 <territory name="sz 18" water="true"/>
                 <territory name="sz 19" water="true"/>
-                <territory name="sz Bay of Tolfolas" water="true"/>
+                <territory name="sz Bay of Tolfalas" water="true"/>
                 <territory name="South Minhiriath"/>
                 <territory name="East Anfalas"/>
                 <territory name="sz Greyflood 1" water="true"/>
@@ -340,7 +335,6 @@
                 <territory name="East Forodwaith"/>
                 <territory name="Upper Lefnui"/>
                 <territory name="Emyn Muil"/>
-                <territory name="West Celduin Bank"/>
                 <territory name="sz Bay of Belfalas" water="true"/>
                 <territory name="West Anfalas"/>
                 <territory name="Druadan Forest"/>
@@ -353,7 +347,6 @@
                 <territory name="North Enedwaith"/>
                 <territory name="Pinnath Gelin"/>
                 <territory name="South Lhun"/>
-                <territory name="East Celduin Bank"/>
                 <territory name="sz 1" water="true"/>
                 <territory name="West Brown Lands"/>
                 <territory name="sz 2" water="true"/>
@@ -409,8 +402,211 @@
                 <territory name="Baranduin South Bank"/>
                 <territory name="South Cardolan"/>
                 <territory name="Ered Nimrais"/>
+				
+				<territory name="Halifirien"/>
+				<territory name="Amon Din"/>
+				<territory name="Firienholt"/>
+				<territory name="The Undeeps"/>
+				<territory name="South Misty Mountains"/>
+				<territory name="Eagles Eyrie"/>
+				<territory name="Lands of the Lossoth"/>
+				<territory name="Northern Waste"/>
+				<territory name="South Forodwaith"/>
+				<territory name="Halls of Gror"/>
+				<territory name="North Dale"/>
+				<territory name="East Dale"/>
+				<territory name="West Dale"/>
+				<territory name="River Running Bank"/>
+				<territory name="Carnen West Bank"/>
+				<territory name="Northeast Rhun"/>
+				<territory name="Carnen East Bank"/>
+				<territory name="Celduin North Bank"/>
+				<territory name="North Rhovanion"/>
+				<territory name="River Running South Bank"/>
+				<territory name="Realm of Vidugavia"/>
+				<territory name="West Wilderland"/>
+				<territory name="Kingdom of Rhovanion"/>
+				<territory name="South Rhovanion"/>
+				<territory name="Celduin South Bank"/>
+				<territory name="West Rhun"/>
+				<territory name="South Wilderland"/>
+				<territory name="Sea of Rhun Coast"/>
+				<territory name="Southeast Rhun"/>
 
                 <!-- Territory Connections -->
+				<connection t1="West Rhun" t2="East Rhovanion"/>
+				<connection t1="West Rhun" t2="East Brown Lands"/>
+				<connection t1="West Rhun" t2="South Wilderland"/>
+				<connection t1="West Rhun" t2="Lands of the Balcoth"/>
+				
+				<connection t1="South Wilderland" t2="Lands of the Balcoth"/>
+				<connection t1="South Wilderland" t2="East Brown Land"/>
+				<connection t1="South Wilderland" t2="Dagorlad"/>
+				<connection t1="South Wilderland" t2="South Rhun"/>
+				
+				<connection t1="Sea of Rhun Coast" t2="sz Sea of Rhun"/>
+				<connection t1="Sea of Rhun Coast" t2="Mountains of Rhun"/>
+				
+				<connection t1="Mountains of Rhun" t2="East Rhovanion"/>
+				
+				<connection t1="Southeast Rhun" t2="East Ered Lithui"/>
+				<connection t1="Southeast Rhun" t2="South Rhun"/>
+				<connection t1="Southeast Rhun" t2="Lands of the Balcoth"/>
+				<connection t1="Southeast Rhun" t2="Mountains of Rhun"/>
+				<connection t1="Southeast Rhun" t2="Sea of Rhun Coast"/>
+				
+				<connection t1="North Rhovanion" t2="Long Marshes"/>
+				<connection t1="North Rhovanion" t2="Old Forest Road"/>
+				<connection t1="North Rhovanion" t2="East Mirkwood"/>
+				<connection t1="North Rhovanion" t2="sz Celduin 3"/>
+				<connection t1="North Rhovanion" t2="Realm of Vidugavia"/>
+				<connection t1="North Rhovanion" t2="River Running South Bank"/>
+				
+				<connection t1="River Running Sout Bank" t2="sz Celduin 3"/>
+				<connection t1="River Running Sout Bank" t2="sz Celduin 2"/>
+				<connection t1="River Running Sout Bank" t2="Realm of Vidugavia"/>
+				<connection t1="River Running Sout Bank" t2="Kingdom of Rhovanion"/>
+				<connection t1="River Running Sout Bank" t2="West Wilderland"/>
+				
+				<connection t1="East Bight" t2="Realm of Vidugavia"/>
+				<connection t1="East Bight" t2="South Rhovanion"/>
+				
+				<connection t1="Kingdom of Rhovanion" t2="West Wilderland"/>
+				<connection t1="Kingdom of Rhovanion" t2="East Rhovanion"/>
+				<connection t1="Kingdom of Rhovanion" t2="South Rhovanion"/>
+				<connection t1="Kingdom of Rhovanion" t2="West Wilderland"/>
+				
+				<connection t1="Realm of Vidugavia" t2="East Mirkwood"/>
+				<connection t1="Realm of Vidugavia" t2="South Rhovanion"/>
+				
+				<connection t1="South Rhovanion" t2="Southeast Mirkwood"/>
+				<connection t1="South Rhovanion" t2="North Brown Lands"/>
+				<connection t1="South Rhovanion" t2="East Brown Lands"/>
+				<connection t1="South Rhovanion" t2="East Rhovanion"/>
+				<connection t1="South Rhovanion" t2="West Rhun"/>
+				
+				<connection t1="West Wilderland" t2="sz Celduin 1"/>
+				<connection t1="West Wilderland" t2="sz Celduin 2"/>
+				<connection t1="West Wilderland" t2="Celduin South Bank"/>
+				<connection t1="West Wilderland" t2="East Rhovanion"/>
+				
+				<connection t1="Celduin South Bank" t2="sz Celduin 1"/>
+				<connection t1="Celduin South Bank" t2="Dorwinion"/>
+				<connection t1="Celduin South Bank" t2="Lands of Dorwinion"/>
+				<connection t1="Celduin South Bank" t2="East Rhovanion"/>
+				
+				<connection t1="North Dale" t2="Dale"/>
+				<connection t1="North Dale" t2="Esgaroth"/>
+				<connection t1="North Dale" t2="Lands of the Bardings"/>
+				<connection t1="North Dale" t2="West Iron Hills"/>
+				<connection t1="North Dale" t2="West Dale"/>
+				<connection t1="North Dale" t2="Kingdom of Dale"/>
+				
+				<connection t1="West Dale" t2="Esgaroth"/>
+				<connection t1="West Dale" t2="Kingdom of Dale"/>
+				<connection t1="West Dale" t2="River Running Bank"/>
+				<connection t1="West Dale" t2="sz Celduin 3"/>
+				
+				<connection t1="River Running Bank" t2="sz Celduin 3"/>
+				<connection t1="River Running Bank" t2="sz Celduin 2"/>
+				<connection t1="River Running Bank" t2="Kingdom of Dale"/>
+				<connection t1="River Running Bank" t2="Carnen West Bank"/>
+				
+				<connection t1="Carnen West Bank" t2="East Dale"/>
+				<connection t1="Carnen West Bank" t2="Kingdom of Dale"/>
+				<connection t1="Carnen West Bank" t2="sz Carnen"/>
+				<connection t1="Carnen West Bank" t2="sz Celduin 2"/>
+				
+				<connection t1="Kingdom of Dale" t2="East Dale"/>
+				<connection t1="Kingdom of Dale" t2="West Iron Hills"/>
+				
+				<connection t1="East Dale" t2="West Iron Hills"/>
+				<connection t1="East Dale" t2="sz Carnen"/>
+				
+				<connection t1="East Iron Hills" t2="Northeast Rhun"/>
+				<connection t1="East Iron Hills" t2="sz Carnen"/>
+				
+				<connection t1="West Iron Hills" t2="sz Carnen"/>
+				
+				<connection t1="Northeast Rhun" t2="Rhun"/>
+				<connection t1="Northeast Rhun" t2="North Rhun"/>
+				
+				<connection t1="Rhun" t2="Carnen East Bank"/>
+				<connection t1="Rhun" t2="Celduin North Bank"/>
+				
+				<connection t1="Carnen East Bank" t2="sz Celduin 1"/>
+				<connection t1="Carnen East Bank" t2="Celduin North Bank"/>
+				<connection t1="Carnen East Bank" t2="North Rhun"/>
+				<connection t1="Carnen East Bank" t2="sz Carnen"/>
+				
+				<connection t1="Celduin North Bank" t2="Dorwinion"/>
+				<connection t1="Celduin North Bank" t2="sz Celduin 1"/>
+				<connection t1="Celduin North Bank" t2="sz Sea of Rhun"/>
+				
+				<connection t1="Halls of Gror" t2="East Iron Hills"/>
+				<connection t1="Halls of Gror" t2="West Iron Hills"/>
+				
+				<connection t1="East Forodwaith" t2="East Iron Hills"/>
+				<connection t1="East Forodwaith" t2="Northeast Rhun"/>
+				
+				<connection t1="South Forodwaith" t2="Lands of the Bardings"/>
+				<connection t1="South Forodwaith" t2="Withered Heath"/>
+				<connection t1="South Forodwaith" t2="West Iron Hills"/>
+				<connection t1="South Forodwaith" t2="Halls of Gror"/>
+				<connection t1="South Forodwaith" t2="East Iron Hills"/>
+				<connection t1="South Forodwaith" t2="East Forodwaith"/>
+				
+				<connection t1="Northern Waste" t2="Withered Heath"/>
+				<connection t1="Northern Waste" t2="East Forodwaith"/>
+				<connection t1="Northern Waste" t2="South Forodwaith"/>
+				
+				<connection t1="Lands of the Lossoth" t2="Forodwaith"/>
+				<connection t1="Lands of the Lossoth" t2="North Ered Mithrin"/>
+				<connection t1="Lands of the Lossoth" t2="Withered Heath"/>
+				<connection t1="Lands of the Lossoth" t2="Northern Waste"/>
+				
+				<connection t1="Eagles Eyrie" t2="North Misty Mountains"/>
+				<connection t1="Eagles Eyrie" t2="Langwell"/>
+				<connection t1="Eagles Eyrie" t2="Rhimdath"/>
+				<connection t1="Eagles Eyrie" t2="Coldfells"/>
+				<connection t1="Eagles Eyrie" t2="High Pass"/>
+				<connection t1="Eagles Eyrie" t2="East Rhudaur"/>
+				
+				<connection t1="Amon Din" t2="Aldburg"/>
+				<connection t1="Amon Din" t2="Halifirien"/>
+				<connection t1="Amon Din" t2="Firienholt"/>
+				<connection t1="Amon Din" t2="Druadan Forest"/>
+				<connection t1="Amon Din" t2="Mindoullin"/>
+				<connection t1="Amon Din" t2="Lamedon"/>
+				<connection t1="Amon Din" t2="Ringlo Vale"/>
+				<connection t1="Firienholt" t2="Aldburg"/>
+				<connection t1="Firienholt" t2="Mouths of Entwash"/>
+				<connection t1="Firienholt" t2="Eastfold"/>
+				<connection t1="Firienholt" t2="Anorien"/>
+				<connection t1="Firienholt" t2="Entwade"/>
+				<connection t1="Firienholt" t2="Druadan Forest"/>
+				<connection t1="Halifirien" t2="Aldburg"/>
+				<connection t1="Halifirien" t2="Lamedon"/>
+				<connection t1="Halifirien" t2="Ciril"/>
+				<connection t1="Halifirien" t2="East Ered Nimrais"/>
+				<connection t1="Halifirien" t2="Eastfold"/>
+				
+				<connection t1="The Undeeps" t2="The Wold"/>
+				<connection t1="The Undeeps" t2="North Undeep"/>
+				<connection t1="The Undeeps" t2="South Undeep"/>
+				<connection t1="The Undeeps" t2="sz Upper Anduin 1"/>
+				<connection t1="The Undeeps" t2="sz Upper Anduin 2"/>
+				
+				<connection t1="East Osgiliath" t2="West Osgiliath"/>
+				
+				<connection t1="South Misty Mountains" t2="Nimrodel"/>
+				<connection t1="South Misty Mountains" t2="Celebdil"/>
+				<connection t1="South Misty Mountains" t2="Glanduin"/>
+				<connection t1="South Misty Mountains" t2="Methedras"/>
+				<connection t1="South Misty Mountains" t2="North Fangorn"/>
+				<connection t1="South Misty Mountains" t2="Limlight"/>
+				
+				
                 <connection t1="West Ered Mithrin" t2="Greylin"/>
                 <connection t1="West Ered Mithrin" t2="Langwell"/>
                 <connection t1="West Ered Mithrin" t2="Mount Gundabad"/>
@@ -439,7 +635,6 @@
                 <connection t1="North Ered Mithrin" t2="Withered Heath"/>
                 <connection t1="Dains Halls" t2="Upper Forest River"/>
                 <connection t1="West Iron Hills" t2="Lands of the Bardings"/>
-                <connection t1="West Iron Hills" t2="East Kingdom of Dale"/>
                 <connection t1="Blue Mountains" t2="Ered Luin"/>
                 <connection t1="Bree" t2="Staddle"/>
                 <connection t1="Bree" t2="South Downs"/>
@@ -519,7 +714,6 @@
                 <connection t1="Southeast Mirkwood" t2="Dol Guldur"/>
                 <connection t1="Southeast Mirkwood" t2="East Bight"/>
                 <connection t1="Southeast Mirkwood" t2="Narrows of Mirkwood"/>
-                <connection t1="Southeast Mirkwood" t2="East Rhovanion"/>
                 <connection t1="Southeast Mirkwood" t2="North Brown Lands"/>
                 <connection t1="Southeast Mirkwood" t2="Southwest Mirkwood"/>
                 <connection t1="Dol Guldur" t2="Southwest Mirkwood"/>
@@ -590,7 +784,6 @@
                 <connection t1="Methedras" t2="North Fangorn"/>
                 <connection t1="Methedras" t2="Wellinghall"/>
                 <connection t1="Methedras" t2="East Methedras"/>
-                <connection t1="Methedras" t2="Celebdil"/>
                 <connection t1="Methedras" t2="Dunland Hills"/>
                 <connection t1="Methedras" t2="Glanduin"/>
                 <connection t1="Methedras" t2="Isengard"/>
@@ -644,13 +837,12 @@
                 <connection t1="Pelargir" t2="sz Ethir Anduin"/>
                 <connection t1="Mindoullin" t2="Druadan Forest"/>
                 <connection t1="Mindoullin" t2="Sirith"/>
-                <connection t1="Mindoullin" t2="Warning Beacons of Gondor"/>
                 <connection t1="Mindoullin" t2="Minas Tirith"/>
                 <connection t1="Mindoullin" t2="Lebennin"/>
                 <connection t1="Mindoullin" t2="Ringlo Vale"/>
                 <connection t1="Emyn Arnen" t2="sz Lower Anduin 2"/>
                 <connection t1="Emyn Arnen" t2="South Ithilien"/>
-                <connection t1="Emyn Arnen" t2="Osgiliath"/>
+                <connection t1="Emyn Arnen" t2="East Osgiliath"/>
                 <connection t1="Emyn Arnen" t2="Crossroads"/>
                 <connection t1="Emyn Arnen" t2="North Ephel Duath"/>
                 <connection t1="South Ithilien" t2="Poros Bank"/>
@@ -668,19 +860,18 @@
                 <connection t1="Cair Andros" t2="Nindalf"/>
                 <connection t1="Cair Andros" t2="Field of Cormallen"/>
                 <connection t1="Cair Andros" t2="Anorien"/>
-                <connection t1="Tolfolas" t2="sz Bay of Tolfolas"/>
-                <connection t1="Tolfolas" t2="sz 4"/>
-                <connection t1="Tolfolas" t2="sz 5"/>
+                <connection t1="Tolfalas" t2="sz Bay of Tolfalas"/>
+                <connection t1="Tolfalas" t2="sz 4"/>
+                <connection t1="Tolfalas" t2="sz 5"/>
                 <connection t1="Lamedon" t2="Ciril"/>
-                <connection t1="Lamedon" t2="Warning Beacons of Gondor"/>
                 <connection t1="Lamedon" t2="Ethring"/>
                 <connection t1="Lamedon" t2="Calembel"/>
                 <connection t1="Lamedon" t2="Ringlo"/>
                 <connection t1="Lamedon" t2="Ringlo Vale"/>
-                <connection t1="Osgiliath" t2="Crossroads"/>
-                <connection t1="Osgiliath" t2="Pelennor Fields"/>
-                <connection t1="Osgiliath" t2="Field of Cormallen"/>
-                <connection t1="Osgiliath" t2="Lossarnach"/>
+                <connection t1="East Osgiliath" t2="Crossroads"/>
+                <connection t1="West Osgiliath" t2="Pelennor Fields"/>
+                <connection t1="East Osgiliath" t2="Field of Cormallen"/>
+                <connection t1="West Osgiliath" t2="Lossarnach"/>
                 <connection t1="Celos" t2="Sirith"/>
                 <connection t1="Celos" t2="Lebennin"/>
                 <connection t1="Celos" t2="Lossarnach"/>
@@ -693,7 +884,6 @@
                 <connection t1="Dol Amroth" t2="Belfalas"/>
                 <connection t1="Dol Amroth" t2="Dor en Ernil"/>
                 <connection t1="East Ered Nimrais" t2="Ciril"/>
-                <connection t1="East Ered Nimrais" t2="Warning Beacons of Gondor"/>
                 <connection t1="East Ered Nimrais" t2="Morthond"/>
                 <connection t1="East Ered Nimrais" t2="Erech"/>
                 <connection t1="East Ered Nimrais" t2="Edoras"/>
@@ -703,16 +893,11 @@
                 <connection t1="Pelennor Fields" t2="Minas Tirith"/>
                 <connection t1="Pelennor Fields" t2="Lossarnach"/>
                 <connection t1="Pelennor Fields" t2="Anorien"/>
-                <connection t1="Ciril" t2="Warning Beacons of Gondor"/>
                 <connection t1="Ciril" t2="Morthond"/>
                 <connection t1="Ciril" t2="Calembel"/>
                 <connection t1="Sirith" t2="Minas Tirith"/>
                 <connection t1="Sirith" t2="Lebennin"/>
                 <connection t1="Sirith" t2="Lossarnach"/>
-                <connection t1="Warning Beacons of Gondor" t2="Aldburg"/>
-                <connection t1="Warning Beacons of Gondor" t2="Merring Stream"/>
-                <connection t1="Warning Beacons of Gondor" t2="Eastfold"/>
-                <connection t1="Warning Beacons of Gondor" t2="Ringlo Vale"/>
                 <connection t1="Belfalas" t2="Dor en Ernil"/>
                 <connection t1="Belfalas" t2="sz 5"/>
                 <connection t1="Belfalas" t2="Serni"/>
@@ -772,7 +957,6 @@
                 <connection t1="South Nurn" t2="sz Sea of Nurnen"/>
                 <connection t1="South Nurn" t2="Nurn"/>
                 <connection t1="South Nurn" t2="East Ephel Duath"/>
-                <connection t1="East Ered Lithui" t2="East Rhun"/>
                 <connection t1="East Ered Lithui" t2="South Rhun"/>
                 <connection t1="East Ered Lithui" t2="Ered Lithui"/>
                 <connection t1="East Ered Lithui" t2="Lithlad"/>
@@ -931,7 +1115,6 @@
                 <connection t1="West March" t2="Adorn"/>
                 <connection t1="East Wall of Rohan" t2="Mouths of Entwash"/>
                 <connection t1="East Wall of Rohan" t2="Entwade"/>
-                <connection t1="Aldburg" t2="Merring Stream"/>
                 <connection t1="Aldburg" t2="Eastfold"/>
                 <connection t1="Hornburg" t2="Snowbourn"/>
                 <connection t1="Hornburg" t2="Helms Deep"/>
@@ -939,10 +1122,6 @@
                 <connection t1="Entwash" t2="Treebeards Hill"/>
                 <connection t1="Entwash" t2="Entwade"/>
                 <connection t1="Entwash" t2="West Emnet"/>
-                <connection t1="Merring Stream" t2="Mouths of Entwash"/>
-                <connection t1="Merring Stream" t2="Eastfold"/>
-                <connection t1="Merring Stream" t2="Entwade"/>
-                <connection t1="Merring Stream" t2="Anorien"/>
                 <connection t1="Mouths of Entwash" t2="Entwade"/>
                 <connection t1="Mouths of Entwash" t2="Anorien"/>
                 <connection t1="Edoras" t2="Eastfold"/>
@@ -969,12 +1148,9 @@
                 <connection t1="Eregion" t2="Redhorn Gate"/>
                 <connection t1="Eregion" t2="Swanfleet"/>
                 <connection t1="North Misty Mountains" t2="Ettendales"/>
-                <connection t1="North Misty Mountains" t2="High Pass"/>
                 <connection t1="North Misty Mountains" t2="Hoarwell"/>
                 <connection t1="North Misty Mountains" t2="Langwell"/>
                 <connection t1="North Misty Mountains" t2="Mount Gundabad"/>
-                <connection t1="North Misty Mountains" t2="Rhimdath"/>
-                <connection t1="North Misty Mountains" t2="East Rhudaur"/>
                 <connection t1="Sirannon" t2="Moria"/>
                 <connection t1="Sirannon" t2="Celebdil"/>
                 <connection t1="Sirannon" t2="Glanduin"/>
@@ -983,7 +1159,6 @@
                 <connection t1="Moria" t2="Redhorn Gate"/>
                 <connection t1="Moria" t2="Dimrill Dale"/>
                 <connection t1="Celebdil" t2="Nimrodel"/>
-                <connection t1="Celebdil" t2="Limlight"/>
                 <connection t1="Celebdil" t2="Glanduin"/>
                 <connection t1="Celebdil" t2="Dimrill Dale"/>
                 <connection t1="Front Porch" t2="Rivendell"/>
@@ -1099,53 +1274,25 @@
                 <connection t1="Carn Dum" t2="Trollfells"/>
                 <connection t1="Carn Dum" t2="East Mountains of Angmar"/>
                 <connection t1="Forodwaith" t2="Dains Halls"/>
-                <connection t1="Forodwaith" t2="Withered Heath"/>
                 <connection t1="Forodwaith" t2="West Forodwaith"/>
                 <connection t1="Trollfells" t2="Ettenmoors"/>
                 <connection t1="Trollfells" t2="East Mountains of Angmar"/>
                 <connection t1="West Forodwaith" t2="East Mountains of Angmar"/>
-                <connection t1="Carnen Bank" t2="South Kingdom of Dale"/>
-                <connection t1="Carnen Bank" t2="sz Celduin 2"/>
-                <connection t1="Carnen Bank" t2="sz Carnen"/>
-                <connection t1="Carnen Bank" t2="East Kingdom of Dale"/>
-                <connection t1="South Kingdom of Dale" t2="Kingdom of Dale"/>
-                <connection t1="South Kingdom of Dale" t2="sz Celduin 2"/>
-                <connection t1="South Kingdom of Dale" t2="sz Celduin 3"/>
-                <connection t1="South Kingdom of Dale" t2="Esgaroth"/>
-                <connection t1="South Kingdom of Dale" t2="East Kingdom of Dale"/>
-                <connection t1="Kingdom of Dale" t2="Dale"/>
-                <connection t1="Kingdom of Dale" t2="West Iron Hills"/>
-                <connection t1="Kingdom of Dale" t2="Esgaroth"/>
-                <connection t1="Kingdom of Dale" t2="Lands of the Bardings"/>
-                <connection t1="Kingdom of Dale" t2="East Kingdom of Dale"/>
                 <connection t1="Dale" t2="Erebor"/>
                 <connection t1="Dale" t2="Esgaroth"/>
                 <connection t1="Dale" t2="Lands of the Bardings"/>
                 <connection t1="Lands of the Bardings" t2="Withered Heath"/>
-                <connection t1="Rhun" t2="Dorwinion"/>
-                <connection t1="Rhun" t2="sz Celduin 1"/>
-                <connection t1="Rhun" t2="sz Carnen"/>
-                <connection t1="Rhun" t2="sz Sea of Rhun"/>
                 <connection t1="Lands of Dorwinion" t2="Dorwinion"/>
-                <connection t1="Lands of Dorwinion" t2="East Celduin Bank"/>
-                <connection t1="Lands of Dorwinion" t2="sz Celduin 1"/>
                 <connection t1="Lands of Dorwinion" t2="East Rhovanion"/>
-                <connection t1="Lands of Dorwinion" t2="Lands of the Balcoth"/>
                 <connection t1="Lands of Dorwinion" t2="sz Sea of Rhun"/>
                 <connection t1="Lands of Dorwinion" t2="Mountains of Rhun"/>
                 <connection t1="Dorwinion" t2="sz Celduin 1"/>
                 <connection t1="Dorwinion" t2="sz Sea of Rhun"/>
-                <connection t1="East Rhun" t2="South Rhun"/>
-                <connection t1="East Rhun" t2="Lands of the Balcoth"/>
-                <connection t1="East Rhun" t2="sz Sea of Rhun"/>
-                <connection t1="East Rhun" t2="Mountains of Rhun"/>
                 <connection t1="South Rhun" t2="Carchost"/>
-                <connection t1="South Rhun" t2="East Brown Lands"/>
                 <connection t1="South Rhun" t2="Lands of the Balcoth"/>
                 <connection t1="South Rhun" t2="Ered Lithui"/>
                 <connection t1="Lands of the Balcoth" t2="Mountains of Rhun"/>
                 <connection t1="North Fangorn" t2="Wellinghall"/>
-                <connection t1="North Fangorn" t2="Celebdil"/>
                 <connection t1="North Fangorn" t2="Limlight"/>
                 <connection t1="North Fangorn" t2="Derndingle"/>
                 <connection t1="North Fangorn" t2="Treebeards Hill"/>
@@ -1157,7 +1304,6 @@
                 <connection t1="Treebeards Hill" t2="West Emnet"/>
                 <connection t1="Treebeards Hill" t2="South Fangorn"/>
                 <connection t1="South Fangorn" t2="Westfold"/>
-                <connection t1="East Mirkwood" t2="West Celduin Bank"/>
                 <connection t1="East Mirkwood" t2="West Mirkwood"/>
                 <connection t1="East Mirkwood" t2="East Bight"/>
                 <connection t1="East Mirkwood" t2="Narrows of Mirkwood"/>
@@ -1177,7 +1323,6 @@
                 <connection t1="Elvenkings Halls" t2="Lower Forest River"/>
                 <connection t1="Elvenkings Halls" t2="Enchanted River"/>
                 <connection t1="Elvenkings Halls" t2="Elf Path"/>
-                <connection t1="Long Marshes" t2="West Celduin Bank"/>
                 <connection t1="Long Marshes" t2="Dale"/>
                 <connection t1="Long Marshes" t2="Enchanted River"/>
                 <connection t1="Long Marshes" t2="sz Celduin 3"/>
@@ -1223,11 +1368,8 @@
                 <connection t1="Falls of Rauros" t2="Emyn Muil"/>
                 <connection t1="Falls of Rauros" t2="East Wall of Rohan"/>
                 <connection t1="North Rhun" t2="Rhun"/>
-                <connection t1="North Rhun" t2="East Forodwaith"/>
                 <connection t1="North Rhun" t2="East Iron Hills"/>
-                <connection t1="North Rhun" t2="West Iron Hills"/>
                 <connection t1="North Rhun" t2="sz Carnen"/>
-                <connection t1="North Rhun" t2="East Kingdom of Dale"/>
                 <connection t1="sz Gulf of Umbar" t2="City of Corsairs"/>
                 <connection t1="sz Gulf of Umbar" t2="South Umbar"/>
                 <connection t1="sz Gulf of Umbar" t2="sz 1"/>
@@ -1261,12 +1403,14 @@
                 <connection t1="sz Lower Anduin 4" t2="Mouths of Entwash"/>
                 <connection t1="sz Lower Anduin 4" t2="Anorien"/>
                 <connection t1="sz Lower Anduin 3" t2="Cair Andros"/>
-                <connection t1="sz Lower Anduin 3" t2="Osgiliath"/>
+                <connection t1="sz Lower Anduin 3" t2="West Osgiliath"/>
+				<connection t1="sz Lower Anduin 3" t2="East Osgiliath"/>
                 <connection t1="sz Lower Anduin 3" t2="Pelennor Fields"/>
                 <connection t1="sz Lower Anduin 3" t2="Field of Cormallen"/>
                 <connection t1="sz Lower Anduin 2" t2="sz Lower Anduin 1"/>
                 <connection t1="sz Lower Anduin 2" t2="South Ithilien"/>
-                <connection t1="sz Lower Anduin 2" t2="Osgiliath"/>
+                <connection t1="sz Lower Anduin 2" t2="West Osgiliath"/>
+				<connection t1="sz Lower Anduin 2" t2="East Osgiliath"/>
                 <connection t1="sz Lower Anduin 2" t2="Celos"/>
                 <connection t1="sz Lower Anduin 2" t2="Lossarnach"/>
                 <connection t1="sz Lower Anduin 1" t2="South Ithilien"/>
@@ -1361,12 +1505,12 @@
                 <connection t1="sz 19" t2="sz 11"/>
                 <connection t1="sz 19" t2="sz 9"/>
                 <connection t1="sz 19" t2="sz Belegaer"/>
-                <connection t1="sz Bay of Tolfolas" t2="Belfalas"/>
-                <connection t1="sz Bay of Tolfolas" t2="sz 4"/>
-                <connection t1="sz Bay of Tolfolas" t2="sz 5"/>
-                <connection t1="sz Bay of Tolfolas" t2="South Gondor"/>
-                <connection t1="sz Bay of Tolfolas" t2="Serni"/>
-                <connection t1="sz Bay of Tolfolas" t2="sz Ethir Anduin"/>
+                <connection t1="sz Bay of Tolfalas" t2="Belfalas"/>
+                <connection t1="sz Bay of Tolfalas" t2="sz 4"/>
+                <connection t1="sz Bay of Tolfalas" t2="sz 5"/>
+                <connection t1="sz Bay of Tolfalas" t2="South Gondor"/>
+                <connection t1="sz Bay of Tolfalas" t2="Serni"/>
+                <connection t1="sz Bay of Tolfalas" t2="sz Ethir Anduin"/>
                 <connection t1="South Minhiriath" t2="sz Greyflood 1"/>
                 <connection t1="South Minhiriath" t2="sz 10"/>
                 <connection t1="South Minhiriath" t2="North Minhiriath"/>
@@ -1439,11 +1583,6 @@
                 <connection t1="sz 15" t2="South Forlindon"/>
                 <connection t1="sz 15" t2="Ered Luin"/>
                 <connection t1="sz 16" t2="sz 17"/>
-                <connection t1="East Forodwaith" t2="East Iron Hills"/>
-                <connection t1="East Forodwaith" t2="Forodwaith"/>
-                <connection t1="East Forodwaith" t2="West Iron Hills"/>
-                <connection t1="East Forodwaith" t2="Lands of the Bardings"/>
-                <connection t1="East Forodwaith" t2="Withered Heath"/>
                 <connection t1="Upper Lefnui" t2="West Anfalas"/>
                 <connection t1="Upper Lefnui" t2="Ras Morthil"/>
                 <connection t1="Upper Lefnui" t2="Pinnath Gelin"/>
@@ -1451,12 +1590,6 @@
                 <connection t1="Emyn Muil" t2="Nindalf"/>
                 <connection t1="Emyn Muil" t2="West Brown Lands"/>
                 <connection t1="Emyn Muil" t2="South Undeep"/>
-                <connection t1="Emyn Muil" t2="Dead Marshes"/>
-                <connection t1="West Celduin Bank" t2="East Bight"/>
-                <connection t1="West Celduin Bank" t2="East Celduin Bank"/>
-                <connection t1="West Celduin Bank" t2="sz Celduin 2"/>
-                <connection t1="West Celduin Bank" t2="sz Celduin 3"/>
-                <connection t1="West Celduin Bank" t2="Old Forest Road"/>
                 <connection t1="sz Bay of Belfalas" t2="West Anfalas"/>
                 <connection t1="sz Bay of Belfalas" t2="Belfalas"/>
                 <connection t1="sz Bay of Belfalas" t2="Dor en Ernil"/>
@@ -1464,8 +1597,6 @@
                 <connection t1="sz Bay of Belfalas" t2="sz 6"/>
                 <connection t1="West Anfalas" t2="Pinnath Gelin"/>
                 <connection t1="West Anfalas" t2="sz 6"/>
-                <connection t1="Druadan Forest" t2="Warning Beacons of Gondor"/>
-                <connection t1="Druadan Forest" t2="Merring Stream"/>
                 <connection t1="Druadan Forest" t2="Minas Tirith"/>
                 <connection t1="Druadan Forest" t2="Anorien"/>
                 <connection t1="Ered Luin Foothills" t2="South Ered Luin"/>
@@ -1483,8 +1614,6 @@
                 <connection t1="South Ered Luin" t2="South Harlindon"/>
                 <connection t1="Greenway" t2="South Cardolan"/>
                 <connection t1="East Bight" t2="Narrows of Mirkwood"/>
-                <connection t1="East Bight" t2="East Celduin Bank"/>
-                <connection t1="East Bight" t2="East Rhovanion"/>
                 <connection t1="Nindalf" t2="Dead Marshes"/>
                 <connection t1="Nindalf" t2="North Ithilien"/>
                 <connection t1="North Enedwaith" t2="Swanfleet"/>
@@ -1494,9 +1623,6 @@
                 <connection t1="South Lhun" t2="West Forochel Coast"/>
                 <connection t1="South Lhun" t2="sz Lhun"/>
                 <connection t1="South Lhun" t2="Lhun Tributary"/>
-                <connection t1="East Celduin Bank" t2="sz Celduin 1"/>
-                <connection t1="East Celduin Bank" t2="sz Celduin 2"/>
-                <connection t1="East Celduin Bank" t2="East Rhovanion"/>
                 <connection t1="sz 1" t2="sz 2"/>
                 <connection t1="sz 1" t2="North Umbar"/>
                 <connection t1="West Brown Lands" t2="Dagorlad"/>
@@ -1562,16 +1688,12 @@
                 <connection t1="sz Baranduin 1" t2="Brandywine North Bank"/>
                 <connection t1="sz Baranduin 1" t2="Baranduin South Bank"/>
                 <connection t1="West Lone Lands" t2="East West Road"/>
-                <connection t1="East Rhovanion" t2="East Brown Lands"/>
                 <connection t1="East Rhovanion" t2="Lands of the Balcoth"/>
-                <connection t1="East Rhovanion" t2="North Brown Lands"/>
                 <connection t1="Midgewater" t2="Amon Sul"/>
                 <connection t1="Midgewater" t2="East West Road"/>
                 <connection t1="Dead Marshes" t2="North Ithilien"/>
-                <connection t1="East Brown Lands" t2="Lands of the Balcoth"/>
                 <connection t1="East Brown Lands" t2="North Brown Lands"/>
                 <connection t1="sz Isen" t2="Adorn"/>
-                <connection t1="sz Carnen" t2="East Kingdom of Dale"/>
                 <connection t1="sz Sea of Rhun" t2="Mountains of Rhun"/>
                 <connection t1="West Ered Nimrais" t2="Adorn"/>
                 <connection t1="West Ered Nimrais" t2="Ered Nimrais"/>
@@ -3118,6 +3240,131 @@
 					
 					
 					
+					<attachment name="territoryAttachment" attachTo="Halifirien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="mountain"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Amon Din" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="mountain"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Firienholt" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="river"/>
+						<option name="territoryEffect" value="forest"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="The Undeeps" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="river"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="South Misty Mountains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="mountain"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Eagles Eyrie" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="mountain"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Lands of the Lossoth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Northern Waste" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="South Forodwaith" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Halls of Gror" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="3"/>
+						<option name="unitProduction" value="3"/>
+						<option name="territoryEffect" value="settlement"/>
+						<option name="territoryEffect" value="hills"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="North Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="East Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="West Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="River Running Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Carnen West Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Northeast Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Carnen East Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Celduin North Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="North Rhovanion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="River Running South Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Realm of Vidugavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="West Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Kingdom of Rhovanion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="South Rhovanion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Celduin South Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="West Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="South Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Sea of Rhun Coast" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Southeast Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+                   </attachment>
 		
 					<attachment name="territoryAttachment" attachTo="West Ered Mithrin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -3530,7 +3777,7 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="Tolfolas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                    <attachment name="territoryAttachment" attachTo="Tolfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
                    </attachment>
@@ -3538,9 +3785,15 @@
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="Osgiliath" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="6"/>
-						<option name="unitProduction" value="5"/>
+                    <attachment name="territoryAttachment" attachTo="West Osgiliath" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="3"/>
+						<option name="unitProduction" value="3"/>
+						<option name="territoryEffect" value="river"/>
+						<option name="territoryEffect" value="settlement"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="East Osgiliath" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="3"/>
+						<option name="unitProduction" value="3"/>
 						<option name="territoryEffect" value="river"/>
 						<option name="territoryEffect" value="settlement"/>
                    </attachment>
@@ -3582,11 +3835,6 @@
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
-                   </attachment>
-                    <attachment name="territoryAttachment" attachTo="Warning Beacons of Gondor" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-						<option name="territoryEffect" value="mountain"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Belfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -4008,11 +4256,6 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="Merring Stream" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-						<option name="territoryEffect" value="river"/>
-                   </attachment>
                     <attachment name="territoryAttachment" attachTo="Mouths of Entwash" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
@@ -4290,14 +4533,6 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="mountain"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="Carnen Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-                   </attachment>
-                    <attachment name="territoryAttachment" attachTo="South Kingdom of Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-                   </attachment>
                     <attachment name="territoryAttachment" attachTo="Kingdom of Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
@@ -4319,10 +4554,6 @@
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="East Kingdom of Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-                   </attachment>
                     <attachment name="territoryAttachment" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
@@ -4336,10 +4567,6 @@
 						<option name="unitProduction" value="8"/>
 						<option name="territoryEffect" value="settlement"/>
                         <option name="capital" value="Rhun"/>
-                   </attachment>
-                    <attachment name="territoryAttachment" attachTo="East Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="South Rhun" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -4559,10 +4786,6 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="hill"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="West Celduin Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-                   </attachment>
                     <attachment name="territoryAttachment" attachTo="West Anfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
@@ -4614,10 +4837,6 @@
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
-                   </attachment>
-                    <attachment name="territoryAttachment" attachTo="East Celduin Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="West Brown Lands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -4749,7 +4968,7 @@
 				   <attachment name="territoryAttachment" attachTo="sz Gulf of Umbar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 						<option name="territoryEffect" value="sea"/>
                    </attachment>
-				   <attachment name="territoryAttachment" attachTo="sz Bay of Tolfolas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+				   <attachment name="territoryAttachment" attachTo="sz Bay of Tolfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
 						<option name="territoryEffect" value="sea"/>
                    </attachment>
 				   <attachment name="territoryAttachment" attachTo="sz Bay of Belfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -4843,11 +5062,11 @@
 					
 					<attachment name="canalAttachmentOsgiliath" attachTo="sz Lower Anduin 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Osgiliath"/>
-						<option name="landTerritories" value="Osgiliath"/>
+						<option name="landTerritories" value="West Osgiliath:East Osgiliath"/>
 					</attachment>
 					<attachment name="canalAttachmentOsgiliath" attachTo="sz Lower Anduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Osgiliath"/>
-						<option name="landTerritories" value="Osgiliath"/>
+						<option name="landTerritories" value="West Osgiliath:East Osgiliath"/>
 					</attachment>
 					
 					<attachment name="canalAttachmentCairAndros" attachTo="sz Lower Anduin 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
@@ -5857,7 +6076,7 @@
 					<attachment name="objectiveAttachmentMordor_Triumph1" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_MordorCapital:conditionAttachment_noFFA"/>
 						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Osgiliath" count="1"/>
+						<option name="directOwnershipTerritories" value="West Osgiliath" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
 					<attachment name="objectiveAttachmentMordor_Triumph2" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -5917,12 +6136,12 @@
 					<attachment name="objectiveAttachmentRhun_EastSupport" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_noFFA"/>
 						<option name="objectiveValue" value="6"/>
-						<option name="directOwnershipTerritories" value="North Rhun:Rhun:East Rhun" count="each"/>
+						<option name="directOwnershipTerritories" value="North Rhun:Rhun" count="each"/>
 					</attachment>
 					<attachment name="objectiveAttachmentRhun_RaidingDale" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_DaleCapital:conditionAttachment_noFFA"/>
 						<option name="objectiveValue" value="1"/>
-						<option name="directOwnershipTerritories" value="Carnen Bank:East Kingdom of Dale:South Kingdom of Dale:Kingdom of Dale" count="each"/>
+						<option name="directOwnershipTerritories" value="Kingdom of Dale" count="each"/>
 					</attachment>
 					
 					<attachment name="objectiveAttachmentWoodlandRealm_Forests" attachTo="WoodlandRealm" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -6503,9 +6722,10 @@
 						<territoryOwner territory="Poros Bank" owner="Gondor"/>
 						<territoryOwner territory="West Gondor" owner="Gondor"/>
 						<territoryOwner territory="Cair Andros" owner="Gondor"/>
-						<territoryOwner territory="Tolfolas" owner="Gondor"/>
+						<territoryOwner territory="Tolfalas" owner="Gondor"/>
 						<territoryOwner territory="Lamedon" owner="Gondor"/>
-						<territoryOwner territory="Osgiliath" owner="Gondor"/>
+						<territoryOwner territory="West Osgiliath" owner="Gondor"/>
+						<territoryOwner territory="East Osgiliath" owner="Gondor"/>
 						<territoryOwner territory="Celos" owner="Gondor"/>
 						<territoryOwner territory="Crossroads" owner="Gondor"/>
 						<territoryOwner territory="Ethir Anduin" owner="Gondor"/>
@@ -6514,7 +6734,6 @@
 						<territoryOwner territory="Pelennor Fields" owner="Gondor"/>
 						<territoryOwner territory="Ciril" owner="Gondor"/>
 						<territoryOwner territory="Sirith" owner="Gondor"/>
-						<territoryOwner territory="Warning Beacons of Gondor" owner="Gondor"/>
 						<territoryOwner territory="Belfalas" owner="Gondor"/>
 						<territoryOwner territory="Dor en Ernil" owner="Gondor"/>
 						<territoryOwner territory="Linhir" owner="Gondor"/>
@@ -6604,7 +6823,6 @@
 						<territoryOwner territory="Aldburg" owner="Rohan"/>
 						<territoryOwner territory="Hornburg" owner="Rohan"/>
 						<territoryOwner territory="Entwash" owner="Rohan"/>
-						<territoryOwner territory="Merring Stream" owner="Rohan"/>
 						<territoryOwner territory="Mouths of Entwash" owner="Rohan"/>
 						<territoryOwner territory="Edoras" owner="Rohan"/>
 						<territoryOwner territory="Eastfold" owner="Rohan"/>
@@ -6663,17 +6881,13 @@
 						<territoryOwner territory="West Forodwaith" owner="Angmar"/>
 						<territoryOwner territory="Ettenmoors" owner="Angmar"/>
 						<territoryOwner territory="East Mountains of Angmar" owner="Angmar"/>
-						<territoryOwner territory="Carnen Bank" owner="Dale"/>
-						<territoryOwner territory="South Kingdom of Dale" owner="Dale"/>
 						<territoryOwner territory="Kingdom of Dale" owner="Dale"/>
 						<territoryOwner territory="Dale" owner="Dale"/>
 						<territoryOwner territory="Esgaroth" owner="Dale"/>
 						<territoryOwner territory="Lands of the Bardings" owner="Dale"/>
-						<territoryOwner territory="East Kingdom of Dale" owner="Dale"/>
 						<territoryOwner territory="Rhun" owner="Rhun"/>
 						<territoryOwner territory="Lands of Dorwinion" owner="Rhun"/>
 						<territoryOwner territory="Dorwinion" owner="Rhun"/>
-						<territoryOwner territory="East Rhun" owner="Rhun"/>
 						<territoryOwner territory="South Rhun" owner="Rhun"/>
 						<territoryOwner territory="Lands of the Balcoth" owner="Rhun"/>
 						<territoryOwner territory="Mountains of Rhun" owner="Rhun"/>
@@ -6820,20 +7034,19 @@
 					<unitPlacement unitType="spearman" territory="Cair Andros" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Cair Andros" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Cair Andros" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="Osgiliath" quantity="7" owner="Gondor"/>
-					<unitPlacement unitType="knight" territory="Osgiliath" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Osgiliath" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="wall" territory="Osgiliath" quantity="4" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="West Osgiliath" quantity="7" owner="Gondor"/>
+					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="4" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="tower" territory="Dol Amroth" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="Dol Amroth" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Dol Amroth" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="lancer" territory="Dol Amroth" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Dol Amroth" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="knight" territory="Dol Amroth" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Warning Beacons of Gondor" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Dor en Ernil" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Linhir" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="Linhir" quantity="1" owner="Gondor"/>
@@ -7050,10 +7263,6 @@
 					<unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="warg" territory="East Mountains of Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="archer" territory="Carnen Bank" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="spearman" territory="Carnen Bank" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="archer" territory="South Kingdom of Dale" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="swordsman" territory="South Kingdom of Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Dale"/>
 					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Dale"/>
@@ -7074,10 +7283,6 @@
 					<unitPlacement unitType="axeman" territory="Dorwinion" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="factory" territory="Dorwinion" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="wall" territory="Dorwinion" quantity="3" owner="Rhun"/>
-					<unitPlacement unitType="war_wagon" territory="East Rhun" quantity="3" owner="Rhun"/>
-					<unitPlacement unitType="horsearcher" territory="East Rhun" quantity="2" owner="Rhun"/>
-					<unitPlacement unitType="chariot_archer" territory="East Rhun" quantity="2" owner="Rhun"/>
-					<unitPlacement unitType="chariot" territory="East Rhun" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="horsearcher" territory="South Rhun" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="axe_cavalry" territory="South Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="archer" territory="Lands of the Balcoth" quantity="5" owner="Rhun"/>
@@ -7154,7 +7359,7 @@
 					<unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman"/>
 					
 					<unitPlacement unitType="factory" territory="Minas Tirith" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="Osgiliath" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Henneth Annun" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Pelargir" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Linhir" quantity="1" owner="Gondor"/>
@@ -7895,7 +8100,7 @@
 			<br/> - You can still collect PUs from territories without controlling your capital, but not from objectives. PUs are not captured when taking a capital.
 			<br/> - Units with 2 or 3 hitpoints regenerate one hitpoint each turn.
 			<br/> - Battles can not last more than 10 turns. This is only a technical rule, for infinite battles where neither side has firepower left can occur.
-			<br/> - On the map, undeeps (South Undeep and North Undeep) are connected to The Wold, and Belfalas is connected to Tolfolas. Water territories are connected through towns and fords (but not through the Falls of Rauros).
+			<br/> - On the map, undeeps (South Undeep and North Undeep) are connected to The Wold, and Belfalas is connected to Tolfalas. Water territories are connected through towns and fords (but not through the Falls of Rauros).
 			<br/> - Cities along rivers act as canals and must be allied controlled at the start of a player's turn to move ships through.
 
 		</div>
@@ -8885,3 +9090,4 @@
 	</propertyList>
 
 </game>
+
