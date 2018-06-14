@@ -462,11 +462,11 @@
 				<connection t1="North Rhovanion" t2="Realm of Vidugavia"/>
 				<connection t1="North Rhovanion" t2="River Running South Bank"/>
 				
-				<connection t1="River Running Sout Bank" t2="sz Celduin 3"/>
-				<connection t1="River Running Sout Bank" t2="sz Celduin 2"/>
-				<connection t1="River Running Sout Bank" t2="Realm of Vidugavia"/>
-				<connection t1="River Running Sout Bank" t2="Kingdom of Rhovanion"/>
-				<connection t1="River Running Sout Bank" t2="West Wilderland"/>
+				<connection t1="River Running South Bank" t2="sz Celduin 3"/>
+				<connection t1="River Running South Bank" t2="sz Celduin 2"/>
+				<connection t1="River Running South Bank" t2="Realm of Vidugavia"/>
+				<connection t1="River Running South Bank" t2="Kingdom of Rhovanion"/>
+				<connection t1="River Running South Bank" t2="West Wilderland"/>
 				
 				<connection t1="East Bight" t2="Realm of Vidugavia"/>
 				<connection t1="East Bight" t2="South Rhovanion"/>
