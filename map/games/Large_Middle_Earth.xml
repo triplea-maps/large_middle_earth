@@ -1738,7 +1738,6 @@
                 <player name="Orcs" optional="false" canBeDisabled="false"/>
                 <player name="Arnor" optional="false" canBeDisabled="false"/>
                 <player name="Angmar" optional="false" canBeDisabled="false"/>
-                <player name="Dale" optional="false" canBeDisabled="false"/>
                 <player name="Rhun" optional="false" canBeDisabled="false"/>
 				<player name="Rohan" optional="false" canBeDisabled="false"/>
                 <player name="WoodlandRealm" optional="false" canBeDisabled="false"/>
@@ -1756,7 +1755,6 @@
                 <alliance player="Orcs" alliance="Evil"/>
                 <alliance player="Arnor" alliance="Good"/>
                 <alliance player="Angmar" alliance="Evil"/>
-                <alliance player="Dale" alliance="Good"/>
                 <alliance player="Rhun" alliance="Evil"/>
 				<alliance player="Rohan" alliance="Good"/>
                 <alliance player="WoodlandRealm" alliance="Good"/>
@@ -1975,14 +1973,6 @@
 					<step name="angmarNonCombatMove" delegate="move" player="Angmar" display="Non Combat Move"/>
 					<step name="angmarPlace" delegate="place" player="Angmar"/>
 					<step name="angmarEndTurn" delegate="endTurn" player="Angmar"/>
-					
-					<!-- Dale Game Sequence -->
-					<step name="dalePurchase" delegate="purchase" player="Dale"/>
-					<step name="daleCombatMove" delegate="move" player="Dale"/>
-					<step name="daleBattle" delegate="battle" player="Dale"/>
-					<step name="daleNonCombatMove" delegate="move" player="Dale" display="Non Combat Move"/>
-					<step name="dalePlace" delegate="place" player="Dale"/>
-					<step name="daleEndTurn" delegate="endTurn" player="Dale"/>
 					
 					<!-- Rhun Game Sequence -->
 					<step name="rhunPurchase" delegate="purchase" player="Rhun"/>
@@ -2323,6 +2313,7 @@
 					</productionFrontier>
 					<productionFrontier name="NorthmenFrontier">
 							<frontierRules name="buypeasant"/>
+							<frontierRules name="buyspearman"/>
 							<frontierRules name="buyaxeman"/>
 							<frontierRules name="buyarcher"/>
 							<frontierRules name="buylight_cavalry"/>
@@ -2356,14 +2347,6 @@
 							<frontierRules name="buytroll"/>
 							<frontierRules name="buydragon"/>
 							<frontierRules name="buynazgul"/>
-					</productionFrontier>
-					<productionFrontier name="DaleFrontier">
-							<frontierRules name="buyswordsman"/>
-							<frontierRules name="buyspearman"/>
-							<frontierRules name="buyaxeman"/>
-							<frontierRules name="buyarcher"/>
-							<frontierRules name="buylight_cavalry"/>
-							<frontierRules name="buylancer"/>
 					</productionFrontier>
 					<productionFrontier name="RhunFrontier">
 							<frontierRules name="buyaxeman"/>
@@ -2403,7 +2386,6 @@
 					<playerProduction player="Orcs" frontier="OrcsFrontier"/>
 					<playerProduction player="Arnor" frontier="ArnorFrontier"/>
 					<playerProduction player="Angmar" frontier="AngmarFrontier"/>
-					<playerProduction player="Dale" frontier="DaleFrontier"/>
 					<playerProduction player="Rhun" frontier="RhunFrontier"/>
 					<playerProduction player="Rohan" frontier="RohanFrontier"/>
 					<playerProduction player="WoodlandRealm" frontier="WoodlandRealmFrontier"/>
@@ -3225,7 +3207,7 @@
 					
 					<attachment name="unitAttachment" attachTo="flood_of_Bruinen" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="isInfrastructure" value="true"/>
-						<option name="destroyedWhenCapturedBy" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="destroyedWhenCapturedBy" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 						
 						<option name="targetsAA" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
 						<option name="typeAA" value="flood"/>
@@ -4543,7 +4525,6 @@
 						<option name="unitProduction" value="8"/>
 						<option name="territoryEffect" value="river"/>
 						<option name="territoryEffect" value="settlement"/>
-                        <option name="capital" value="Dale"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Esgaroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="6"/>
@@ -5432,7 +5413,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_rangerRan" attachTo="ranger" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5443,7 +5424,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_goblin_archerRan" attachTo="goblin_archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5454,7 +5435,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_snaga_skirmisherRan" attachTo="snaga_skirmisher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5465,7 +5446,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_horsearcherRan" attachTo="horsearcher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5476,7 +5457,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_chariot_archerRan" attachTo="chariot_archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5487,7 +5468,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dwarven_axethrowerRan" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5498,7 +5479,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_elven_archerRan" attachTo="elven_archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5509,7 +5490,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_elven_hunterRan" attachTo="elven_hunter" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5520,7 +5501,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_catapultRan" attachTo="catapult" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5531,7 +5512,7 @@
 						<option name="number" value="3"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_trebuchetRan" attachTo="trebuchet" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5542,7 +5523,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="ranged"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					
@@ -5556,7 +5537,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_tower_guardArm" attachTo="tower_guard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5567,7 +5548,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_uruk_pikemanArm" attachTo="uruk_pikeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5578,7 +5559,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_uruk_swordsmanArm" attachTo="uruk_swordsman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5589,7 +5570,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_morannon_guardArm" attachTo="morannon_guard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5600,7 +5581,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_lancerArm" attachTo="lancer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5611,7 +5592,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_knightArm" attachTo="knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5622,7 +5603,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dwarven_axemanArm" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5633,7 +5614,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dwarven_axemanArm" attachTo="dwarven_phalangite" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5644,7 +5625,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dwarven_axemanArm" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5655,7 +5636,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dwarven_axemanArm" attachTo="elven_warden" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:peasant:hobbit:tower_guard:goblin_stabber:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:axe_cavalry:lancer:knight:chariot:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_warden:noldorin_warrior"/>
@@ -5666,7 +5647,7 @@
 						<option name="number" value="1"/>
 						<option name="bonusType" value="armor"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					<!--LEADERSHIP-->
@@ -5679,7 +5660,7 @@
 						<option name="number" value="6"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_entLead" attachTo="ent" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
@@ -5690,7 +5671,7 @@
 						<option name="number" value="8"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_wizardLead" attachTo="wizard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
@@ -5701,7 +5682,7 @@
 						<option name="number" value="12"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_balrogLead" attachTo="balrog" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
@@ -5712,7 +5693,7 @@
 						<option name="number" value="8"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_nazgulLead" attachTo="nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
@@ -5723,7 +5704,7 @@
 						<option name="number" value="12"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_winged_nazgulLead" attachTo="winged_nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet"/>
@@ -5734,7 +5715,7 @@
 						<option name="number" value="12"/>
 						<option name="bonusType" value="leadership"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					
@@ -5748,7 +5729,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_olog_haiTer" attachTo="olog_hai" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5759,7 +5740,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_bearTer" attachTo="bear" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5770,7 +5751,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_huornTer" attachTo="huorn" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5781,7 +5762,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_dragonTer" attachTo="dragon" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5792,7 +5773,7 @@
 						<option name="number" value="4"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_oathbreakerTer" attachTo="oathbreaker" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5803,7 +5784,7 @@
 						<option name="number" value="4"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_balrogTer" attachTo="balrog" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5814,7 +5795,7 @@
 						<option name="number" value="8"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_nazgulTer" attachTo="nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5825,7 +5806,7 @@
 						<option name="number" value="6"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_winged_nazgulTer" attachTo="winged_nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:catapult:trebuchet"/>
@@ -5836,7 +5817,7 @@
 						<option name="number" value="12"/>
 						<option name="bonusType" value="terror"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					
@@ -5850,7 +5831,7 @@
 						<option name="number" value="2"/>
 						<option name="bonusType" value="fortification"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_wallFort" attachTo="wall" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior"/>
@@ -5861,7 +5842,7 @@
 						<option name="number" value="3"/>
 						<option name="bonusType" value="fortification"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_fortressFort" attachTo="fortress" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior"/>
@@ -5872,7 +5853,7 @@
 						<option name="number" value="6"/>
 						<option name="bonusType" value="fortification"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					<attachment name="supportAttachment_towerFort" attachTo="tower" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior"/>
@@ -5883,7 +5864,7 @@
 						<option name="number" value="6"/>
 						<option name="bonusType" value="fortification"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					
@@ -5897,7 +5878,7 @@
 						<option name="number" value="8"/>
 						<option name="bonusType" value="web"/>
 						<option name="impArtTech" value="false"/>
-						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Dale:Rhun:WoodlandRealm"/>
+						<option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm"/>
 					</attachment>
 					
 					
@@ -5941,9 +5922,6 @@
 					</attachment>
 					<attachment name="conditionAttachment_AngmarCapital" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="directOwnershipTerritories" value="Carn Dum" count="1"/>
-					</attachment>
-					<attachment name="conditionAttachment_DaleCapital" attachTo="Dale" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="directOwnershipTerritories" value="Dale" count="1"/>
 					</attachment>
 					<attachment name="conditionAttachment_RhunCapital" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="directOwnershipTerritories" value="Dorwinion" count="1"/>
@@ -6140,7 +6118,7 @@
 						<option name="directOwnershipTerritories" value="North Rhun:Rhun" count="each"/>
 					</attachment>
 					<attachment name="objectiveAttachmentRhun_RaidingDale" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_DaleCapital:conditionAttachment_noFFA"/>
+						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_noFFA"/>
 						<option name="objectiveValue" value="1"/>
 						<option name="directOwnershipTerritories" value="Kingdom of Dale" count="each"/>
 					</attachment>
@@ -6208,10 +6186,6 @@
 					<attachment name="objectiveAttachmentAngmar_FFAB" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_AngmarCapital:conditionAttachment_FFA"/>
 						<option name="objectiveValue" value="5"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDale_FFAB" attachTo="Dale" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DaleCapital:conditionAttachment_FFA"/>
-						<option name="objectiveValue" value="15"/>
 					</attachment>
 					<attachment name="objectiveAttachmentRhun_FFAB" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_FFA"/>
@@ -6315,7 +6289,6 @@
 						<option name="relationshipChange" value="Dwarves:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Dwarves:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Dwarves:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Dwarves:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Dwarves:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Dwarves:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6331,7 +6304,6 @@
 						<option name="relationshipChange" value="Freefolk:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Freefolk:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Freefolk:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Freefolk:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Freefolk:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Freefolk:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6346,7 +6318,6 @@
 						<option name="relationshipChange" value="DolGuldur:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="DolGuldur:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="DolGuldur:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="DolGuldur:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="DolGuldur:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="DolGuldur:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6360,7 +6331,6 @@
 						<option name="relationshipChange" value="HighElves:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="HighElves:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="HighElves:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="HighElves:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="HighElves:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="HighElves:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6373,7 +6343,6 @@
 						<option name="relationshipChange" value="Saruman:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Saruman:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Saruman:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Saruman:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Saruman:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Saruman:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6385,7 +6354,6 @@
 						<option name="relationshipChange" value="Gondor:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Gondor:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Gondor:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Gondor:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Gondor:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Gondor:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6396,7 +6364,6 @@
 						<option name="relationshipChange" value="Mordor:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Mordor:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Mordor:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Mordor:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Mordor:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Mordor:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6406,7 +6373,6 @@
 						<option name="relationshipChange" value="Lorien:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Lorien:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Lorien:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Lorien:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Lorien:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Lorien:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6415,7 +6381,6 @@
 						<option name="relationshipChange" value="Harad:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Harad:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Harad:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Harad:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Harad:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Harad:WoodlandRealm:any:default_war_relation"/>
 						
@@ -6423,34 +6388,26 @@
 						<option name="relationshipChange" value="Northmen:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Northmen:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Northmen:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Northmen:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Northmen:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Northmen:WoodlandRealm:any:default_war_relation"/>
 						
 						<option name="relationshipChange" value="Rohan:Orcs:any:default_war_relation"/>
 						<option name="relationshipChange" value="Rohan:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Rohan:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Rohan:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Rohan:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Rohan:WoodlandRealm:any:default_war_relation"/>
 						
 						<option name="relationshipChange" value="Orcs:Arnor:any:default_war_relation"/>
 						<option name="relationshipChange" value="Orcs:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Orcs:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Orcs:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Orcs:WoodlandRealm:any:default_war_relation"/>
 						
 						<option name="relationshipChange" value="Arnor:Angmar:any:default_war_relation"/>
-						<option name="relationshipChange" value="Arnor:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Arnor:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Arnor:WoodlandRealm:any:default_war_relation"/>
 						
-						<option name="relationshipChange" value="Angmar:Dale:any:default_war_relation"/>
 						<option name="relationshipChange" value="Angmar:Rhun:any:default_war_relation"/>
 						<option name="relationshipChange" value="Angmar:WoodlandRealm:any:default_war_relation"/>
-						
-						<option name="relationshipChange" value="Dale:Rhun:any:default_war_relation"/>
-						<option name="relationshipChange" value="Dale:WoodlandRealm:any:default_war_relation"/>
 						
 						<option name="relationshipChange" value="Rhun:WoodlandRealm:any:default_war_relation"/>
 					</attachment>
@@ -6499,10 +6456,10 @@
 						<option name="placement" value="sz Celduin 1:merchant_ship" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
-					<attachment name="triggerAttachmentRhun_SU" attachTo="Dale" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+					<attachment name="triggerAttachmentNorthmen_SU" attachTo="Northmen" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
 						<option name="when" value="before:dwarvesPurchase"/>
-						<option name="productionRule" value="DaleFrontier:buymerchant_ship"/>
+						<option name="productionRule" value="NorthmenFrontier:buymerchant_ship"/>
 						<option name="placement" value="sz Celduin 3:merchant_ship" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
@@ -6551,9 +6508,6 @@
 						<option name="unlimitedProduction" value="true"/>
 					</attachment>
 					<attachment name="rulesAttachment" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="unlimitedProduction" value="true"/>
-					</attachment>
-					<attachment name="rulesAttachment" attachTo="Dale" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="unlimitedProduction" value="true"/>
 					</attachment>
 					<attachment name="rulesAttachment" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -6616,10 +6570,6 @@
 						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
 					<attachment name="playerAttachment" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
-						<option name="retainCapitalNumber" value="0"/>
-						<option name="retainCapitalProduceNumber" value="0"/>
-					</attachment>
-					<attachment name="playerAttachment" attachTo="Dale" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
 						<option name="retainCapitalNumber" value="0"/>
 						<option name="retainCapitalProduceNumber" value="0"/>
 					</attachment>
@@ -6879,10 +6829,10 @@
 					<territoryOwner territory="West Forodwaith" owner="Angmar"/>
 					<territoryOwner territory="Ettenmoors" owner="Angmar"/>
 					<territoryOwner territory="East Mountains of Angmar" owner="Angmar"/>
-					<territoryOwner territory="Kingdom of Dale" owner="Dale"/>
-					<territoryOwner territory="Dale" owner="Dale"/>
-					<territoryOwner territory="Esgaroth" owner="Dale"/>
-					<territoryOwner territory="Lands of the Bardings" owner="Dale"/>
+					<territoryOwner territory="Kingdom of Dale" owner="Northmen"/>
+					<territoryOwner territory="Dale" owner="Northmen"/>
+					<territoryOwner territory="Esgaroth" owner="Northmen"/>
+					<territoryOwner territory="Lands of the Bardings" owner="Northmen"/>
 					<territoryOwner territory="Rhun" owner="Rhun"/>
 					<territoryOwner territory="Lands of Dorwinion" owner="Rhun"/>
 					<territoryOwner territory="Dorwinion" owner="Rhun"/>
@@ -6916,11 +6866,11 @@
 					<territoryOwner territory="Eagles Eyrie" owner="HighElves"/>
 					<territoryOwner territory="Lands of the Lossoth" owner="Angmar"/>
 					<territoryOwner territory="Halls of Gror" owner="Dwarves"/>
-					<territoryOwner territory="North Dale" owner="Dale"/>
-					<territoryOwner territory="East Dale" owner="Dale"/>
-					<territoryOwner territory="West Dale" owner="Dale"/>
-					<territoryOwner territory="River Running Bank" owner="Dale"/>
-					<territoryOwner territory="Carnen West Bank" owner="Dale"/>
+					<territoryOwner territory="North Dale" owner="Northmen"/>
+					<territoryOwner territory="East Dale" owner="Northmen"/>
+					<territoryOwner territory="West Dale" owner="Northmen"/>
+					<territoryOwner territory="River Running Bank" owner="Northmen"/>
+					<territoryOwner territory="Carnen West Bank" owner="Northmen"/>
 					<territoryOwner territory="Northeast Rhun" owner="Rhun"/>
 					<territoryOwner territory="Carnen East Bank" owner="Rhun"/>
 					<territoryOwner territory="Celduin North Bank" owner="Rhun"/>
@@ -7284,20 +7234,20 @@
 					<unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="warg" territory="East Mountains of Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="swordsman" territory="Kingdom of Dale" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Dale"/>
-					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="lancer" territory="Dale" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="wall" territory="Dale" quantity="4" owner="Dale"/>
-					<unitPlacement unitType="archer" territory="Esgaroth" quantity="3" owner="Dale"/>
-					<unitPlacement unitType="factory" territory="Esgaroth" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="wall" territory="Esgaroth" quantity="2" owner="Dale"/>
-					<unitPlacement unitType="swordsman" territory="Esgaroth" quantity="1" owner="Dale"/>
-					<unitPlacement unitType="axeman" territory="Lands of the Bardings" quantity="2" owner="Dale"/>
+					<unitPlacement unitType="peasant" territory="Kingdom of Dale" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="axe_cavalry" territory="Dale" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="wall" territory="Dale" quantity="4" owner="Northmen"/>
+					<unitPlacement unitType="archer" territory="Esgaroth" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="factory" territory="Esgaroth" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="wall" territory="Esgaroth" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="peasant" territory="Esgaroth" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="axeman" territory="Lands of the Bardings" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axe_cavalry" territory="Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="chariot_archer" territory="Rhun" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="chariot" territory="Rhun" quantity="2" owner="Rhun"/>
@@ -7402,11 +7352,10 @@
 					<resourceGiven player="Mordor" resource="PUs" quantity="60"/>
 					<resourceGiven player="Lorien" resource="PUs" quantity="29"/>
 					<resourceGiven player="Harad" resource="PUs" quantity="41"/>
-					<resourceGiven player="Northmen" resource="PUs" quantity="19"/>
+					<resourceGiven player="Northmen" resource="PUs" quantity="38"/>
 					<resourceGiven player="Orcs" resource="PUs" quantity="52"/>
 					<resourceGiven player="Arnor" resource="PUs" quantity="33"/>
 					<resourceGiven player="Angmar" resource="PUs" quantity="45"/>
-					<resourceGiven player="Dale" resource="PUs" quantity="19"/>
 					<resourceGiven player="Rhun" resource="PUs" quantity="26"/>
 					<resourceGiven player="Rohan" resource="PUs" quantity="30"/>
 					<resourceGiven player="WoodlandRealm" resource="PUs" quantity="28"/>
