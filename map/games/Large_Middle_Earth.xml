@@ -6254,14 +6254,14 @@
 					<!--swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower-->
 					<attachment name="triggerAttachment_SlowUnits_1" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SlowUnits"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_warden:troll:bear:huorn:ent:oathbreaker:wizard:catapult:trebuchet"/>
 						<option name="unitProperty" value="movement" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
 					<attachment name="triggerAttachment_SlowUnits_2" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SlowUnits"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="unitType" value="ranger:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:elven_hunter:olog_hai:spider:oliphant:warg:balrog:nazgul"/>
 						<option name="unitProperty" value="movement" count="2"/>
 						<option name="uses" value="1"/>
@@ -6269,7 +6269,7 @@
 					
 					<attachment name="triggerAttachment_FortPrevCF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_FortPrevCF"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="unitType" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:olog_hai:bear:oliphant:warg"/>
 						<option name="unitProperty" value="willNotFireIfPresent" count="wall:fortress:tower"/>
 						<option name="uses" value="1"/>
@@ -6277,7 +6277,7 @@
 					
 					<attachment name="triggerAttachment_AllBlitz" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_AllBlitz"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="unitType" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:oathbreaker:wizard:balrog:nazgul:catapult:trebuchet"/>
 						<option name="unitProperty" value="canBlitz" count="true"/>
 						<option name="uses" value="1"/>
@@ -6285,7 +6285,7 @@
 					
 					<attachment name="triggerAttachment_TEAAU" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_TEAAU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="territoryEffects" value="mountain:hill:cave:pass:marsh:forest:river:settlement:sea:ocean"/>
 						<option name="territoryEffectProperty" value="unitsNotAllowed" count="-reset-"/>
 						<option name="uses" value="1"/>
@@ -6293,7 +6293,7 @@
 					
 					<attachment name="triggerAttachment_FFA" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_FFA"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="uses" value="1"/>
 						<option name="relationshipChange" value="Dwarves:Freefolk:any:default_war_relation"/>
 						<option name="relationshipChange" value="Dwarves:DolGuldur:any:default_war_relation"/>
@@ -6433,7 +6433,7 @@
 					
 					<attachment name="triggerAttachmentGondor_SU" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="GondorFrontier:buymerchant_ship"/>
 						<option name="productionRule" value="GondorFrontier:buycaravel"/>
 						<option name="placement" value="sz Bay of Belfalas:caravel" count="2"/>
@@ -6443,7 +6443,7 @@
 					</attachment>
 					<attachment name="triggerAttachmentHarad_SU" attachTo="Harad" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="HaradFrontier:buymerchant_ship"/>
 						<option name="productionRule" value="HaradFrontier:buycaravel"/>
 						<option name="placement" value="sz Gulf of Umbar:caravel" count="1"/>
@@ -6454,7 +6454,7 @@
 					</attachment>
 					<attachment name="triggerAttachmentHighElves_SU" attachTo="HighElves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="HighElvesFrontier:buyswan_boat"/>
 						<option name="productionRule" value="HighElvesFrontier:buycaravel"/>
 						<option name="placement" value="sz Gulf of Lhun:caravel" count="1"/>
@@ -6463,21 +6463,21 @@
 					</attachment>
 					<attachment name="triggerAttachmentLorien_SU" attachTo="Lorien" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="LorienFrontier:buyswan_boat"/>
 						<option name="placement" value="sz Upper Anduin 3:swan_boat" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
 					<attachment name="triggerAttachmentRhun_SU" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="RhunFrontier:buymerchant_ship"/>
 						<option name="placement" value="sz Celduin 1:merchant_ship" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>
 					<attachment name="triggerAttachmentNorthmen_SU" attachTo="Northmen" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_SU"/>
-						<option name="when" value="before:dwarvesPurchase"/>
+						<option name="when" value="before:sarumanPurchase"/>
 						<option name="productionRule" value="NorthmenFrontier:buymerchant_ship"/>
 						<option name="placement" value="sz Celduin 3:merchant_ship" count="1"/>
 						<option name="uses" value="1"/>
