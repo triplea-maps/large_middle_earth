@@ -4133,10 +4133,9 @@
 						<option name="territoryEffect" value="hill"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Beorns Hall" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="6"/>
-						<option name="unitProduction" value="8"/>
+                        <option name="production" value="3"/>
+						<option name="unitProduction" value="3"/>
 						<option name="territoryEffect" value="settlement"/>
-                        <option name="capital" value="Northmen"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Framsburg" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="3"/>
@@ -4521,16 +4520,17 @@
 						<option name="unitProduction" value="0"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="8"/>
-						<option name="unitProduction" value="8"/>
-						<option name="territoryEffect" value="river"/>
-						<option name="territoryEffect" value="settlement"/>
-                   </attachment>
-                    <attachment name="territoryAttachment" attachTo="Esgaroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="6"/>
 						<option name="unitProduction" value="3"/>
 						<option name="territoryEffect" value="river"/>
 						<option name="territoryEffect" value="settlement"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="Esgaroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="8"/>
+						<option name="unitProduction" value="8"/>
+						<option name="territoryEffect" value="river"/>
+						<option name="territoryEffect" value="settlement"/>
+						<option name="capital" value="Northmen"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Lands of the Bardings" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
@@ -5912,7 +5912,7 @@
 						<option name="directOwnershipTerritories" value="City of Corsairs" count="1"/>
 					</attachment>
 					<attachment name="conditionAttachment_NorthmenCapital" attachTo="Northmen" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="directOwnershipTerritories" value="Beorns Hall" count="1"/>
+						<option name="directOwnershipTerritories" value="Esgaroth" count="1"/>
 					</attachment>
 					<attachment name="conditionAttachment_OrcsCapital" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="directOwnershipTerritories" value="Moria" count="1"/>
@@ -6871,6 +6871,12 @@
 					<territoryOwner territory="West Dale" owner="Northmen"/>
 					<territoryOwner territory="River Running Bank" owner="Northmen"/>
 					<territoryOwner territory="Carnen West Bank" owner="Northmen"/>
+					<territoryOwner territory="North Rhovanion" owner="Northmen"/>
+					<territoryOwner territory="Realm of Vidugavia" owner="Northmen"/>
+					<territoryOwner territory="River Running South Bank" owner="Northmen"/>
+					<territoryOwner territory="Kingdom of Rhovanion" owner="Northmen"/>
+					<territoryOwner territory="South Rhovanion" owner="Northmen"/>
+					<territoryOwner territory="East Rhovanion" owner="Northmen"/>
 					<territoryOwner territory="Northeast Rhun" owner="Rhun"/>
 					<territoryOwner territory="Carnen East Bank" owner="Rhun"/>
 					<territoryOwner territory="Celduin North Bank" owner="Rhun"/>
@@ -7238,6 +7244,11 @@
 					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="peasant" territory="East Rhovanion" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="axe_cavalry" territory="Kingdom of Rhovanion" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="light_cavalry" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="axe_cavalry" territory="South Rhovanion" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="axeman" territory="Realm of Vidugavia" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Northmen"/>
@@ -7312,7 +7323,6 @@
 					<unitPlacement unitType="axeman" territory="West Forochel Coast" quantity="1"/>
 					<unitPlacement unitType="peasant" territory="South Enedwaith" quantity="2"/>
 					<unitPlacement unitType="peasant" territory="West Lone Lands" quantity="1"/>
-					<unitPlacement unitType="peasant" territory="East Rhovanion" quantity="3"/>
 					<unitPlacement unitType="axeman" territory="Druwaith Laur" quantity="3"/>
 					<unitPlacement unitType="peasant" territory="East Brown Lands" quantity="2"/>
 					<unitPlacement unitType="factory" territory="Lond Daer" quantity="1"/>
