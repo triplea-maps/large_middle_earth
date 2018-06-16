@@ -5079,6 +5079,15 @@
 						<option name="landTerritories" value="Cair Andros"/>
 					</attachment>
 					
+					<attachment name="canalAttachmentTheUndeeps" attachTo="sz Upper Anduin 1" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+						<option name="canalName" value="The Undeeps"/>
+						<option name="landTerritories" value="The Undeeps"/>
+					</attachment>
+					<attachment name="canalAttachmentTheUndeeps" attachTo="sz Upper Anduin 2" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+						<option name="canalName" value="The Undeeps"/>
+						<option name="landTerritories" value="The Undeeps"/>
+					</attachment>
+					
 					<attachment name="canalAttachmentOldFord" attachTo="sz Upper Anduin 4" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
 						<option name="canalName" value="Old Ford"/>
 						<option name="landTerritories" value="Old Ford"/>
