@@ -3124,7 +3124,7 @@
 					<!--SIEGE-->
 					<attachment name="unitAttachment" attachTo="catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
-						<option name="movement" value="1"/>
+						<option name="movement" value="2"/>
                         <option name="attack" value="3"/>
 						<option name="attackRolls" value="2"/>
 						<option name="defense" value="4"/>
@@ -3142,7 +3142,7 @@
                     </attachment>
 					<attachment name="unitAttachment" attachTo="trebuchet" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
-						<option name="movement" value="1"/>
+						<option name="movement" value="2"/>
                         <option name="attack" value="4"/>
 						<option name="defense" value="4"/>
 						
