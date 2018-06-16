@@ -1840,6 +1840,8 @@
 			<unit name="caravel"/>
 			<unit name="merchant_ship"/>
 			
+			<unit name="fire_of_orthanc"/>
+			
 			<unit name="flood_of_Bruinen"/>
 		</unitList>
 		
@@ -2245,6 +2247,10 @@
 						<cost resource="PUs" quantity="16" />
 						<result resourceOrUnit="merchant_ship" quantity="1"/>
 					</productionRule>
+					<productionRule name="buyfire_of_orthanc">
+						<cost resource="PUs" quantity="18" />
+						<result resourceOrUnit="fire_of_orthanc" quantity="1"/>
+					</productionRule>
 					<productionRule name="buyflood_of_Bruinen">
 						<cost resource="PUs" quantity="20" />
 						<result resourceOrUnit="flood_of_Bruinen" quantity="1"/>
@@ -2292,6 +2298,7 @@
 							<frontierRules name="buyuruk_pikeman"/>
 							<frontierRules name="buycrebain"/>
 							<frontierRules name="buywizard"/>
+							<frontierRules name="buyfire_of_orthanc"/>
 					</productionFrontier>
 					<productionFrontier name="GondorFrontier">
 							<frontierRules name="buyswordsman"/>
@@ -3222,6 +3229,21 @@
 						<option name="defense" value="3"/>
 						<option name="isCombatTransport" value="true"/>
 						<option name="transportCapacity" value="4"/>
+                    </attachment>
+					
+					<attachment name="unitAttachment" attachTo="fire_of_orthanc" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="movement" value="2"/>
+						<option name="isSuicide" value="true"/>
+						
+						<option name="targetsAA" value="wall:tower:fortress"/>
+						<option name="typeAA" value="siege"/>
+						<option name="attackAA" value="0"/>
+						<option name="offensiveAttackAA" value="6"/>
+						<option name="isAAforCombatOnly" value="true"/>
+                        <option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+                        <option name="maxAAattacks" value="3"/>
+						<option name="maxRoundsAA" value="-1"/>
                     </attachment>
 					
 					<attachment name="unitAttachment" attachTo="flood_of_Bruinen" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -5165,8 +5187,8 @@
 				   <!--TERRITORY EFFECTS-->
 				   
 				   <attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
-						<option name="unitsNotAllowed" value="swordsman:spearman:archer:peasant:hobbit:tower_guard:goblin_stabber:goblin_archer:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_warden:noldorin_warrior:olog_hai:spider:bear:oliphant:oathbreaker:wizard:balrog:nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
+						<option name="unitsNotAllowed" value="swordsman:spearman:archer:peasant:hobbit:tower_guard:goblin_stabber:goblin_archer:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_warden:noldorin_warrior:olog_hai:spider:bear:oliphant:oathbreaker:wizard:balrog:nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 						
 						<!--Light-->
 						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder:noldorin_warrior" count="0"/>
@@ -5218,7 +5240,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 						<!--<option name="unitsNotAllowed" value="light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:oliphant:warg:nazgul"/>-->
 
 						<!--Light-->
@@ -5262,7 +5284,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 						
 						<!--Light-->
 						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder:noldorin_warrior" count="0"/>
@@ -5289,7 +5311,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 						
 						<!--Light-->
 						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder:noldorin_warrior" count="-1"/>
@@ -5354,7 +5376,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="noBlitz" value="swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 						
 						<!--Light-->
 						<option name="combatOffenseEffect" value="swordsman:axeman:peasant:hobbit:goblin_stabber:orc_marauder:noldorin_warrior" count="-1"/>
@@ -5421,7 +5443,7 @@
 						<option name="unitsNotAllowed" value="swan_boat"/>
 					</attachment>
 					<attachment name="territoryEffectAttachment" attachTo="ocean" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="unitsNotAllowed" value="swan_boat:caravel:merchant_ship:swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower"/>
+						<option name="unitsNotAllowed" value="swan_boat:caravel:merchant_ship:swordsman:spearman:axeman:archer:peasant:hobbit:ranger:tower_guard:goblin_stabber:goblin_archer:snaga_skirmisher:orc_marauder:uruk_pikeman:uruk_swordsman:morannon_guard:light_cavalry:horsearcher:axe_cavalry:lancer:knight:chariot:chariot_archer:war_wagon:dwarven_axeman:dwarven_axethrower:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:elven_warden:noldorin_warrior:troll:olog_hai:spider:bear:oliphant:warg:huorn:ent:dragon:bat:raven:crebain:eagle:oathbreaker:wizard:balrog:nazgul:winged_nazgul:catapult:trebuchet:wall:fortress:tower:fire_of_orthanc"/>
 					</attachment>
 					
 					
@@ -7018,6 +7040,7 @@
 					<unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wall" territory="Isengard" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="fire_of_orthanc" territory="Isengard" quantity="2" owner="Saruman"/>
 					<unitPlacement unitType="axeman" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="spearman" territory="Crossings of Poros" quantity="2" owner="Gondor"/>
