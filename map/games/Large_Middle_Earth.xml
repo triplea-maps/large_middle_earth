@@ -7157,6 +7157,7 @@
 					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
