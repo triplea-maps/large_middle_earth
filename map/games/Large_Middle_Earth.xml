@@ -1871,6 +1871,13 @@
 			<unit name="fire_of_orthanc"/>
 			
 			<unit name="flood_of_Bruinen"/>
+			
+			<!--hack-->
+			<unit name="eotheod_cavalry"/>
+			<unit name="beorning_warrior"/>
+			<unit name="barding_infantry"/>
+			<unit name="woodman"/>
+			<unit name="raider"/>
 		</unitList>
 		
 		<territoryEffectList>
@@ -2456,6 +2463,39 @@
 		
 		
 		<attachmentList>
+					<!--hack-->
+					<attachment name="unitAttachment" attachTo="beorning_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="woodman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="barding_infantry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="eotheod_cavalry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="raider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<!--end hack-->
+		
 					<attachment name="unitAttachment" attachTo="factory" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                         <option name="isFactory" value="true"/>
                     </attachment>
@@ -7028,8 +7068,6 @@
 					<territoryOwner territory="Southeast Rhun" owner="Rhun"/>
 				</ownerInitialize>
 				<unitInitialize>
-					<unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="3" owner="Dwarves"/>
-					<unitPlacement unitType="dwarven_axeman" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="catapult" territory="Thorins Halls" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="factory" territory="Thorins Halls" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="wall" territory="Thorins Halls" quantity="4" owner="Dwarves"/>
@@ -7157,9 +7195,9 @@
 					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="East Osgiliath" quantity="3" owner="Gondor"/>
@@ -7265,25 +7303,20 @@
 					<unitPlacement unitType="oliphant" territory="Far Harad" quantity="1" owner="Harad"/>
 					<unitPlacement unitType="axe_cavalry" territory="Khand" quantity="3" owner="Harad"/>
 					<unitPlacement unitType="light_cavalry" territory="Khand" quantity="4" owner="Harad"/>
-					<unitPlacement unitType="archer" territory="Misty Mountains Foothills" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Misty Mountains Foothills" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="bear" territory="Beorns Hall" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Beorns Hall" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Beorns Hall" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="archer" territory="Framsburg" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="Framsburg" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="bear" territory="Beorns Hall" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="beorning_warrior" territory="Beorns Hall" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Framsburg" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Framsburg" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Framsburg" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Greylin" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Greylin" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Langwell" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="Lands of the Eotheod" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Lands of the Beornings" quantity="3" owner="Northmen"/>
-					<unitPlacement unitType="archer" territory="Upper Forest River" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Upper Forest River" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="North Anduin Bank" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="eotheod_cavalry" territory="Framsburg" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="wall" territory="Framsburg" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="beorning_warrior" territory="Langwell" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="eotheod_cavalry" territory="Lands of the Eotheod" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="beorning_warrior" territory="Lands of the Beornings" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="woodman" territory="Lands of the Beornings" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="woodman" territory="Rhimdath" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="woodman" territory="Upper Forest River" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Dunharrow" quantity="2" owner="Rohan"/>
+					<unitPlacement unitType="factory" territory="Dunharrow" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="horsearcher" territory="East Emnet" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="light_cavalry" territory="East Emnet" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="horsearcher" territory="The Wold" quantity="1" owner="Rohan"/>
@@ -7315,7 +7348,6 @@
 					<unitPlacement unitType="wall" territory="Goblin Town" quantity="3" owner="Orcs"/>
 					<unitPlacement unitType="goblin_archer" territory="Goblin Town" quantity="5" owner="Orcs"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="North Misty Mountains" quantity="5" owner="Angmar"/>
-					<unitPlacement unitType="warg_rider" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="North Misty Mountains" quantity="3" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Sirannon" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="orc_marauder" territory="Sirannon" quantity="2" owner="Orcs"/>
@@ -7361,9 +7393,11 @@
 					<unitPlacement unitType="factory" territory="Fornost" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="wall" territory="Fornost" quantity="3" owner="Arnor"/>
 					<unitPlacement unitType="orc_marauder" territory="East Angmar" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="warg_rider" territory="East Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="West Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="West Angmar" quantity="3" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="Hoarwell" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="warg_rider" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Mount Gundabad" quantity="6" owner="Angmar"/>
 					<unitPlacement unitType="factory" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="wall" territory="Mount Gundabad" quantity="3" owner="Angmar"/>
@@ -7381,27 +7415,17 @@
 					<unitPlacement unitType="orc_marauder" territory="South Angmar" quantity="4" owner="Angmar"/>
 					<unitPlacement unitType="troll" territory="Ettenmoors" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="warg_rider" territory="East Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="peasant" territory="Kingdom of Dale" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Northmen"/>
-					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="East Rhovanion" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="Kingdom of Rhovanion" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="South Rhovanion" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Realm of Vidugavia" quantity="3" owner="Northmen"/>
-					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="barding_infantry" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="Dale" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="barding_infantry" territory="Dale" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="beorning_warrior" territory="Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="wall" territory="Dale" quantity="4" owner="Northmen"/>
-					<unitPlacement unitType="archer" territory="Esgaroth" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Esgaroth" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="wall" territory="Esgaroth" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Esgaroth" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Lands of the Bardings" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="barding_infantry" territory="Esgaroth" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="woodman" territory="Esgaroth" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="wall" territory="Esgaroth" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="barding_infantry" territory="Lands of the Bardings" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="axe_cavalry" territory="Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="chariot_archer" territory="Rhun" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="chariot" territory="Rhun" quantity="2" owner="Rhun"/>
@@ -7489,13 +7513,21 @@
 					<unitPlacement unitType="factory" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="wall" territory="Halls of Gror" quantity="2" owner="Dwarves"/>
 					<unitPlacement unitType="fortress" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
+					<unitPlacement unitType="beorning_warrior" territory="East Dale" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="barding_infantry" territory="East Dale" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Northeast Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="war_wagon" territory="Northeast Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="beorning_warrior" territory="North Rhovanion" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="woodman" territory="North Rhovanion" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="raider" territory="Realm of Vidugavia" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="West Wilderland" quantity="1"/>
 					<unitPlacement unitType="archer" territory="West Wilderland" quantity="1"/>
+					<unitPlacement unitType="raider" territory="Kingdom of Rhovanion" quantity="3" owner="Northmen"/>
+					<unitPlacement unitType="raider" territory="South Rhovanion" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="axe_cavalry" territory="West Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="3" owner="Dwarves"/>
+					<unitPlacement unitType="dwarven_axeman" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="factory" territory="Glittering Caves" quantity="1" owner="Rohan"/>
-					<unitPlacement unitType="factory" territory="Dunharrow" quantity="1" owner="Rohan"/>
 				</unitInitialize>
 				<resourceInitialize>
 					<resourceGiven player="Dwarves" resource="PUs" quantity="33"/>
