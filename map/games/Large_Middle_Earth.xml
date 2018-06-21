@@ -1878,6 +1878,10 @@
 			<unit name="barding_infantry"/>
 			<unit name="woodman"/>
 			<unit name="raider"/>
+			
+			<unit name="dunlending_wildman"/>
+			<unit name="halforc"/>
+			<unit name="uruk_warrior"/>
 		</unitList>
 		
 		<territoryEffectList>
@@ -2489,6 +2493,24 @@
 						<option name="defense" value="1"/>
                     </attachment>
 					<attachment name="unitAttachment" attachTo="raider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="halforc" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="uruk_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="dunlending_wildman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
                         <option name="attack" value="1"/>
@@ -7150,27 +7172,30 @@
 					<unitPlacement unitType="elven_hunter" territory="South Harlindon" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="South Harlindon" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_hunter" territory="The Angle" quantity="2" owner="HighElves"/>
-					<unitPlacement unitType="snaga_skirmisher" territory="West Methedras" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="orc_marauder" territory="West Methedras" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="axeman" territory="South Dunland" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="snaga_skirmisher" territory="East Methedras" quantity="3" owner="Saruman"/>
-					<unitPlacement unitType="snaga_skirmisher" territory="Isen" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="axeman" territory="Isen" quantity="3" owner="Saruman"/>
-					<unitPlacement unitType="orc_marauder" territory="Isen" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="snaga_skirmisher" territory="North South Road" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="orc_marauder" territory="North South Road" quantity="4" owner="Saruman"/>
-					<unitPlacement unitType="axeman" territory="North Dunland" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="axeman" territory="Dunland Hills" quantity="3" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="West Methedras" quantity="1" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="1" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="East Methedras" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="3" owner="Saruman"/>
+					<unitPlacement unitType="halforc" territory="Isen" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="uruk_warrior" territory="North South Road" quantity="1" owner="Saruman"/>
+					<unitPlacement unitType="halforc" territory="North South Road" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="North Dunland" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="uruk_warrior" territory="North Dunland" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="Dunland Hills" quantity="3" owner="Saruman"/>
+					<unitPlacement unitType="warg_rider" territory="Dunland Hills" quantity="2" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="Dunland Hills" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="orc_marauder" territory="Fords of Isen" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="halforc" territory="Fords of Isen" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="6" owner="Saruman"/>
 					<unitPlacement unitType="tower" territory="Isengard" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="uruk_swordsman" territory="Isengard" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="uruk_warrior" territory="Isengard" quantity="9" owner="Saruman"/>
+					<unitPlacement unitType="warg_rider" territory="Isengard" quantity="2" owner="Saruman"/>
 					<unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wall" territory="Isengard" quantity="4" owner="Saruman"/>
 					<unitPlacement unitType="fire_of_orthanc" territory="Isengard" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="axeman" territory="West Dunland" quantity="1" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="West Dunland" quantity="1" owner="Saruman"/>
+					<unitPlacement unitType="halforc" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="spearman" territory="Crossings of Poros" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Crossings of Poros" quantity="1" owner="Gondor"/>
