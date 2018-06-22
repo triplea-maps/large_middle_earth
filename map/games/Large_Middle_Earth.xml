@@ -1882,6 +1882,9 @@
 			<unit name="dunlending_wildman"/>
 			<unit name="halforc"/>
 			<unit name="uruk_warrior"/>
+			
+			<unit name="swan_knight"/>
+			<unit name="man_at_arms"/>
 		</unitList>
 		
 		<territoryEffectList>
@@ -2511,6 +2514,18 @@
 						<option name="defense" value="1"/>
                     </attachment>
 					<attachment name="unitAttachment" attachTo="dunlending_wildman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="swan_knight" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="1"/>
+						<option name="defense" value="1"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="man_at_arms" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
                         <option name="attack" value="1"/>
@@ -7175,8 +7190,7 @@
 					<unitPlacement unitType="dunlending_wildman" territory="West Methedras" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="dunlending_wildman" territory="East Methedras" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="3" owner="Saruman"/>
+					<unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="5" owner="Saruman"/>
 					<unitPlacement unitType="halforc" territory="Isen" quantity="2" owner="Saruman"/>
 					<unitPlacement unitType="uruk_warrior" territory="North South Road" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="halforc" territory="North South Road" quantity="4" owner="Saruman"/>
@@ -7197,64 +7211,51 @@
 					<unitPlacement unitType="dunlending_wildman" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="halforc" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="West Dunland" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="spearman" territory="Crossings of Poros" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Crossings of Poros" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="knight" territory="Crossings of Poros" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="lancer" territory="Gilrain" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Henneth Annun" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Henneth Annun" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Pelargir" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Pelargir" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Pelargir" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Emyn Arnen" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="South Ithilien" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Pelargir" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="Emyn Arnen" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="South Ithilien" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Edhellond" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Edhellond" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Edhellond" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="West Gondor" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="West Gondor" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="Cair Andros" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Edhellond" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Cair Andros" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Cair Andros" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="West Osgiliath" quantity="5" owner="Gondor"/>
-					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Cair Andros" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="Cair Andros" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="East Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="East Osgiliath" quantity="4" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="East Osgiliath" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="East Osgiliath" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Ethir Anduin" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="tower" territory="Dol Amroth" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="Dol Amroth" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Dol Amroth" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="lancer" territory="Dol Amroth" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="wall" territory="Dol Amroth" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="knight" territory="Dol Amroth" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Dor en Ernil" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="wall" territory="Dol Amroth" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="swan_knight" territory="Dol Amroth" quantity="5" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Dol Amroth" quantity="7" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="East Ered Nimrais" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Belfalas" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Linhir" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Linhir" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Linhir" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Linhir" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Linhir" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Ethring" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Ethring" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Ethring" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Ethring" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="tower" territory="Minas Tirith" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="tower_guard" territory="Minas Tirith" quantity="5" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Minas Tirith" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="trebuchet" territory="Minas Tirith" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Minas Tirith" quantity="4" owner="Gondor"/>
-					<unitPlacement unitType="knight" territory="Minas Tirith" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Lebennin" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="Erech" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="tower_guard" territory="Minas Tirith" quantity="6" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Minas Tirith" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Lebennin" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Erech" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Erech" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Calembel" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Calembel" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Calembel" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Calembel" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="oathbreaker" territory="Paths of the Dead" quantity="8" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="North Ithilien" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Lossarnach" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="lancer" territory="Anorien" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="man_at_arms" territory="Lossarnach" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Durthang" quantity="2" owner="Mordor"/>
 					<unitPlacement unitType="fortress" territory="Durthang" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="West Ephel Duath" quantity="2" owner="Mordor"/>
@@ -7503,10 +7504,9 @@
 					<unitPlacement unitType="axeman" territory="Eryn Vorn" quantity="5"/>
 					<unitPlacement unitType="axeman" territory="South Minhiriath" quantity="1"/>
 					<unitPlacement unitType="light_cavalry" territory="South Minhiriath" quantity="2"/>
-					<unitPlacement unitType="swordsman" territory="West Anfalas" quantity="3" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="West Anfalas" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="axeman" territory="Druadan Forest" quantity="4"/>
 					<unitPlacement unitType="peasant" territory="North Enedwaith" quantity="1"/>
+					<unitPlacement unitType="ranger" territory="Pinnath Gelin" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="peasant" territory="West Brown Lands" quantity="4"/>
 					<unitPlacement unitType="peasant" territory="East Lone Lands" quantity="2"/>
 					<unitPlacement unitType="axe_cavalry" territory="North Minhiriath" quantity="1"/>
@@ -7522,8 +7522,6 @@
 					<unitPlacement unitType="peasant" territory="North Brown Lands" quantity="2"/>
 					<unitPlacement unitType="huorn" territory="Old Forest" quantity="4"/>
 					<unitPlacement unitType="peasant" territory="South Cardolan" quantity="3"/>
-					<unitPlacement unitType="ranger" territory="Halifirien" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="ranger" territory="Amon Din" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Firienholt" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="axeman" territory="Firienholt" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="archer" territory="Firienholt" quantity="2" owner="Rohan"/>
