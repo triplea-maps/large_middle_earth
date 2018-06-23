@@ -2113,7 +2113,7 @@
     </productionRule>
     <productionRule name="buy_oathbreaker">
       <cost resource="PUs" quantity="5" />
-      <result resourceOrUnit="halforc" quantity="1" />
+      <result resourceOrUnit="oathbreaker" quantity="1" />
     </productionRule>
     <productionRule name="buyswordsman">
       <!--4-->
