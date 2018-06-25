@@ -5720,7 +5720,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Fornost" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3" />
-      <option name="unitProduction" value="3" />
+      <option name="unitProduction" value="5" />
       <option name="territoryEffect" value="hill" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
