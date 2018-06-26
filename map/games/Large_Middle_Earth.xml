@@ -3,9 +3,9 @@
 <!DOCTYPE game SYSTEM "game.dtd">
 
 <game>
-	<info name="Large Middle Earth II" version="1.3"/>
+	<info name="Large Middle Earth - The Battle for Arda" version="1.3"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
-	<triplea minimumVersion="1.9"/>
+	<triplea minimumVersion="1.9.0.0.10000"/>
 	<diceSides value="12"/>
 	
 		<map>
@@ -814,6 +814,7 @@
                 <connection t1="West Methedras" t2="Nan Curunir"/>
                 <connection t1="West Methedras" t2="Dunland Hills"/>
                 <connection t1="West Methedras" t2="Fords of Isen"/>
+				<connection t1="Nan Curunir" t2="Isengard"/>
                 <connection t1="West Methedras" t2="Isengard"/>
                 <connection t1="Methedras" t2="North Fangorn"/>
                 <connection t1="Methedras" t2="Wellinghall"/>
@@ -844,7 +845,6 @@
                 <connection t1="North Dunland" t2="Swanfleet"/>
                 <connection t1="North Dunland" t2="West Dunland"/>
                 <connection t1="Nan Curunir" t2="Fords of Isen"/>
-                <connection t1="Nan Curunir" t2="Isengard"/>
                 <connection t1="Dunland Hills" t2="Glanduin"/>
                 <connection t1="Dunland Hills" t2="West Dunland"/>
                 <connection t1="Crossings of Poros" t2="West Ephel Duath"/>
