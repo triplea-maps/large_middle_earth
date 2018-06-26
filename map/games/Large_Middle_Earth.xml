@@ -45,7 +45,7 @@
     <territory name="Dol Guldur" />
     <territory name="Anduin Bank" />
     <territory name="Narrows of Mirkwood" />
-    <territory name="West Wilderlands" />
+    <territory name="West Wilderland" />
     <territory name="West Mirkwood" />
     <territory name="North Forlindon" />
     <territory name="North Lindon" />
@@ -175,7 +175,7 @@
     <territory name="Rhimdath" />
     <territory name="Upper Forest River" />
     <territory name="Carrock" />
-    <territory name="North Wilderlands" />
+    <territory name="North Wilderland" />
     <territory name="Old Ford" />
     <territory name="Dunharrow" />
     <territory name="East Emnet" />
@@ -419,7 +419,7 @@
     <territory name="North Rhovanion" />
     <territory name="River Running South Bank" />
     <territory name="Realm of Vidugavia" />
-    <territory name="West Wilderland" />
+    <territory name="East Wilderland" />
     <territory name="Kingdom of Rhovanion" />
     <territory name="South Rhovanion" />
     <territory name="Celduin South Bank" />
@@ -482,13 +482,13 @@
     <connection t1="River Running South Bank" t2="sz Celduin 2" />
     <connection t1="River Running South Bank" t2="Realm of Vidugavia" />
     <connection t1="River Running South Bank" t2="Kingdom of Rhovanion" />
-    <connection t1="River Running South Bank" t2="West Wilderland" />
+    <connection t1="River Running South Bank" t2="East Wilderland" />
     <connection t1="East Bight" t2="Realm of Vidugavia" />
     <connection t1="East Bight" t2="South Rhovanion" />
-    <connection t1="Kingdom of Rhovanion" t2="West Wilderland" />
+    <connection t1="Kingdom of Rhovanion" t2="East Wilderland" />
     <connection t1="Kingdom of Rhovanion" t2="East Rhovanion" />
     <connection t1="Kingdom of Rhovanion" t2="South Rhovanion" />
-    <connection t1="Kingdom of Rhovanion" t2="West Wilderland" />
+    <connection t1="Kingdom of Rhovanion" t2="East Wilderland" />
     <connection t1="Realm of Vidugavia" t2="Eryn Galen" />
     <connection t1="Realm of Vidugavia" t2="South Rhovanion" />
     <connection t1="Realm of Vidugavia" t2="Kingdom of Rhovanion" />
@@ -497,10 +497,10 @@
     <connection t1="South Rhovanion" t2="East Brown Lands" />
     <connection t1="South Rhovanion" t2="East Rhovanion" />
     <connection t1="South Rhovanion" t2="West Rhûn" />
-    <connection t1="West Wilderland" t2="sz Celduin 1" />
-    <connection t1="West Wilderland" t2="sz Celduin 2" />
-    <connection t1="West Wilderland" t2="Celduin South Bank" />
-    <connection t1="West Wilderland" t2="East Rhovanion" />
+    <connection t1="East Wilderland" t2="sz Celduin 1" />
+    <connection t1="East Wilderland" t2="sz Celduin 2" />
+    <connection t1="East Wilderland" t2="Celduin South Bank" />
+    <connection t1="East Wilderland" t2="East Rhovanion" />
     <connection t1="Celduin South Bank" t2="sz Celduin 1" />
     <connection t1="Celduin South Bank" t2="Dorwinion" />
     <connection t1="Celduin South Bank" t2="Lands of Dorwinion" />
@@ -706,12 +706,12 @@
     <connection t1="Dol Guldur" t2="West Mirkwood" />
     <connection t1="Anduin Bank" t2="Narrows of Mirkwood" />
     <connection t1="Anduin Bank" t2="Rhosgobel" />
-    <connection t1="Anduin Bank" t2="West Wilderlands" />
-    <connection t1="Anduin Bank" t2="North Wilderlands" />
+    <connection t1="Anduin Bank" t2="West Wilderland" />
+    <connection t1="Anduin Bank" t2="North Wilderland" />
     <connection t1="Anduin Bank" t2="West Mirkwood" />
     <connection t1="Narrows of Mirkwood" t2="Rhosgobel" />
     <connection t1="Narrows of Mirkwood" t2="West Mirkwood" />
-    <connection t1="West Wilderlands" t2="West Mirkwood" />
+    <connection t1="West Wilderland" t2="West Mirkwood" />
     <connection t1="North Forlindon" t2="sz 15" />
     <connection t1="North Forlindon" t2="River of Forlindon" />
     <connection t1="North Forlindon" t2="South Forlindon" />
@@ -1054,14 +1054,14 @@
     <connection t1="Lands of the Éothéod" t2="Carrock" />
     <connection t1="Lands of the Éothéod" t2="Elf Path" />
     <connection t1="Lands of the Beornings" t2="Carrock" />
-    <connection t1="Lands of the Beornings" t2="North Wilderlands" />
+    <connection t1="Lands of the Beornings" t2="North Wilderland" />
     <connection t1="Lands of the Beornings" t2="Old Forest Road" />
     <connection t1="Lands of the Beornings" t2="Elf Path" />
     <connection t1="Lands of the Beornings" t2="Old Ford" />
     <connection t1="Rhimdath" t2="Carrock" />
     <connection t1="Upper Forest River" t2="Elf Path" />
-    <connection t1="North Wilderlands" t2="Old Forest Road" />
-    <connection t1="North Wilderlands" t2="Old Ford" />
+    <connection t1="North Wilderland" t2="Old Forest Road" />
+    <connection t1="North Wilderland" t2="Old Ford" />
     <connection t1="Dunharrow" t2="Starkhorn" />
     <connection t1="Dunharrow" t2="White Mountains" />
     <connection t1="Dunharrow" t2="Paths of the Dead" />
@@ -1311,13 +1311,13 @@
     <connection t1="Long Marshes" t2="Old Forest Road" />
     <connection t1="Greenwood the Great" t2="Narrows of Mirkwood" />
     <connection t1="Greenwood the Great" t2="Rhosgobel" />
-    <connection t1="Greenwood the Great" t2="North Wilderlands" />
+    <connection t1="Greenwood the Great" t2="North Wilderland" />
     <connection t1="Greenwood the Great" t2="Old Forest Road" />
     <connection t1="Lower Forest River" t2="Dáin's Halls" />
     <connection t1="Lower Forest River" t2="Upper Forest River" />
     <connection t1="Lower Forest River" t2="Elf Path" />
     <connection t1="Enchanted River" t2="Elf Path" />
-    <connection t1="Rhosgobel" t2="North Wilderlands" />
+    <connection t1="Rhosgobel" t2="North Wilderland" />
     <connection t1="sz Lower Harnen" t2="Harnen Bank" />
     <connection t1="sz Lower Harnen" t2="Harondor" />
     <connection t1="sz Lower Harnen" t2="sz 3" />
@@ -1431,7 +1431,7 @@
     <connection t1="North Undeep" t2="sz Upper Anduin 1" />
     <connection t1="North Undeep" t2="sz Upper Anduin 2" />
     <connection t1="North Undeep" t2="West Brown Lands" />
-    <connection t1="North Undeep" t2="West Wilderlands" />
+    <connection t1="North Undeep" t2="West Wilderland" />
     <connection t1="North Undeep" t2="South Undeep" />
     <connection t1="North Undeep" t2="North Brown Lands" />
     <connection t1="North Undeep" t2="West Mirkwood" />
@@ -1513,13 +1513,13 @@
     <connection t1="sz Upper Anduin 3" t2="sz Upper Anduin 4" />
     <connection t1="sz Upper Anduin 3" t2="Anduin Bank" />
     <connection t1="sz Upper Anduin 3" t2="Gladden Fields" />
-    <connection t1="sz Upper Anduin 3" t2="West Wilderlands" />
+    <connection t1="sz Upper Anduin 3" t2="West Wilderland" />
     <connection t1="sz Upper Anduin 3" t2="East Vales of Anduin" />
     <connection t1="sz Upper Anduin 3" t2="North Lórien" />
     <connection t1="sz Greyflood 2" t2="North Enedwaith" />
     <connection t1="sz Greyflood 2" t2="North Minhiriath" />
     <connection t1="sz Greyflood 2" t2="South Cardolan" />
-    <connection t1="sz Upper Anduin 2" t2="West Wilderlands" />
+    <connection t1="sz Upper Anduin 2" t2="West Wilderland" />
     <connection t1="sz Upper Anduin 2" t2="South Lórien" />
     <connection t1="sz Greyflood 3" t2="Greenway" />
     <connection t1="sz Greyflood 3" t2="Hollin Ridge" />
@@ -1532,7 +1532,7 @@
     <connection t1="sz Upper Anduin 5" t2="Old Ford" />
     <connection t1="sz Upper Anduin 4" t2="Anduin Bank" />
     <connection t1="sz Upper Anduin 4" t2="Gladden Fields" />
-    <connection t1="sz Upper Anduin 4" t2="North Wilderlands" />
+    <connection t1="sz Upper Anduin 4" t2="North Wilderland" />
     <connection t1="sz Upper Anduin 4" t2="Old Ford" />
     <connection t1="sz Upper Anduin 6" t2="Lands of the Éothéod" />
     <connection t1="sz Upper Anduin 6" t2="Rhimdath" />
@@ -4590,7 +4590,7 @@
       <option name="production" value="1" />
       <option name="unitProduction" value="0" />
     </attachment>
-    <attachment name="territoryAttachment" attachTo="West Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+    <attachment name="territoryAttachment" attachTo="East Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1" />
       <option name="unitProduction" value="0" />
     </attachment>
@@ -4821,7 +4821,7 @@
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
-    <attachment name="territoryAttachment" attachTo="West Wilderlands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+    <attachment name="territoryAttachment" attachTo="West Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0" />
       <option name="unitProduction" value="0" />
     </attachment>
@@ -5451,7 +5451,7 @@
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="river" />
     </attachment>
-    <attachment name="territoryAttachment" attachTo="North Wilderlands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+    <attachment name="territoryAttachment" attachTo="North Wilderland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1" />
       <option name="unitProduction" value="0" />
     </attachment>
@@ -7078,7 +7078,7 @@
       <territoryOwner territory="Dol Guldur" owner="DolGuldur" />
       <territoryOwner territory="Anduin Bank" owner="DolGuldur" />
       <territoryOwner territory="Narrows of Mirkwood" owner="DolGuldur" />
-      <territoryOwner territory="West Wilderlands" owner="DolGuldur" />
+      <territoryOwner territory="West Wilderland" owner="DolGuldur" />
       <territoryOwner territory="West Mirkwood" owner="DolGuldur" />
       <territoryOwner territory="North Forlindon" owner="HighElves" />
       <territoryOwner territory="North Lindon" owner="HighElves" />
@@ -7208,7 +7208,7 @@
       <territoryOwner territory="Rhimdath" owner="Northmen" />
       <territoryOwner territory="Upper Forest River" owner="Northmen" />
       <territoryOwner territory="Carrock" owner="Northmen" />
-      <territoryOwner territory="North Wilderlands" owner="Northmen" />
+      <territoryOwner territory="North Wilderland" owner="Northmen" />
       <territoryOwner territory="Old Ford" owner="Northmen" />
       <territoryOwner territory="Dunharrow" owner="Rohan" />
       <territoryOwner territory="East Emnet" owner="Rohan" />
@@ -7393,8 +7393,8 @@
       <unitPlacement unitType="wall" territory="Dol Guldur" quantity="4" owner="DolGuldur" />
       <unitPlacement unitType="orc_marauder" territory="Dol Guldur" quantity="5" owner="DolGuldur" />
       <unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur" />
-      <unitPlacement unitType="warg_scout" territory="West Wilderlands" quantity="1" owner="DolGuldur" />
-      <unitPlacement unitType="orc_marauder" territory="West Wilderlands" quantity="1" owner="DolGuldur" />
+      <unitPlacement unitType="warg_scout" territory="West Wilderland" quantity="1" owner="DolGuldur" />
+      <unitPlacement unitType="orc_marauder" territory="West Wilderland" quantity="1" owner="DolGuldur" />
       <unitPlacement unitType="elven_hunter" territory="High Pass" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_archer" territory="Mithlond" quantity="3" owner="HighElves" />
@@ -7772,8 +7772,8 @@
       <unitPlacement unitType="beorning_warrior" territory="North Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="woodman" territory="North Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="raider" territory="Realm of Vidugavia" quantity="3" owner="Northmen" />
-      <unitPlacement unitType="axeman" territory="West Wilderland" quantity="1" />
-      <unitPlacement unitType="archer" territory="West Wilderland" quantity="1" />
+      <unitPlacement unitType="axeman" territory="East Wilderland" quantity="1" />
+      <unitPlacement unitType="archer" territory="East Wilderland" quantity="1" />
       <unitPlacement unitType="raider" territory="Kingdom of Rhovanion" quantity="3" owner="Northmen" />
       <unitPlacement unitType="raider" territory="South Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="balchoth_tribesman" territory="South Wilderland" quantity="1" owner="Rhun" />
