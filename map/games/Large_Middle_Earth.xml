@@ -3,7 +3,7 @@
 <!DOCTYPE game SYSTEM "game.dtd">
 
 <game>
-	<info name="Large Middle Earth - The Battle for Arda" version="1.3"/>
+	<info name="Large Middle Earth - The Battle for Arda" version="1.3.1"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
 	<triplea minimumVersion="1.9.0.0.10000"/>
 	<diceSides value="12"/>
@@ -6077,192 +6077,6 @@
 						<option name="invert" value="true"/>
 					</attachment>
 					
-					<!--OBJECTIVES-->
-					<attachment name="objectiveAttachmentDwarves_Homeland1" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DwarvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="3"/>
-						<option name="directOwnershipTerritories" value="Ered Mithrin:South Ered Mithrin:North Ered Mithrin:West Grey Mountains:Dains Halls" count="5"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDwarves_Homeland2" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DwarvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="3"/>
-						<option name="directOwnershipTerritories" value="Thorins Halls:Ered Luin:North Ered Luin:Blue Mountains" count="4"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDwarves_Triumph1" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DwarvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Mount Gundabad" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDwarves_Triumph2" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DwarvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="24"/>
-						<option name="alliedOwnershipTerritories" value="Moria" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentFreefolk_Homeland1" attachTo="Freefolk" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_FreefolkCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="5"/>
-						<option name="directOwnershipTerritories" value="Hobbiton:Eastfarthing:Northfarthing:Westfarthing:Far Downs:Michel Delving:White Downs:Tookland:Green Hills:Tuckborough:Shirebourn:Old Winyards:Southfarthing" count="13"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentDolGuldur_Shadow" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DolGuldurCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="alliedOwnershipTerritories" value="Barad Dur:Minas Morgul:Dol Guldur:Carn Dum" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDolGuldur_WoodlandCreatures" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DolGuldurCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="1"/>
-						<option name="directOwnershipTerritories" value="Southwest Mirkwood:Southeast Mirkwood:Narrows of Mirkwood:West Mirkwood:East Mirkwood:Old Forest Road:Mountains of Mirkwood:Lands of the Beornings:Elf Path:Enchanted River:North Woodland Realm:Lower Forest River:Upper Forest River" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentDolGuldur_Triumph1" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_DolGuldurCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Rhosgobel" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentHighElves_AncestralLands" attachTo="HighElves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_HighElvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="2"/>
-						<option name="directOwnershipTerritories" value="Ost in Edhil:Sirannon:Swanfleet:Eregion:Hollin Ridge" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentHighElves_Triumph1" attachTo="HighElves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_HighElvesCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Ost in Edhil" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentSaruman_RaidingRohan" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_RohanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="1"/>
-						<option name="directOwnershipTerritories" value="Gap of Rohan:Eastfold:East Emnet:Westfold:West Emnet:The Wold" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Homeland1" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="5"/>
-						<option name="directOwnershipTerritories" value="Dunland Hills:North Dunland:West Dunland:South Dunland:North South Road" count="5"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Homeland2" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="3"/>
-						<option name="directOwnershipTerritories" value="West Methedras:East Methedras:Methedras:Isengard:Nan Curunir" count="5"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Triumph1" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Helms Deep" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Triumph2" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="18"/>
-						<option name="directOwnershipTerritories" value="Edoras" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Triumph4" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Tharbad" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentSaruman_Triumph3" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_SarumanCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Hobbiton:Eastfarthing:Northfarthing:Westfarthing:Far Downs:Michel Delving:White Downs:Tookland:Green Hills:Tuckborough:Shirebourn:Old Winyards:Southfarthing" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentGondor_Homeland1" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_GondorCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="directOwnershipTerritories" value="South Ithilien:Emyn Arnen:Henneth Annun:Field of Cormallen:North Ithilien" count="5"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentMordor_Shadow" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_MordorCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="alliedOwnershipTerritories" value="Barad Dur:Minas Morgul:Dol Guldur:Carn Dum" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentMordor_Triumph1" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_MordorCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="West Osgiliath" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentMordor_Triumph2" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_MordorCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="24"/>
-						<option name="directOwnershipTerritories" value="Minas Tirith" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentLorien_Homeland1" attachTo="Lorien" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_LorienCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="3"/>
-						<option name="directOwnershipTerritories" value="Wellinghall:Derndingle:Treebeards Hill:North Fangorn:South Fangorn" count="5"/>
-					</attachment>
-					<attachment name="objectiveAttachmentLorien_Homeland2" attachTo="Lorien" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_LorienCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="directOwnershipTerritories" value="Caras Galadhon:Cerin Amroth:South Lorien:North Lorien:Naith" count="5"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentHarad_SouthSupport" attachTo="Harad" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_HaradCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="6"/>
-						<option name="directOwnershipTerritories" value="Haradwaith:Far Harad:Khand" count="each"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentOrcs_Shadow" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_OrcsCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="alliedOwnershipTerritories" value="Barad Dur:Minas Morgul:Dol Guldur:Carn Dum" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentOrcs_Triumph1" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_OrcsCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="12"/>
-						<option name="directOwnershipTerritories" value="Hobbiton:Eastfarthing:Northfarthing:Westfarthing:Far Downs:Michel Delving:White Downs:Tookland:Green Hills:Tuckborough:Shirebourn:Old Winyards:Southfarthing" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentAngmar_Shadow" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_AngmarCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="4"/>
-						<option name="alliedOwnershipTerritories" value="Barad Dur:Minas Morgul:Dol Guldur:Carn Dum" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentAngmar_Triumph1" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_AngmarCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="18"/>
-						<option name="directOwnershipTerritories" value="Fornost" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					<attachment name="objectiveAttachmentAngmar_Triumph2" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_AngmarCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="18"/>
-						<option name="directOwnershipTerritories" value="Amon Sul" count="1"/>
-						<option name="uses" value="1"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentRhun_EastSupport" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="6"/>
-						<option name="directOwnershipTerritories" value="North Rhun:Rhun" count="each"/>
-					</attachment>
-					<attachment name="objectiveAttachmentRhun_RaidingDale" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_RhunCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="1"/>
-						<option name="directOwnershipTerritories" value="Kingdom of Dale" count="each"/>
-					</attachment>
-					
-					<attachment name="objectiveAttachmentWoodlandRealm_Forests" attachTo="WoodlandRealm" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="conditions" value="conditionAttachment_WoodlandRealmCapital:conditionAttachment_noFFA"/>
-						<option name="objectiveValue" value="1"/>
-						<option name="directOwnershipTerritories" value="Southwest Mirkwood:Southeast Mirkwood:Narrows of Mirkwood:West Mirkwood:East Mirkwood:Old Forest Road:Mountains of Mirkwood:Lands of the Beornings:Elf Path:Enchanted River:North Woodland Realm:Lower Forest River:Upper Forest River" count="each"/>
-					</attachment>
 					
 					
 					<!--FREE FOR ALL BALANCE-->
@@ -7028,8 +6842,6 @@
 					<territoryOwner territory="Southeast Rhun" owner="Rhun"/>
 				</ownerInitialize>
 				<unitInitialize>
-					<unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="3" owner="Dwarves"/>
-					<unitPlacement unitType="dwarven_axeman" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="catapult" territory="Thorins Halls" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="factory" territory="Thorins Halls" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="wall" territory="Thorins Halls" quantity="4" owner="Dwarves"/>
@@ -7058,7 +6870,7 @@
 					<unitPlacement unitType="factory" territory="Bree" quantity="1" owner="Freefolk"/>
 					<unitPlacement unitType="hobbit" territory="Bree" quantity="2" owner="Freefolk"/>
 					<unitPlacement unitType="wall" territory="Bree" quantity="2" owner="Freefolk"/>
-					<unitPlacement unitType="peasant" territory="Bree" quantity="2" owner="Freefolk"/>
+					<unitPlacement unitType="peasant" territory="Bree" quantity="1" owner="Freefolk"/>
 					<unitPlacement unitType="factory" territory="Staddle" quantity="1" owner="Freefolk"/>
 					<unitPlacement unitType="hobbit" territory="Staddle" quantity="2" owner="Freefolk"/>
 					<unitPlacement unitType="factory" territory="Michel Delving" quantity="1" owner="Freefolk"/>
@@ -7082,12 +6894,13 @@
 					<unitPlacement unitType="snaga_skirmisher" territory="Dol Guldur" quantity="3" owner="DolGuldur"/>
 					<unitPlacement unitType="nazgul" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
 					<unitPlacement unitType="factory" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
-					<unitPlacement unitType="bat" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
+					<unitPlacement unitType="bat" territory="Dol Guldur" quantity="2" owner="DolGuldur"/>
 					<unitPlacement unitType="wall" territory="Dol Guldur" quantity="4" owner="DolGuldur"/>
-					<unitPlacement unitType="orc_marauder" territory="Dol Guldur" quantity="5" owner="DolGuldur"/>
+					<unitPlacement unitType="orc_marauder" territory="Dol Guldur" quantity="7" owner="DolGuldur"/>
 					<unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
-					<unitPlacement unitType="warg_scout" territory="South Anduin Bank" quantity="1" owner="DolGuldur"/>
+					<unitPlacement unitType="warg_scout" territory="South Anduin Bank" quantity="4" owner="DolGuldur"/>
 					<unitPlacement unitType="orc_marauder" territory="South Anduin Bank" quantity="1" owner="DolGuldur"/>
+					<unitPlacement unitType="spider" territory="Southwest Mirkwood" quantity="1" owner="DolGuldur"/>
 					<unitPlacement unitType="elven_hunter" territory="High Pass" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_archer" territory="Mithlond" quantity="3" owner="HighElves"/>
@@ -7097,7 +6910,7 @@
 					<unitPlacement unitType="flood_of_Bruinen" territory="Ford of Bruinen" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="factory" territory="Rivendell" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="wizard" territory="Rivendell" quantity="1" owner="HighElves"/>
-					<unitPlacement unitType="elven_archer" territory="Rivendell" quantity="6" owner="HighElves"/>
+					<unitPlacement unitType="elven_archer" territory="Rivendell" quantity="5" owner="HighElves"/>
 					<unitPlacement unitType="noldorin_warrior" territory="Rivendell" quantity="3" owner="HighElves"/>
 					<unitPlacement unitType="flood_of_Bruinen" territory="Rivendell" quantity="1" owner="HighElves"/>
 					<unitPlacement unitType="elven_hunter" territory="Lhun East Bank" quantity="1" owner="HighElves"/>
@@ -7122,34 +6935,35 @@
 					<unitPlacement unitType="snaga_skirmisher" territory="North South Road" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="orc_marauder" territory="North South Road" quantity="4" owner="Saruman"/>
 					<unitPlacement unitType="axeman" territory="North Dunland" quantity="2" owner="Saruman"/>
+					<unitPlacement unitType="orc_marauder" territory="North Dunland" quantity="3" owner="Saruman"/>
 					<unitPlacement unitType="axeman" territory="Dunland Hills" quantity="3" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="Dunland Hills" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="orc_marauder" territory="Fords of Isen" quantity="2" owner="Saruman"/>
-					<unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="10" owner="Saruman"/>
 					<unitPlacement unitType="tower" territory="Isengard" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="uruk_swordsman" territory="Isengard" quantity="4" owner="Saruman"/>
+					<unitPlacement unitType="uruk_swordsman" territory="Isengard" quantity="10" owner="Saruman"/>
 					<unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="wall" territory="Isengard" quantity="4" owner="Saruman"/>
 					<unitPlacement unitType="fire_of_orthanc" territory="Isengard" quantity="2" owner="Saruman"/>
 					<unitPlacement unitType="axeman" territory="West Dunland" quantity="1" owner="Saruman"/>
 					<unitPlacement unitType="crebain" territory="West Dunland" quantity="1" owner="Saruman"/>
-					<unitPlacement unitType="spearman" territory="Crossings of Poros" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Crossings of Poros" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Crossings of Poros" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="Crossings of Poros" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="knight" territory="Crossings of Poros" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="lancer" territory="Gilrain" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Henneth Annun" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Henneth Annun" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Pelargir" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Pelargir" quantity="2" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="Pelargir" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="Pelargir" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Emyn Arnen" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="South Ithilien" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Edhellond" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Edhellond" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="light_cavalry" territory="Edhellond" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="light_cavalry" territory="Edhellond" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="West Gondor" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="swordsman" territory="West Gondor" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="swordsman" territory="West Gondor" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="Cair Andros" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="Cair Andros" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Cair Andros" quantity="3" owner="Gondor"/>
@@ -7157,9 +6971,9 @@
 					<unitPlacement unitType="knight" territory="West Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="West Osgiliath" quantity="3" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="West Osgiliath" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="West Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+					<unitPlacement unitType="factory" territory="East Osgiliath" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="spearman" territory="East Osgiliath" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="wall" territory="East Osgiliath" quantity="3" owner="Gondor"/>
@@ -7176,6 +6990,7 @@
 					<unitPlacement unitType="factory" territory="Ethring" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="ranger" territory="Ethring" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="swordsman" territory="Ethring" quantity="1" owner="Gondor"/>
+					<unitPlacement unitType="ranger" territory="Field of Cormallen" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="tower" territory="Minas Tirith" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="tower_guard" territory="Minas Tirith" quantity="5" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Minas Tirith" quantity="1" owner="Gondor"/>
@@ -7183,7 +6998,7 @@
 					<unitPlacement unitType="wall" territory="Minas Tirith" quantity="4" owner="Gondor"/>
 					<unitPlacement unitType="knight" territory="Minas Tirith" quantity="2" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="Lebennin" quantity="1" owner="Gondor"/>
-					<unitPlacement unitType="spearman" territory="Erech" quantity="2" owner="Gondor"/>
+					<unitPlacement unitType="spearman" territory="Erech" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Erech" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="factory" territory="Calembel" quantity="1" owner="Gondor"/>
 					<unitPlacement unitType="light_cavalry" territory="Calembel" quantity="1" owner="Gondor"/>
@@ -7224,6 +7039,9 @@
 					<unitPlacement unitType="winged_nazgul" territory="Barad Dur" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="factory" territory="Barad Dur" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="wall" territory="Barad Dur" quantity="3" owner="Mordor"/>
+					<unitPlacement unitType="uruk_swordsman" territory="Barad Dur" quantity="4" owner="Mordor"/>
+					<unitPlacement unitType="olog_hai" territory="Barad Dur" quantity="1" owner="Mordor"/>
+					<unitPlacement unitType="catapult" territory="Barad Dur" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="fortress" territory="Narchost" quantity="1" owner="Mordor"/>
 					<unitPlacement unitType="orc_marauder" territory="Narchost" quantity="2" owner="Mordor"/>
 					<unitPlacement unitType="tower" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
@@ -7274,9 +7092,8 @@
 					<unitPlacement unitType="axe_cavalry" territory="Framsburg" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Framsburg" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="light_cavalry" territory="Framsburg" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Framsburg" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Greylin" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="Greylin" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="peasant" territory="Framsburg" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="peasant" territory="Greylin" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="peasant" territory="Langwell" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axe_cavalry" territory="Lands of the Eotheod" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Lands of the Beornings" quantity="3" owner="Northmen"/>
@@ -7284,6 +7101,9 @@
 					<unitPlacement unitType="axeman" territory="Upper Forest River" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="North Anduin Bank" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Dunharrow" quantity="2" owner="Rohan"/>
+					<unitPlacement unitType="factory" territory="Dunharrow" quantity="1" owner="Rohan"/>
+					<unitPlacement unitType="wall" territory="Dunharrow" quantity="3" owner="Rohan"/>
+					<unitPlacement unitType="archer" territory="Dunharrow" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="horsearcher" territory="East Emnet" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="light_cavalry" territory="East Emnet" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="horsearcher" territory="The Wold" quantity="1" owner="Rohan"/>
@@ -7295,6 +7115,7 @@
 					<unitPlacement unitType="factory" territory="Aldburg" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="light_cavalry" territory="Aldburg" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="swordsman" territory="Aldburg" quantity="1" owner="Rohan"/>
+					<unitPlacement unitType="wall" territory="Aldburg" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="archer" territory="Hornburg" quantity="4" owner="Rohan"/>
 					<unitPlacement unitType="fortress" territory="Hornburg" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="factory" territory="Hornburg" quantity="1" owner="Rohan"/>
@@ -7315,7 +7136,6 @@
 					<unitPlacement unitType="wall" territory="Goblin Town" quantity="3" owner="Orcs"/>
 					<unitPlacement unitType="goblin_archer" territory="Goblin Town" quantity="5" owner="Orcs"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="North Misty Mountains" quantity="5" owner="Angmar"/>
-					<unitPlacement unitType="warg_rider" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="North Misty Mountains" quantity="3" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Sirannon" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="orc_marauder" territory="Sirannon" quantity="2" owner="Orcs"/>
@@ -7323,7 +7143,7 @@
 					<unitPlacement unitType="fortress" territory="Moria" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="troll" territory="Moria" quantity="2" owner="Orcs"/>
 					<unitPlacement unitType="factory" territory="Moria" quantity="1" owner="Orcs"/>
-					<unitPlacement unitType="bat" territory="Moria" quantity="1" owner="Orcs"/>
+					<unitPlacement unitType="bat" territory="Moria" quantity="3" owner="Orcs"/>
 					<unitPlacement unitType="balrog" territory="Moria" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="wall" territory="Moria" quantity="5" owner="Orcs"/>
 					<unitPlacement unitType="orc_marauder" territory="Moria" quantity="6" owner="Orcs"/>
@@ -7332,7 +7152,7 @@
 					<unitPlacement unitType="warg_rider" territory="Hollin Ridge" quantity="2" owner="Orcs"/>
 					<unitPlacement unitType="warg_scout" territory="Glanduin" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="orc_marauder" territory="East Vales of Anduin" quantity="2" owner="Orcs"/>
-					<unitPlacement unitType="troll" territory="Hith Aeglir" quantity="1" owner="Orcs"/>
+					<unitPlacement unitType="troll" territory="Hith Aeglir" quantity="2" owner="Orcs"/>
 					<unitPlacement unitType="warg_rider" territory="Gladden River" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="peasant" territory="Greenfields" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="light_cavalry" territory="East Arthedain" quantity="1" owner="Arnor"/>
@@ -7340,8 +7160,8 @@
 					<unitPlacement unitType="swordsman" territory="North Downs" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="archer" territory="West Rhudaur" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="catapult" territory="Annuminas" quantity="2" owner="Arnor"/>
-					<unitPlacement unitType="archer" territory="Annuminas" quantity="4" owner="Arnor"/>
-					<unitPlacement unitType="spearman" territory="Annuminas" quantity="3" owner="Arnor"/>
+					<unitPlacement unitType="archer" territory="Annuminas" quantity="3" owner="Arnor"/>
+					<unitPlacement unitType="spearman" territory="Annuminas" quantity="2" owner="Arnor"/>
 					<unitPlacement unitType="factory" territory="Annuminas" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="wall" territory="Annuminas" quantity="3" owner="Arnor"/>
 					<unitPlacement unitType="swordsman" territory="Annuminas" quantity="2" owner="Arnor"/>
@@ -7361,9 +7181,13 @@
 					<unitPlacement unitType="factory" territory="Fornost" quantity="1" owner="Arnor"/>
 					<unitPlacement unitType="wall" territory="Fornost" quantity="3" owner="Arnor"/>
 					<unitPlacement unitType="orc_marauder" territory="East Angmar" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="warg_rider" territory="East Angmar" quantity="2" owner="Angmar"/>
+					<unitPlacement unitType="snaga_skirmisher" territory="East Angmar" quantity="2" owner="Angmar"/>
+					<unitPlacement unitType="troll" territory="Ettendales" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="West Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="West Angmar" quantity="3" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="Hoarwell" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="warg_rider" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="Mount Gundabad" quantity="6" owner="Angmar"/>
 					<unitPlacement unitType="factory" territory="Mount Gundabad" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="wall" territory="Mount Gundabad" quantity="3" owner="Angmar"/>
@@ -7374,24 +7198,21 @@
 					<unitPlacement unitType="factory" territory="Carn Dum" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="wall" territory="Carn Dum" quantity="4" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="Carn Dum" quantity="4" owner="Angmar"/>
+					<unitPlacement unitType="warg_rider" territory="Carn Dum" quantity="4" owner="Angmar"/>
 					<unitPlacement unitType="troll" territory="Trollfells" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="Withered Heath" quantity="1" owner="Angmar"/>
+					<unitPlacement unitType="snaga_skirmisher" territory="Withered Heath" quantity="3" owner="Angmar"/>
+					<unitPlacement unitType="orc_marauder" territory="Withered Heath" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="South Angmar" quantity="4" owner="Angmar"/>
 					<unitPlacement unitType="warg_rider" territory="South Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="orc_marauder" territory="South Angmar" quantity="4" owner="Angmar"/>
 					<unitPlacement unitType="troll" territory="Ettenmoors" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
-					<unitPlacement unitType="warg_rider" territory="East Angmar" quantity="2" owner="Angmar"/>
 					<unitPlacement unitType="dragon" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="peasant" territory="Kingdom of Dale" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="spearman" territory="Kingdom of Dale" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="archer" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="light_cavalry" territory="Kingdom of Dale" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="peasant" territory="East Rhovanion" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="Kingdom of Rhovanion" quantity="2" owner="Northmen"/>
-					<unitPlacement unitType="light_cavalry" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axe_cavalry" territory="South Rhovanion" quantity="1" owner="Northmen"/>
-					<unitPlacement unitType="axeman" territory="Realm of Vidugavia" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="archer" territory="Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Dale" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Northmen"/>
@@ -7427,10 +7248,10 @@
 					<unitPlacement unitType="elven_hunter" territory="North Woodland Realm" quantity="1" owner="WoodlandRealm"/>
 					<unitPlacement unitType="elven_archer" territory="North Woodland Realm" quantity="1" owner="WoodlandRealm"/>
 					<unitPlacement unitType="elven_hunter" territory="Mountains of Mirkwood" quantity="2" owner="WoodlandRealm"/>
-					<unitPlacement unitType="elven_warden" territory="Elvenkings Halls" quantity="3" owner="WoodlandRealm"/>
+					<unitPlacement unitType="elven_warden" territory="Elvenkings Halls" quantity="2" owner="WoodlandRealm"/>
 					<unitPlacement unitType="wall" territory="Elvenkings Halls" quantity="3" owner="WoodlandRealm"/>
 					<unitPlacement unitType="factory" territory="Elvenkings Halls" quantity="1" owner="WoodlandRealm"/>
-					<unitPlacement unitType="elven_archer" territory="Elvenkings Halls" quantity="5" owner="WoodlandRealm"/>
+					<unitPlacement unitType="elven_archer" territory="Elvenkings Halls" quantity="4" owner="WoodlandRealm"/>
 					<unitPlacement unitType="factory" territory="Rhosgobel" quantity="1" owner="WoodlandRealm"/>
 					<unitPlacement unitType="wizard" territory="Rhosgobel" quantity="1" owner="WoodlandRealm"/>
 					<unitPlacement unitType="elven_archer" territory="Rhosgobel" quantity="4" owner="WoodlandRealm"/>
@@ -7440,7 +7261,8 @@
 					<unitPlacement unitType="wall" territory="Ost in Edhil" quantity="1"/>
 					<unitPlacement unitType="archer" territory="North Rhun" quantity="1" owner="Rhun"/>
 					<unitPlacement unitType="horsearcher" territory="North Rhun" quantity="1" owner="Rhun"/>
-					<unitPlacement unitType="chariot" territory="North Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="chariot" territory="North Rhun" quantity="2" owner="Rhun"/>
+					<unitPlacement unitType="war_wagon" territory="North Rhun" quantity="3" owner="Rhun"/>
 					<unitPlacement unitType="peasant" territory="Lefnui Vale" quantity="1"/>
 					<unitPlacement unitType="axeman" territory="Barrow Downs" quantity="5"/>
 					<unitPlacement unitType="troll" territory="Trollshaws" quantity="3"/>
@@ -7466,6 +7288,7 @@
 					<unitPlacement unitType="axeman" territory="West Forochel Coast" quantity="1"/>
 					<unitPlacement unitType="peasant" territory="South Enedwaith" quantity="2"/>
 					<unitPlacement unitType="peasant" territory="West Lone Lands" quantity="1"/>
+					<unitPlacement unitType="peasant" territory="East Rhovanion" quantity="2" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="Druwaith Laur" quantity="3"/>
 					<unitPlacement unitType="peasant" territory="East Brown Lands" quantity="2"/>
 					<unitPlacement unitType="factory" territory="Lond Daer" quantity="1"/>
@@ -7478,24 +7301,34 @@
 					<unitPlacement unitType="swordsman" territory="Firienholt" quantity="1" owner="Rohan"/>
 					<unitPlacement unitType="axeman" territory="Firienholt" quantity="2" owner="Rohan"/>
 					<unitPlacement unitType="archer" territory="Firienholt" quantity="2" owner="Rohan"/>
-					<unitPlacement unitType="snaga_skirmisher" territory="South Misty Mountains" quantity="1" owner="Orcs"/>
+					<unitPlacement unitType="snaga_skirmisher" territory="South Misty Mountains" quantity="3" owner="Orcs"/>
+					<unitPlacement unitType="troll" territory="South Misty Mountains" quantity="1" owner="Orcs"/>
 					<unitPlacement unitType="eagle" territory="Eagles Eyrie" quantity="2" owner="HighElves"/>
 					<unitPlacement unitType="orc_marauder" territory="Lands of the Lossoth" quantity="3" owner="Angmar"/>
 					<unitPlacement unitType="peasant" territory="South Forodwaith" quantity="1"/>
 					<unitPlacement unitType="dwarven_axeman" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="dwarven_phalangite" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="dwarven_halberdier" territory="Halls of Gror" quantity="2" owner="Dwarves"/>
-					<unitPlacement unitType="catapult" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="factory" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="wall" territory="Halls of Gror" quantity="2" owner="Dwarves"/>
 					<unitPlacement unitType="fortress" territory="Halls of Gror" quantity="1" owner="Dwarves"/>
 					<unitPlacement unitType="axeman" territory="Northeast Rhun" quantity="2" owner="Rhun"/>
 					<unitPlacement unitType="war_wagon" territory="Northeast Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="axeman" territory="Realm of Vidugavia" quantity="3" owner="Northmen"/>
 					<unitPlacement unitType="axeman" territory="West Wilderland" quantity="1"/>
 					<unitPlacement unitType="archer" territory="West Wilderland" quantity="1"/>
+					<unitPlacement unitType="axe_cavalry" territory="Kingdom of Rhovanion" quantity="2" owner="Northmen"/>
+					<unitPlacement unitType="light_cavalry" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
+					<unitPlacement unitType="axe_cavalry" territory="South Rhovanion" quantity="1" owner="Northmen"/>
 					<unitPlacement unitType="axe_cavalry" territory="West Rhun" quantity="1" owner="Rhun"/>
+					<unitPlacement unitType="axe_cavalry" territory="Southeast Rhun" quantity="3" owner="Rhun"/>
+					<unitPlacement unitType="chariot" territory="Southeast Rhun" quantity="2" owner="Rhun"/>
+					<unitPlacement unitType="chariot_archer" territory="Southeast Rhun" quantity="2" owner="Rhun"/>
+					<unitPlacement unitType="dwarven_axeman" territory="Grey Mountains" quantity="3" owner="Dwarves"/>
+					<unitPlacement unitType="snaga_skirmisher" territory="West Grey Mountains" quantity="1" owner="Angmar"/>
 					<unitPlacement unitType="factory" territory="Glittering Caves" quantity="1" owner="Rohan"/>
-					<unitPlacement unitType="factory" territory="Dunharrow" quantity="1" owner="Rohan"/>
+					<unitPlacement unitType="wall" territory="Glittering Caves" quantity="3" owner="Rohan"/>
+					<unitPlacement unitType="swordsman" territory="Glittering Caves" quantity="2" owner="Rohan"/>
 				</unitInitialize>
 				<resourceInitialize>
 					<resourceGiven player="Dwarves" resource="PUs" quantity="33"/>
@@ -8170,9 +8003,12 @@
 		<div style="text-align: center">
 			<table border="1" bgcolor="3D3D99" align="center">
 				<tr>
-					<th style="font-size:140%;000000">====================<br>Large Middle Earth<br>Third Age All Stars<br>====================</th>
+					<th style="font-size:140%;000000">====================<br>Large Middle Earth<br>The Battle for Arda<br>====================</th>
 				</tr>
 			</table>
+		</div>
+		<div style="text-align:left;font-size:100%">
+			<br>Version 1.3.1. The purpose of this version is testing the map design. Nothing in this version should be considered final; and it may contain bugs, inconsistencies and unpolished details.
 		</div>
 		<div style="text-align: center;font-size:120%">
 			<br><b>Background</b>
@@ -9017,14 +8853,37 @@
 					<td>-</td>
 					<td>-</td>
 				</tr>
+				<tr bgcolor="A0A0B2">
+					<td bgcolor="7C7CB2">noldorin warrior</td>
+					<td>6</td>
+					<td>2</td>
+					<td>1</td>
+					<td>6</td>
+					<td>4</td>
+					<td>-</td>
+					<td>-</td>
+					<td>mel,inf</td>
+					<td>uns</td>
+				</tr>
+				<tr bgcolor="72727F">
+					<td bgcolor="59597F">fire of orthanc</td>
+					<td>18</td>
+					<td>2</td>
+					<td>0</td>
+					<td>-</td>
+					<td>-</td>
+					<td>6x3 siege</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
 			</table>
 		</div>
 		<div style="text-align: center;font-size:120%">
 			<br><br><b>Territory Effects</b>
 		</div>
 		<div style="text-align:left;font-size:100%">
-			<br/> !!! REWORKED - GAME NOTES TO BE UPDATED
-			<br/> !!! table should be correct
+			<br/>"Light" is melee infantry units without armor, "Heavy" is the same with armor, "Ranged" is ranged infantry, the rest is self-explanatory.
 			<table border="1"bgcolor="757780">
 				<tr>
 					<th style="font-size:120%;000000"bgcolor="3D3D99"colspan="12">Territory Effects</th>
@@ -9144,6 +9003,11 @@
 			<br><br><b></b>
 		</div>
 		<div style="text-align:left;font-size:100%">
+			<br/>Version 1.3.1 Changes
+			<br/> - New map design by Hepps
+			<br/> - Various additions and changes
+			<br/>(Nothing in this version should be considered final.)
+			<br/>
 			<br/>Version 1.3 Changelog (work done by redrum)
 			<br/> - Add canals for cities along rivers
 			<br/>
@@ -9170,7 +9034,9 @@
 			<br/>
 			<br/>Please contribute to the map by sharing your experiences or ideas! You can help with playtesting and balance, but you can contribute graphics or whatever you feel is necessary to improve this map.
 			<br/>Creator and maintainer: alkexr (find me on the tripleadev forum)
-			<br/>Map design by Frostion
+			<br/>Map design by Hepps
+			<br/>Contributions by Frostion and redrum
+			<br/>Thanks to the members of the TripleA forum, especially mattbarnes, for extensive feedback and testing.
 		</div>
 	</body>
 </html>
