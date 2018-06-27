@@ -1744,9 +1744,13 @@
     <unit name="elven_warden" />
     <unit name="man_at_arms" />
     <unit name="tower_guard" />
+    <unit name="dwarven_axeman" />
+    <unit name="dwarven_pikeman" />
+    <unit name="dwarven_halberdier" />
     <unit name="woodman" />
     <unit name="ranger" />
     <unit name="galadhrim_longbowman" />
+    <unit name="dwarven_axethrower" />
     <unit name="raider" />
     <unit name="elven_cavalry" />
     <unit name="easterling_cavalry" />
@@ -1756,6 +1760,7 @@
     <unit name="swan_knight" />
     <unit name="warg_rider" />
     <unit name="crebain" />
+    <unit name="raven" />
     <unit name="huorn" />
     <unit name="hobbit" />
     <unit name="peasant" />
@@ -1773,10 +1778,7 @@
     <unit name="snaga_skirmisher" />
     <unit name="orc_marauder" />
     <unit name="war_wagon" />
-    <unit name="dwarven_axeman" />
     <unit name="dwarven_phalangite" />
-    <unit name="dwarven_axethrower" />
-    <unit name="dwarven_halberdier" />
     <unit name="troll" />
     <unit name="olog_hai" />
     <unit name="spider" />
@@ -1786,7 +1788,6 @@
     <unit name="ent" />
     <unit name="dragon" />
     <unit name="bat" />
-    <unit name="raven" />
     <unit name="eagle" />
     <unit name="elven_archer" />
     <unit name="elven_hunter" />
@@ -2158,6 +2159,26 @@
       <cost resource="PUs" quantity="14" />
       <result resourceOrUnit="wainrider_chieftain" quantity="1" />
     </productionRule>
+    <productionRule name="buy_dwarven_axethrower">
+      <cost resource="PUs" quantity="5" />
+      <result resourceOrUnit="dwarven_axethrower" quantity="1" />
+    </productionRule>
+    <productionRule name="buy_dwarven_axeman">
+      <cost resource="PUs" quantity="7" />
+      <result resourceOrUnit="dwarven_axeman" quantity="1" />
+    </productionRule>
+    <productionRule name="buy_dwarven_pikeman">
+      <cost resource="PUs" quantity="7" />
+      <result resourceOrUnit="dwarven_pikeman" quantity="1" />
+    </productionRule>
+    <productionRule name="buy_dwarven_halberdier">
+      <cost resource="PUs" quantity="8" />
+      <result resourceOrUnit="dwarven_halberdier" quantity="1" />
+    </productionRule>
+    <productionRule name="buy_raven">
+      <cost resource="PUs" quantity="7" />
+      <result resourceOrUnit="raven" quantity="1" />
+    </productionRule>
     <productionRule name="buyswordsman">
       <!--4-->
       <cost resource="PUs" quantity="4" />
@@ -2441,13 +2462,11 @@
       <frontierRules name="buy_wainrider_chieftain" />
     </productionFrontier>
     <productionFrontier name="DwarvesFrontier">
-      <frontierRules name="buydwarven_axeman" />
-      <frontierRules name="buydwarven_axethrower" />
-      <frontierRules name="buydwarven_phalangite" />
-      <frontierRules name="buydwarven_halberdier" />
-      <frontierRules name="buycatapult" />
-      <frontierRules name="buytrebuchet" />
-      <frontierRules name="buyraven" />
+      <frontierRules name="buy_dwarven_axethrower" />
+      <frontierRules name="buy_dwarven_axeman" />
+      <frontierRules name="buy_dwarven_pikeman" />
+      <frontierRules name="buy_dwarven_halberdier" />
+      <frontierRules name="buy_raven" />
     </productionFrontier>
     <productionFrontier name="FreefolkFrontier">
       <frontierRules name="buyhobbit" />
@@ -2671,12 +2690,39 @@
       <option name="attack" value="5" />
       <option name="defense" value="6" />
     </attachment>
+    <attachment name="unitAttachment" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="transportCost" value="1" />
+      <option name="movement" value="2" />
+      <option name="attack" value="5" />
+      <option name="defense" value="3" />
+    </attachment>
+    <attachment name="unitAttachment" attachTo="dwarven_pikeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="transportCost" value="1" />
+      <option name="movement" value="2" />
+      <option name="attack" value="2" />
+      <option name="defense" value="6" />
+      <option name="targetsAA" value="eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:knight:lancer:axe_cavalry:olog_hai:bear:oliphant" />
+      <option name="typeAA" value="formation" />
+      <option name="attackAA" value="6" />
+      <option name="offensiveAttackAA" value="0" />
+      <option name="isAAforCombatOnly" value="true" />
+      <option name="mayOverStackAA" value="false" />
+      <option name="damageableAA" value="true" />
+      <option name="maxAAattacks" value="1" />
+      <option name="maxRoundsAA" value="1" />
+    </attachment>
+    <attachment name="unitAttachment" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="transportCost" value="1" />
+      <option name="movement" value="2" />
+      <option name="attack" value="6" />
+      <option name="defense" value="4" />
+    </attachment>
     <attachment name="unitAttachment" attachTo="woodman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
       <option name="movement" value="2" />
       <option name="attack" value="1" />
       <option name="defense" value="3" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="4" />
       <option name="offensiveAttackAA" value="0" />
@@ -2691,7 +2737,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="4" />
       <option name="defense" value="5" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="2" />
       <option name="offensiveAttackAA" value="0" />
@@ -2706,7 +2752,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="5" />
       <option name="defense" value="3" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="2" />
       <option name="offensiveAttackAA" value="0" />
@@ -2721,7 +2767,7 @@
       <option name="movement" value="2" />
       <option name="attack" value="4" />
       <option name="defense" value="5" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="0" />
@@ -2731,12 +2777,18 @@
       <option name="maxAAattacks" value="1" />
       <option name="maxRoundsAA" value="-1" />
     </attachment>
+    <attachment name="unitAttachment" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="transportCost" value="1" />
+      <option name="movement" value="2" />
+      <option name="attack" value="2" />
+      <option name="defense" value="2" />
+    </attachment>
     <attachment name="unitAttachment" attachTo="raider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
       <option name="movement" value="4" />
       <option name="attack" value="4" />
       <option name="defense" value="1" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="2" />
       <option name="offensiveAttackAA" value="2" />
@@ -2751,7 +2803,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="5" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="3" />
@@ -2766,7 +2818,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="4" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="4" />
       <option name="offensiveAttackAA" value="4" />
@@ -2781,7 +2833,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="4" />
       <option name="defense" value="4" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -2796,7 +2848,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="3" />
       <option name="defense" value="5" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -2811,7 +2863,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="6" />
       <option name="defense" value="3" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -2826,7 +2878,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="7" />
       <option name="defense" value="6" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -2841,7 +2893,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="5" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="4" />
@@ -2856,6 +2908,12 @@
       <option name="movement" value="6" />
       <option name="attack" value="3" />
       <option name="defense" value="2" />
+    </attachment>
+    <attachment name="unitAttachment" attachTo="raven" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+      <option name="isAir" value="true" />
+      <option name="movement" value="4" />
+      <option name="attack" value="4" />
+      <option name="defense" value="3" />
     </attachment>
     <attachment name="unitAttachment" attachTo="huorn" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
@@ -2916,7 +2974,7 @@
       <option name="movement" value="2" />
       <option name="attack" value="1" />
       <option name="defense" value="4" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="0" />
@@ -2934,7 +2992,7 @@
       <option name="attackRolls" value="2" />
       <option name="defense" value="3" />
       <option name="defenseRolls" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -2949,7 +3007,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="6" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="4" />
@@ -2965,7 +3023,7 @@
       <option name="canBlitz" value="true" />
       <option name="attack" value="3" />
       <option name="defense" value="4" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="6" />
       <option name="offensiveAttackAA" value="6" />
@@ -2981,7 +3039,7 @@
       <option name="canBlitz" value="true" />
       <option name="attack" value="5" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="4" />
@@ -2996,7 +3054,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="4" />
       <option name="defense" value="4" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="4" />
       <option name="offensiveAttackAA" value="4" />
@@ -3027,7 +3085,7 @@
       <option name="movement" value="2" />
       <option name="attack" value="1" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="2" />
       <option name="offensiveAttackAA" value="0" />
@@ -3129,12 +3187,18 @@
 						<tag name="combatunit"/>
                     </attachment>-->
     <!--DWARVES-->
-    <attachment name="unitAttachment" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-      <option name="transportCost" value="1" />
-      <option name="movement" value="2" />
-      <option name="attack" value="4" />
-      <option name="defense" value="2" />
-    </attachment>
+    <!--<attachment name="unitAttachment" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="4"/>
+						<option name="defense" value="2"/>
+						<tag name="melee"/>
+						<tag name="infantry"/>
+						<tag name="armor1"/>
+						<tag name="mountainwalk"/>
+						<tag name="cavedweller"/>
+						<tag name="combatunit"/>
+                    </attachment>-->
     <attachment name="unitAttachment" attachTo="dwarven_phalangite" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
       <option name="movement" value="2" />
@@ -3150,27 +3214,40 @@
       <option name="maxAAattacks" value="1" />
       <option name="maxRoundsAA" value="1" />
     </attachment>
-    <attachment name="unitAttachment" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-      <option name="transportCost" value="1" />
-      <option name="movement" value="2" />
-      <option name="attack" value="6" />
-      <option name="defense" value="3" />
-    </attachment>
-    <attachment name="unitAttachment" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-      <option name="transportCost" value="1" />
-      <option name="movement" value="2" />
-      <option name="attack" value="4" />
-      <option name="defense" value="5" />
-      <option name="targetsAA" value="eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:knight:lancer:axe_cavalry:olog_hai:bear:oliphant" />
-      <option name="typeAA" value="formation" />
-      <option name="attackAA" value="2" />
-      <option name="offensiveAttackAA" value="0" />
-      <option name="isAAforCombatOnly" value="true" />
-      <option name="mayOverStackAA" value="false" />
-      <option name="damageableAA" value="true" />
-      <option name="maxAAattacks" value="1" />
-      <option name="maxRoundsAA" value="1" />
-    </attachment>
+    <!--<attachment name="unitAttachment" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="6"/>
+						<option name="defense" value="3"/>
+						<tag name="melee"/>
+						<tag name="ranged"/>
+						<tag name="ranged1"/>
+						<tag name="mountainwalk"/>
+						<tag name="cavedweller"/>
+						<tag name="combatunit"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+                        <option name="attack" value="4"/>
+						<option name="defense" value="5"/>
+						
+						<option name="targetsAA" value="@charge@"/>
+						<option name="typeAA" value="formation"/>
+						<option name="attackAA" value="2"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+                        <option name="mayOverStackAA" value="false"/>
+						<option name="damageableAA" value="true"/>
+                        <option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
+						
+						<tag name="melee"/>
+						<tag name="infantry"/>
+						<tag name="armor3"/>
+						<tag name="cavedweller"/>
+						<tag name="combatunit"/>
+                    </attachment>-->
     <!--FORTIFICATIONS-->
     <attachment name="unitAttachment" attachTo="wall" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="hitPoints" value="2" />
@@ -3223,7 +3300,7 @@
       <option name="attackRolls" value="2" />
       <option name="defense" value="4" />
       <option name="defenseRolls" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="4" />
@@ -3253,7 +3330,7 @@
       <option name="attackRolls" value="2" />
       <option name="defense" value="3" />
       <option name="defenseRolls" value="2" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="4" />
@@ -3272,7 +3349,7 @@
       <option name="attackRolls" value="3" />
       <option name="defense" value="3" />
       <option name="defenseRolls" value="3" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:hobbit:peasant:swordsman:axeman:archer:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:dwarven_phalangite:elven_archer:elven_hunter:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="typeAA" value="charge" />
       <option name="attackAA" value="0" />
       <option name="offensiveAttackAA" value="6" />
@@ -3303,7 +3380,7 @@
       <option name="movement" value="4" />
       <option name="attack" value="3" />
       <option name="defense" value="2" />
-      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="targetsAA" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="typeAA" value="flank" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="3" />
@@ -3348,12 +3425,6 @@
       <option name="attack" value="6" />
       <option name="defense" value="2" />
     </attachment>
-    <attachment name="unitAttachment" attachTo="raven" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-      <option name="isAir" value="true" />
-      <option name="movement" value="4" />
-      <option name="attack" value="3" />
-      <option name="defense" value="3" />
-    </attachment>
     <attachment name="unitAttachment" attachTo="crebain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="isAir" value="true" />
       <option name="movement" value="4" />
@@ -3376,7 +3447,7 @@
       <option name="movement" value="2" />
       <option name="attack" value="2" />
       <option name="defense" value="5" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="4" />
       <option name="offensiveAttackAA" value="0" />
@@ -3391,7 +3462,7 @@
       <option name="movement" value="3" />
       <option name="attack" value="5" />
       <option name="defense" value="3" />
-      <option name="targetsAA" value="crebain:dragon:bat:raven:eagle:winged_nazgul" />
+      <option name="targetsAA" value="crebain:raven:dragon:bat:eagle:winged_nazgul" />
       <option name="typeAA" value="antiair" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="0" />
@@ -3595,7 +3666,7 @@
     <attachment name="unitAttachment" attachTo="flood_of_Bruinen" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="isInfrastructure" value="true" />
       <option name="destroyedWhenCapturedBy" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
-      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="targetsAA" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="typeAA" value="flood" />
       <option name="attackAA" value="3" />
       <option name="offensiveAttackAA" value="0" />
@@ -3606,7 +3677,7 @@
       <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="supportAttachment_leadership6_swan_knight" attachTo="swan_knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3617,7 +3688,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership6_knight" attachTo="knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3628,7 +3699,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership8_wainrider_chieftain" attachTo="wainrider_chieftain" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3639,7 +3710,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership8_ent" attachTo="ent" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3650,7 +3721,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership8_balrog" attachTo="balrog" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3661,7 +3732,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership12_wizard" attachTo="wizard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3672,7 +3743,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership12_nazgul" attachTo="nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3683,7 +3754,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_leadership12_winged_nazgul" attachTo="winged_nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3694,7 +3765,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror2_huorn" attachTo="huorn" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3705,7 +3776,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror2_troll" attachTo="troll" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3716,7 +3787,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror2_olog_hai" attachTo="olog_hai" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3727,7 +3798,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror2_bear" attachTo="bear" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3738,7 +3809,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror4_dragon" attachTo="dragon" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3749,7 +3820,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror4_oathbreaker" attachTo="oathbreaker" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3760,7 +3831,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror6_nazgul" attachTo="nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3771,7 +3842,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror8_balrog" attachTo="balrog" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3782,7 +3853,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_terror12_winged_nazgul" attachTo="winged_nazgul" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:woodman:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:dwarven_axethrower:raider:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3793,29 +3864,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged1_ranger" attachTo="ranger" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
-      <option name="faction" value="allied" />
-      <option name="side" value="offence" />
-      <option name="dice" value="strength" />
-      <option name="bonus" value="1" />
-      <option name="number" value="1" />
-      <option name="bonusType" value="ranged" />
-      <option name="impArtTech" value="false" />
-      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
-    </attachment>
-    <attachment name="supportAttachment_ranged1_horsearcher" attachTo="horsearcher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
-      <option name="faction" value="allied" />
-      <option name="side" value="offence" />
-      <option name="dice" value="strength" />
-      <option name="bonus" value="1" />
-      <option name="number" value="1" />
-      <option name="bonusType" value="ranged" />
-      <option name="impArtTech" value="false" />
-      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
-    </attachment>
-    <attachment name="supportAttachment_ranged1_snaga_skirmisher" attachTo="snaga_skirmisher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3826,7 +3875,29 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged1_dwarven_axethrower" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="faction" value="allied" />
+      <option name="side" value="offence" />
+      <option name="dice" value="strength" />
+      <option name="bonus" value="1" />
+      <option name="number" value="1" />
+      <option name="bonusType" value="ranged" />
+      <option name="impArtTech" value="false" />
+      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
+    </attachment>
+    <attachment name="supportAttachment_ranged1_horsearcher" attachTo="horsearcher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="faction" value="allied" />
+      <option name="side" value="offence" />
+      <option name="dice" value="strength" />
+      <option name="bonus" value="1" />
+      <option name="number" value="1" />
+      <option name="bonusType" value="ranged" />
+      <option name="impArtTech" value="false" />
+      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
+    </attachment>
+    <attachment name="supportAttachment_ranged1_snaga_skirmisher" attachTo="snaga_skirmisher" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3837,7 +3908,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_woodman" attachTo="woodman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3848,7 +3919,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_elven_cavalry" attachTo="elven_cavalry" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3859,7 +3930,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_easterling_cavalry" attachTo="easterling_cavalry" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3870,7 +3941,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_chariot" attachTo="chariot" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3881,7 +3952,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_archer" attachTo="archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3892,7 +3963,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_goblin_archer" attachTo="goblin_archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3903,7 +3974,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_elven_archer" attachTo="elven_archer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3914,7 +3985,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged2_elven_hunter" attachTo="elven_hunter" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3925,7 +3996,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_ranged3_galadhrim_longbowman" attachTo="galadhrim_longbowman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="allied" />
       <option name="side" value="offence" />
       <option name="dice" value="strength" />
@@ -3936,7 +4007,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor1_uruk_pikeman" attachTo="uruk_pikeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3947,7 +4018,18 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor1_man_at_arms" attachTo="man_at_arms" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="faction" value="enemy" />
+      <option name="side" value="offence:defence" />
+      <option name="dice" value="strength" />
+      <option name="bonus" value="-1" />
+      <option name="number" value="1" />
+      <option name="bonusType" value="armor" />
+      <option name="impArtTech" value="false" />
+      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
+    </attachment>
+    <attachment name="supportAttachment_armor1_dwarven_axethrower" attachTo="dwarven_axethrower" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3958,18 +4040,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor1_lancer" attachTo="lancer" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
-      <option name="faction" value="enemy" />
-      <option name="side" value="offence:defence" />
-      <option name="dice" value="strength" />
-      <option name="bonus" value="-1" />
-      <option name="number" value="1" />
-      <option name="bonusType" value="armor" />
-      <option name="impArtTech" value="false" />
-      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
-    </attachment>
-    <attachment name="supportAttachment_armor1_dwarven_axeman" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3980,7 +4051,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_uruk_warrior" attachTo="uruk_warrior" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -3991,7 +4062,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_barding_infantry" attachTo="barding_infantry" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4002,7 +4073,18 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_tower_guard" attachTo="tower_guard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="faction" value="enemy" />
+      <option name="side" value="offence:defence" />
+      <option name="dice" value="strength" />
+      <option name="bonus" value="-2" />
+      <option name="number" value="1" />
+      <option name="bonusType" value="armor" />
+      <option name="impArtTech" value="false" />
+      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
+    </attachment>
+    <attachment name="supportAttachment_armor2_dwarven_pikeman" attachTo="dwarven_pikeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4013,7 +4095,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_galadhrim_longbowman" attachTo="galadhrim_longbowman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4024,7 +4106,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_wainrider_chieftain" attachTo="wainrider_chieftain" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4035,7 +4117,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_knight" attachTo="knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4046,7 +4128,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_uruk_swordsman" attachTo="uruk_swordsman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4057,7 +4139,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_dwarven_phalangite" attachTo="dwarven_phalangite" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4068,7 +4150,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_armor2_morannon_guard" attachTo="morannon_guard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4078,8 +4160,8 @@
       <option name="impArtTech" value="false" />
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
-    <attachment name="supportAttachment_armor3_swan_knight" attachTo="swan_knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+    <attachment name="supportAttachment_armor3_dwarven_halberdier" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4089,8 +4171,8 @@
       <option name="impArtTech" value="false" />
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
-    <attachment name="supportAttachment_armor3_dwarven_halberdier" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:noldorin_warrior:oathbreaker:morannon_guard" />
+    <attachment name="supportAttachment_armor3_swan_knight" attachTo="swan_knight" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:raider:eotheod_cavalry:wainrider_chieftain:swan_knight:hobbit:peasant:swordsman:axeman:knight:lancer:axe_cavalry:light_cavalry:goblin_stabber:uruk_swordsman:orc_marauder:dwarven_phalangite:noldorin_warrior:oathbreaker:morannon_guard" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4101,7 +4183,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_shield1_spearman" attachTo="spearman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter" />
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4112,7 +4194,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_shield1_uruk_warrior" attachTo="uruk_warrior" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter" />
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4123,7 +4205,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_shield1_beorning_warrior" attachTo="beorning_warrior" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter" />
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4134,7 +4216,7 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_shield2_barding_infantry" attachTo="barding_infantry" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter" />
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
@@ -4145,11 +4227,22 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="supportAttachment_shield2_elven_warden" attachTo="elven_warden" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
-      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:dwarven_axethrower:elven_archer:elven_hunter" />
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
       <option name="faction" value="enemy" />
       <option name="side" value="offence:defence" />
       <option name="dice" value="strength" />
       <option name="bonus" value="-2" />
+      <option name="number" value="1" />
+      <option name="bonusType" value="shield" />
+      <option name="impArtTech" value="false" />
+      <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
+    </attachment>
+    <attachment name="supportAttachment_shield3_dwarven_axeman" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
+      <option name="unitType" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:elven_cavalry:easterling_cavalry:chariot:archer:horsearcher:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" />
+      <option name="faction" value="enemy" />
+      <option name="side" value="offence:defence" />
+      <option name="dice" value="strength" />
+      <option name="bonus" value="-3" />
       <option name="number" value="1" />
       <option name="bonusType" value="shield" />
       <option name="impArtTech" value="false" />
@@ -4213,17 +4306,17 @@
       <option name="players" value="Dwarves:Freefolk:DolGuldur:HighElves:Saruman:Gondor:Mordor:Lorien:Harad:Northmen:Rohan:Orcs:Arnor:Angmar:Rhun:WoodlandRealm" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <option name="unitsNotAllowed" value="spearman:halforc:uruk_pikeman:uruk_warrior:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:hobbit:peasant:swordsman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:war_wagon:dwarven_phalangite:dwarven_halberdier:olog_hai:spider:bear:oliphant:dragon:bat:raven:eagle:elven_archer:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="unitsNotAllowed" value="spearman:halforc:uruk_pikeman:uruk_warrior:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:woodman:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:hobbit:peasant:swordsman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:war_wagon:dwarven_phalangite:olog_hai:spider:bear:oliphant:dragon:bat:eagle:elven_archer:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="2" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="2" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="2" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="2" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="3" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="3" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
@@ -4231,22 +4324,22 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="3" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="3" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="1" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="3" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="4" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="2" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="2" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
@@ -4254,14 +4347,14 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="2" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="2" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="1" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="2" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <!--Light-->
       <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
       <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
@@ -4278,20 +4371,20 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:olog_hai:bear:oliphant:warg_scout:ent:balrog" count="1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:olog_hai:bear:oliphant:warg_scout:ent:balrog" count="2" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:raven:eagle:winged_nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="crebain:dragon:raven:eagle:winged_nazgul" count="-2" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:eagle:winged_nazgul" count="-2" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:eagle:winged_nazgul" count="-2" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="4" />
       <!--Light CD-->
-      <option name="combatOffenseEffect" value="none:goblin_stabber" count="2" />
-      <option name="combatDefenseEffect" value="none:goblin_stabber" count="3" />
+      <option name="combatOffenseEffect" value="none:dwarven_axeman:goblin_stabber" count="2" />
+      <option name="combatDefenseEffect" value="none:dwarven_axeman:goblin_stabber" count="3" />
       <!--Heavy CD-->
-      <option name="combatOffenseEffect" value="none:dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="2" />
-      <option name="combatDefenseEffect" value="none:dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="2" />
+      <option name="combatOffenseEffect" value="none:dwarven_pikeman:dwarven_halberdier:dwarven_phalangite" count="2" />
+      <option name="combatDefenseEffect" value="none:dwarven_pikeman:dwarven_halberdier:dwarven_phalangite" count="2" />
       <!--Ranged CD-->
-      <option name="combatOffenseEffect" value="none:goblin_archer" count="0" />
-      <option name="combatDefenseEffect" value="none:goblin_archer" count="0" />
+      <option name="combatOffenseEffect" value="none:dwarven_axethrower:goblin_archer" count="0" />
+      <option name="combatDefenseEffect" value="none:dwarven_axethrower:goblin_archer" count="0" />
       <!--Cavalry CD-->
       <option name="combatOffenseEffect" value="none" count="-1" />
       <option name="combatDefenseEffect" value="none" count="0" />
@@ -4306,16 +4399,16 @@
       <option name="combatDefenseEffect" value="none" count="6" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="2" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="2" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
@@ -4323,23 +4416,23 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="2" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="2" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="1" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="2" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="-1" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="-1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="-2" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="-1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-2" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-1" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="1" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
@@ -4347,22 +4440,22 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="0" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="0" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="1" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="0" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="1" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="0" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="2" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="2" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="-1" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="0" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-1" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="archer:goblin_archer:snaga_skirmisher" count="1" />
+      <option name="combatOffenseEffect" value="dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
+      <option name="combatDefenseEffect" value="dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="1" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
@@ -4370,8 +4463,8 @@
       <option name="combatOffenseEffect" value="warg_rider:troll:olog_hai:oliphant:warg_scout:balrog" count="1" />
       <option name="combatDefenseEffect" value="warg_rider:troll:olog_hai:oliphant:warg_scout:balrog" count="2" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="-2" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="-2" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="-2" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="0" />
@@ -4398,16 +4491,16 @@
       <option name="combatDefenseEffect" value="none" count="1" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="-1" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="-1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="0" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="-2" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="0" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-2" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="-1" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="-1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="1" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
@@ -4415,22 +4508,22 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="0" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="0" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="0" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="0" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="0" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="0" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <!--Light-->
-      <option name="combatOffenseEffect" value="spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:goblin_stabber:noldorin_warrior:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
+      <option name="combatOffenseEffect" value="spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:goblin_stabber:noldorin_warrior:oathbreaker" count="0" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:dwarven_axeman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:noldorin_warrior:oathbreaker" count="1" />
       <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:man_at_arms:tower_guard:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier:morannon_guard" count="1" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:uruk_swordsman:dwarven_axeman:dwarven_phalangite:dwarven_halberdier" count="2" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:man_at_arms:tower_guard:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:dwarven_pikeman:dwarven_halberdier:uruk_swordsman:dwarven_phalangite" count="2" />
       <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="3" />
+      <option name="combatOffenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:galadhrim_longbowman:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher:elven_archer:elven_hunter" count="3" />
       <!--Cavalry-->
       <option name="combatOffenseEffect" value="elven_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:light_cavalry:nazgul" count="-2" />
       <option name="combatDefenseEffect" value="raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
@@ -4438,8 +4531,8 @@
       <option name="combatOffenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
       <option name="combatDefenseEffect" value="warg_rider:huorn:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
       <!--Flying-->
-      <option name="combatOffenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="-1" />
-      <option name="combatDefenseEffect" value="crebain:dragon:bat:raven:eagle:winged_nazgul" count="-1" />
+      <option name="combatOffenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="-1" />
+      <option name="combatDefenseEffect" value="crebain:raven:dragon:bat:eagle:winged_nazgul" count="-1" />
       <!--Fortification-->
       <option name="combatOffenseEffect" value="wall:tower:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:tower:fortress" count="1" />
@@ -4469,7 +4562,7 @@
       <option name="unitsNotAllowed" value="none" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="ocean" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <option name="unitsNotAllowed" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:raven:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
+      <option name="unitsNotAllowed" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:crebain:raven:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:eagle:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:factory:wall:tower:fortress:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Grey Mountains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1" />
@@ -6731,7 +6824,7 @@
     <attachment name="triggerAttachment_AllBlitz" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_AllBlitz" />
       <option name="when" value="before:sarumanPurchase" />
-      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:woodman:ranger:galadhrim_longbowman:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_axeman:dwarven_phalangite:dwarven_axethrower:dwarven_halberdier:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:oathbreaker:morannon_guard" />
+      <option name="unitType" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:woodman:ranger:galadhrim_longbowman:dwarven_axethrower:raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:huorn:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:elven_archer:elven_hunter:noldorin_warrior:wizard:balrog:nazgul:oathbreaker:morannon_guard" />
       <option name="unitProperty" value="canBlitz" count="true" />
       <option name="uses" value="1" />
     </attachment>
@@ -7337,30 +7430,26 @@
       <territoryOwner territory="Southeast Rhûn" owner="Rhun" />
     </ownerInitialize>
     <unitInitialize>
-      <unitPlacement unitType="catapult" territory="Thorin's Halls" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axethrower" territory="South Ered Mithrin" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="South Ered Mithrin" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Thorin's Halls" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="wall" territory="Thorin's Halls" quantity="4" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axeman" territory="Thorin's Halls" quantity="3" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axethrower" territory="Thorin's Halls" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="Thorin's Halls" quantity="2" owner="Dwarves" />
       <unitPlacement unitType="fortress" territory="Erebor" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_phalangite" territory="Erebor" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Erebor" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="wall" territory="Erebor" quantity="5" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axeman" territory="Erebor" quantity="4" owner="Dwarves" />
-      <unitPlacement unitType="raven" territory="Erebor" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_phalangite" territory="East Iron Hills" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="Erebor" quantity="8" owner="Dwarves" />
+      <unitPlacement unitType="raven" territory="Erebor" quantity="2" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="East Iron Hills" quantity="3" owner="Dwarves" />
       <unitPlacement unitType="dwarven_axethrower" territory="North Ered Mithrin" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="catapult" territory="Dáin's Halls" quantity="2" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_halberdier" territory="Dáin's Halls" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axethrower" territory="Dáin's Halls" quantity="2" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Dáin's Halls" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="wall" territory="Dáin's Halls" quantity="3" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axeman" territory="Dáin's Halls" quantity="3" owner="Dwarves" />
-      <unitPlacement unitType="catapult" territory="West Iron Hills" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_phalangite" territory="West Iron Hills" quantity="2" owner="Dwarves" />
-      <unitPlacement unitType="trebuchet" territory="West Iron Hills" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axethrower" territory="Dáin's Halls" quantity="3" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="Dáin's Halls" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_halberdier" territory="Dáin's Halls" quantity="2" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axeman" territory="West Iron Hills" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="dwarven_axethrower" territory="Blue Mountains" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axeman" territory="Blue Mountains" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axethrower" territory="Ered Luin" quantity="3" owner="Dwarves" />
       <unitPlacement unitType="archer" territory="Bree" quantity="2" owner="Freefolk" />
       <unitPlacement unitType="factory" territory="Bree" quantity="1" owner="Freefolk" />
       <unitPlacement unitType="hobbit" territory="Bree" quantity="2" owner="Freefolk" />
@@ -7759,13 +7848,11 @@
       <unitPlacement unitType="eagle" territory="Eagle's Eyrie" quantity="2" owner="HighElves" />
       <unitPlacement unitType="orc_marauder" territory="Lands of the Lossoth" quantity="3" owner="Angmar" />
       <unitPlacement unitType="peasant" territory="South Forodwaith" quantity="1" />
-      <unitPlacement unitType="dwarven_axeman" territory="Halls of Grór" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_phalangite" territory="Halls of Grór" quantity="1" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_halberdier" territory="Halls of Grór" quantity="2" owner="Dwarves" />
-      <unitPlacement unitType="catapult" territory="Halls of Grór" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Halls of Grór" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="wall" territory="Halls of Grór" quantity="2" owner="Dwarves" />
       <unitPlacement unitType="fortress" territory="Halls of Grór" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_pikeman" territory="Halls of Grór" quantity="2" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_halberdier" territory="Halls of Grór" quantity="2" owner="Dwarves" />
       <unitPlacement unitType="beorning_warrior" territory="East Dale" quantity="1" owner="Northmen" />
       <unitPlacement unitType="barding_infantry" territory="East Dale" quantity="1" owner="Northmen" />
       <unitPlacement unitType="spearman" territory="Northeast Rhûn" quantity="2" owner="Rhun" />
@@ -7781,8 +7868,7 @@
       <unitPlacement unitType="easterling_cavalry" territory="Southeast Rhûn" quantity="1" owner="Rhun" />
       <unitPlacement unitType="chariot" territory="Southeast Rhûn" quantity="4" owner="Rhun" />
       <unitPlacement unitType="wainrider_chieftain" territory="Southeast Rhûn" quantity="1" owner="Rhun" />
-      <unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="3" owner="Dwarves" />
-      <unitPlacement unitType="dwarven_axeman" territory="West Grey Mountains" quantity="1" owner="Dwarves" />
+      <unitPlacement unitType="dwarven_axethrower" territory="Grey Mountains" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Glittering Caves" quantity="1" owner="Rohan" />
     </unitInitialize>
     <resourceInitialize>
