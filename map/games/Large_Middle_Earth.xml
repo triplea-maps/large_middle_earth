@@ -2481,6 +2481,13 @@
       <frontierRules name="buy_eagle" />
       <frontierRules name="buy_wizard" />
     </productionFrontier>
+    <productionFrontier name="WoodlandRealmFrontier">
+      <frontierRules name="buy_elven_archer" />
+      <frontierRules name="buy_elven_warden" />
+      <frontierRules name="buy_elven_hunter" />
+      <frontierRules name="buy_elven_cavalry" />
+      <frontierRules name="buy_wizard" />
+    </productionFrontier>
     <productionFrontier name="DwarvesFrontier">
       <frontierRules name="buy_dwarven_axethrower" />
       <frontierRules name="buy_dwarven_axeman" />
@@ -2561,12 +2568,6 @@
       <frontierRules name="buyhorsearcher" />
       <frontierRules name="buylancer" />
       <frontierRules name="buyknight" />
-    </productionFrontier>
-    <productionFrontier name="WoodlandRealmFrontier">
-      <frontierRules name="buyelven_archer" />
-      <frontierRules name="buyelven_hunter" />
-      <frontierRules name="buyelven_warden" />
-      <frontierRules name="buywizard" />
     </productionFrontier>
     <playerProduction player="Dwarves" frontier="DwarvesFrontier" />
     <playerProduction player="Freefolk" frontier="FreefolkFrontier" />
