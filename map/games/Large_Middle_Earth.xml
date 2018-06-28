@@ -7569,7 +7569,9 @@
       <unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur" />
       <unitPlacement unitType="warg_scout" territory="West Wilderland" quantity="1" owner="DolGuldur" />
       <unitPlacement unitType="orc_marauder" territory="West Wilderland" quantity="1" owner="DolGuldur" />
+      <unitPlacement unitType="elven_cavalry" territory="North Lindon" quantity="2" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="High Pass" quantity="1" owner="HighElves" />
+      <unitPlacement unitType="eagle" territory="High Pass" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_archer" territory="Mithlond" quantity="3" owner="HighElves" />
       <unitPlacement unitType="noldorin_warrior" territory="Mithlond" quantity="2" owner="HighElves" />
@@ -7578,12 +7580,13 @@
       <unitPlacement unitType="flood_of_Bruinen" territory="Ford of Bruinen" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Rivendell" quantity="1" owner="HighElves" />
       <unitPlacement unitType="wizard" territory="Rivendell" quantity="1" owner="HighElves" />
-      <unitPlacement unitType="elven_archer" territory="Rivendell" quantity="6" owner="HighElves" />
+      <unitPlacement unitType="elven_archer" territory="Rivendell" quantity="5" owner="HighElves" />
       <unitPlacement unitType="noldorin_warrior" territory="Rivendell" quantity="3" owner="HighElves" />
       <unitPlacement unitType="flood_of_Bruinen" territory="Rivendell" quantity="1" owner="HighElves" />
+      <unitPlacement unitType="elven_cavalry" territory="Rivendell" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="Lhûn East Bank" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Forlond" quantity="1" owner="HighElves" />
-      <unitPlacement unitType="elven_archer" territory="Forlond" quantity="2" owner="HighElves" />
+      <unitPlacement unitType="elven_archer" territory="Forlond" quantity="1" owner="HighElves" />
       <unitPlacement unitType="noldorin_warrior" territory="Forlond" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_archer" territory="River of Forlindon" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Harlond" quantity="1" owner="HighElves" />
@@ -7591,8 +7594,8 @@
       <unitPlacement unitType="tower" territory="Tower Hills" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="Bruinen Bank" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="South Harlindon" quantity="1" owner="HighElves" />
-      <unitPlacement unitType="elven_archer" territory="South Harlindon" quantity="1" owner="HighElves" />
-      <unitPlacement unitType="elven_hunter" territory="The Angle" quantity="2" owner="HighElves" />
+      <unitPlacement unitType="elven_hunter" territory="The Angle" quantity="1" owner="HighElves" />
+      <unitPlacement unitType="elven_cavalry" territory="The Angle" quantity="1" owner="HighElves" />
       <unitPlacement unitType="dunlending_wildman" territory="West Methedras" quantity="1" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="1" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="East Methedras" quantity="2" owner="Saruman" />
@@ -7931,6 +7934,7 @@
       <unitPlacement unitType="archer" territory="Firienholt" quantity="2" owner="Rohan" />
       <unitPlacement unitType="snaga_skirmisher" territory="South Misty Mountains" quantity="1" owner="Orcs" />
       <unitPlacement unitType="eagle" territory="Eagle's Eyrie" quantity="2" owner="HighElves" />
+      <unitPlacement unitType="elven_hunter" territory="Eagle's Eyrie" quantity="2" owner="HighElves" />
       <unitPlacement unitType="orc_marauder" territory="Lands of the Lossoth" quantity="3" owner="Angmar" />
       <unitPlacement unitType="peasant" territory="South Forodwaith" quantity="1" />
       <unitPlacement unitType="factory" territory="Halls of Grór" quantity="1" owner="Dwarves" />
