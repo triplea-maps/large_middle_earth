@@ -1916,6 +1916,7 @@
     <territoryEffect name="forest" />
     <territoryEffect name="river" />
     <territoryEffect name="settlement" />
+    <territoryEffect name="plains" />
     <territoryEffect name="sea" />
     <territoryEffect name="ocean" />
   </territoryEffectList>
@@ -4686,255 +4687,206 @@
     <attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:huorn:oliphaunt:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
       <option name="unitsNotAllowed" value="spearman:halforc:uruk_pikeman:uruk_warrior:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:galadhrim_longbowman:elven_archer:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:oliphaunt:hobbit:peasant:swordsman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:war_wagon:dwarven_phalangite:olog_hai:spider:bear:oliphant:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="2" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="2" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="3" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="3" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="3" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-2" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="2" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="2" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-2" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="1" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="2" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="-1" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="1" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="1" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
-      <option name="combatDefenseEffect" value="wall:fortress" count="4" />
+      <option name="combatDefenseEffect" value="wall:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="1" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="2" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="2" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="2" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="1" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="2" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="1" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="1" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="1" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:huorn:oliphaunt:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:trollman:hobbit:peasant:swordsman:axeman:orc_marauder:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:trollman:hobbit:peasant:swordsman:axeman:orc_marauder:oathbreaker" count="1" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:noldorin_warrior:uruk_swordsman:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:noldorin_warrior:uruk_swordsman:morannon_guard" count="0" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:archer:snaga_skirmisher" count="-2" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:archer:snaga_skirmisher" count="-2" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:olog_hai:bear:oliphant:warg_scout:ent:balrog" count="1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:olog_hai:bear:oliphant:warg_scout:ent:balrog" count="2" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:winged_nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:winged_nazgul" count="-2" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-2" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="0" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="2" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-2" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="1" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="2" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="-1" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="-2" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="-2" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
-      <option name="combatDefenseEffect" value="wall:fortress" count="4" />
-      <!--Light CD-->
-      <option name="combatOffenseEffect" value="none:dwarven_axeman:goblin_stabber" count="2" />
-      <option name="combatDefenseEffect" value="none:dwarven_axeman:goblin_stabber" count="3" />
-      <!--Heavy CD-->
-      <option name="combatOffenseEffect" value="none:dwarven_pikeman:dwarven_halberdier:dwarven_phalangite" count="2" />
-      <option name="combatDefenseEffect" value="none:dwarven_pikeman:dwarven_halberdier:dwarven_phalangite" count="2" />
-      <!--Ranged CD-->
-      <option name="combatOffenseEffect" value="none:dwarven_axethrower:goblin_archer" count="0" />
-      <option name="combatDefenseEffect" value="none:dwarven_axethrower:goblin_archer" count="0" />
-      <!--Cavalry CD-->
-      <option name="combatOffenseEffect" value="none" count="-1" />
-      <option name="combatDefenseEffect" value="none" count="0" />
-      <!--Creature CD-->
-      <option name="combatOffenseEffect" value="none:troll:spider" count="3" />
-      <option name="combatDefenseEffect" value="none:troll:spider" count="4" />
-      <!--Flying CD-->
-      <option name="combatOffenseEffect" value="none:bat" count="0" />
-      <option name="combatDefenseEffect" value="none:bat" count="0" />
-      <!--Fortification CD-->
-      <option name="combatOffenseEffect" value="none" count="2" />
-      <option name="combatDefenseEffect" value="none" count="6" />
+      <option name="combatDefenseEffect" value="wall:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:huorn:oliphaunt:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="1" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="2" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="2" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="1" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="2" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="1" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="2" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="1" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="1" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="1" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:fortress" count="3" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:huorn:oliphaunt:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="-1" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-2" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-1" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="1" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="0" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="1" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="0" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="1" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="-1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="-1" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="1" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-2" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-1" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="-1" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="1" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="1" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:fortress" count="0" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="2" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-1" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="bowman:ranger:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="bowman:ranger:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="1" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-3" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:oliphaunt:troll:olog_hai:oliphant:warg_scout:balrog" count="1" />
-      <option name="combatDefenseEffect" value="warg_rider:oliphaunt:troll:olog_hai:oliphant:warg_scout:balrog" count="2" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="-2" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-2" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="2" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="-1" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="2" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="3" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-2" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-1" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="-1" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="-2" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="-2" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:fortress" count="0" />
-      <!--Light FD-->
-      <option name="combatOffenseEffect" value="none:elven_warden" count="1" />
-      <option name="combatDefenseEffect" value="none:elven_warden" count="3" />
-      <!--Heavy FD-->
-      <option name="combatOffenseEffect" value="none" count="0" />
-      <option name="combatDefenseEffect" value="none" count="1" />
-      <!--Ranged FD-->
-      <option name="combatOffenseEffect" value="none:woodman:elven_hunter:galadhrim_longbowman:elven_archer" count="1" />
-      <option name="combatDefenseEffect" value="none:woodman:elven_hunter:galadhrim_longbowman:elven_archer" count="2" />
-      <!--Cavalry FD-->
-      <option name="combatOffenseEffect" value="none" count="-2" />
-      <option name="combatDefenseEffect" value="none" count="-1" />
-      <!--Creature FD-->
-      <option name="combatOffenseEffect" value="none:huorn:spider:bear:ent" count="2" />
-      <option name="combatDefenseEffect" value="none:huorn:spider:bear:ent" count="3" />
-      <!--Flying FD-->
-      <option name="combatOffenseEffect" value="none" count="-1" />
-      <option name="combatDefenseEffect" value="none" count="-1" />
-      <!--Fortification FD-->
-      <option name="combatOffenseEffect" value="none" count="1" />
-      <option name="combatDefenseEffect" value="none" count="1" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="noBlitz" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:barding_infantry:elven_warden:man_at_arms:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:huorn:oliphaunt:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:dragon:bat:wizard:balrog:nazgul:winged_nazgul:oathbreaker:morannon_guard:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:fire_of_orthanc:flood_of_Bruinen:none" />
-      <!--Light-->
-      <option name="combatOffenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="-1" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="0" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="-2" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="0" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="-1" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="1" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="0" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="0" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="0" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="0" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="0" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="-1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-2" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="0" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="1" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="0" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="0" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
       <option name="combatDefenseEffect" value="wall:fortress" count="0" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-      <!--Light-->
-      <option name="combatOffenseEffect" value="spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:goblin_stabber:oathbreaker" count="0" />
-      <option name="combatDefenseEffect" value="dunlending_wildman:spearman:halforc:beorning_warrior:balchoth_tribesman:elven_warden:corsair:dwarven_axeman:trollman:hobbit:peasant:swordsman:axeman:goblin_stabber:orc_marauder:oathbreaker" count="1" />
-      <!--Heavy-->
-      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:man_at_arms:black_numenorean:tower_guard:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite:morannon_guard" count="1" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:uruk_warrior:barding_infantry:man_at_arms:black_numenorean:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:uruk_swordsman:dwarven_phalangite" count="2" />
-      <!--Ranged-->
-      <option name="combatOffenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="0" />
-      <option name="combatDefenseEffect" value="woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:archer:goblin_archer:snaga_skirmisher" count="3" />
-      <!--Cavalry-->
-      <option name="combatOffenseEffect" value="elven_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:light_cavalry:nazgul" count="-2" />
-      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:knight:lancer:horsearcher:axe_cavalry:light_cavalry:nazgul" count="-1" />
-      <!--Creature-->
-      <option name="combatOffenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
-      <option name="combatDefenseEffect" value="warg_rider:huorn:oliphaunt:troll:olog_hai:spider:bear:oliphant:warg_scout:ent:balrog" count="-1" />
-      <!--Flying-->
-      <option name="combatOffenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="-1" />
-      <option name="combatDefenseEffect" value="eagle:crebain:raven:dragon:bat:winged_nazgul" count="-1" />
-      <!--Fortification-->
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="-1" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="0" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-2" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-2" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="-1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="2" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="2" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="1" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="0" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="1" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="1" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="0" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="0" />
       <option name="combatOffenseEffect" value="wall:fortress" count="0" />
-      <option name="combatDefenseEffect" value="wall:fortress" count="1" />
-      <!--Light R|G-->
-      <option name="combatOffenseEffect" value="none:dunlending_wildman:axeman:orc_marauder" count="2" />
-      <option name="combatDefenseEffect" value="none" count="3" />
-      <!--Heavy R|G-->
-      <option name="combatOffenseEffect" value="none:uruk_warrior" count="3" />
-      <option name="combatDefenseEffect" value="none:tower_guard:morannon_guard" count="4" />
-      <!--Ranged R|G-->
-      <option name="combatOffenseEffect" value="none" count="2" />
-      <option name="combatDefenseEffect" value="none" count="5" />
-      <!--Cavalry R|G-->
-      <option name="combatOffenseEffect" value="none:raider:variag_raider:easterling_cavalry:horsearcher:axe_cavalry" count="0" />
-      <option name="combatDefenseEffect" value="none" count="1" />
-      <!--Creature R|G-->
-      <option name="combatOffenseEffect" value="none" count="1" />
-      <option name="combatDefenseEffect" value="none" count="1" />
-      <!--Flying R|G-->
-      <option name="combatOffenseEffect" value="none" count="1" />
-      <option name="combatDefenseEffect" value="none" count="1" />
-      <!--Fortification R|G-->
-      <option name="combatOffenseEffect" value="none" count="2" />
-      <option name="combatDefenseEffect" value="none" count="3" />
+      <option name="combatDefenseEffect" value="wall:fortress" count="3" />
+    </attachment>
+    <attachment name="territoryEffectAttachment" attachTo="plains" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
+      <option name="combatOffenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="3" />
+      <option name="combatDefenseEffect" value="raider:variag_raider:elven_cavalry:easterling_cavalry:eotheod_cavalry:chariot:wainrider_chieftain:swan_knight:oliphaunt" count="1" />
+      <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-1" />
+      <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="-1" />
+      <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="-1" />
+      <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="-1" />
+      <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
+      <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="-1" />
+      <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
+      <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-1" />
+      <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="0" />
+      <option name="combatDefenseEffect" value="dwarven_axeman:dwarven_pikeman:dwarven_axethrower" count="-1" />
+      <option name="combatOffenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="1" />
+      <option name="combatDefenseEffect" value="spearman:halforc:man_at_arms:corsair:bowman" count="0" />
+      <option name="combatOffenseEffect" value="eagle:crebain:raven" count="0" />
+      <option name="combatDefenseEffect" value="eagle:crebain:raven" count="0" />
+      <option name="combatOffenseEffect" value="wall:fortress" count="0" />
+      <option name="combatDefenseEffect" value="wall:fortress" count="0" />
     </attachment>
     <attachment name="territoryEffectAttachment" attachTo="sea" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
       <option name="unitsNotAllowed" value="none" />
