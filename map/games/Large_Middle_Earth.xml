@@ -6354,6 +6354,7 @@
       <option name="production" value="8" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="settlement" />
+      <option name="territoryEffect" value="river" />
       <option name="capital" value="Rhun" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Rhûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
