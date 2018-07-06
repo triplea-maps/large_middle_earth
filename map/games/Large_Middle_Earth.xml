@@ -4714,7 +4714,7 @@
       <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
       <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
       <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
       <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
       <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
       <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
@@ -4739,7 +4739,7 @@
       <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
       <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
       <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="2" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
       <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
       <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
       <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="-2" />
@@ -4760,7 +4760,7 @@
       <option name="combatOffenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
       <option name="combatDefenseEffect" value="dunlending_wildman:beorning_warrior:warg_rider" count="1" />
       <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="0" />
-      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="1" />
+      <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="2" />
       <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
       <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="1" />
       <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
@@ -4852,7 +4852,7 @@
       <option name="combatOffenseEffect" value="woodman:ranger:elven_hunter" count="-1" />
       <option name="combatDefenseEffect" value="woodman:ranger:elven_hunter" count="0" />
       <option name="combatOffenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="0" />
-      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="2" />
+      <option name="combatDefenseEffect" value="uruk_pikeman:barding_infantry:black_numenorean:tower_guard:dwarven_halberdier" count="3" />
       <option name="combatOffenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="2" />
       <option name="combatDefenseEffect" value="uruk_warrior:balchoth_tribesman:trollman" count="0" />
       <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:galadhrim_longbowman:elven_archer:huorn" count="0" />
