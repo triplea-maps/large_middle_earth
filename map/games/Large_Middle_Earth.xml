@@ -8246,6 +8246,7 @@
       <unitPlacement unitType="factory" territory="Mithlond" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_archer" territory="Mithlond" quantity="3" owner="HighElves" />
       <unitPlacement unitType="noldorin_warrior" territory="Mithlond" quantity="2" owner="HighElves" />
+      <unitPlacement unitType="wall" territory="Mithlond" quantity="2" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="Rhudaur" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_archer" territory="Rhudaur" quantity="1" owner="HighElves" />
       <unitPlacement unitType="flood_of_Bruinen" territory="Ford of Bruinen" quantity="1" owner="HighElves" />
@@ -8286,8 +8287,8 @@
       <unitPlacement unitType="warg_rider" territory="Isengard" quantity="2" owner="Saruman" />
       <unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman" />
       <unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman" />
-      <unitPlacement unitType="wall" territory="Isengard" quantity="4" owner="Saruman" />
       <unitPlacement unitType="fire_of_orthanc" territory="Isengard" quantity="2" owner="Saruman" />
+      <unitPlacement unitType="wall" territory="Isengard" quantity="4" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="West Dunland" quantity="1" owner="Saruman" />
       <unitPlacement unitType="halforc" territory="West Dunland" quantity="1" owner="Saruman" />
       <unitPlacement unitType="crebain" territory="West Dunland" quantity="1" owner="Saruman" />
@@ -8296,10 +8297,12 @@
       <unitPlacement unitType="factory" territory="Pelargir" quantity="1" owner="Gondor" />
       <unitPlacement unitType="wall" territory="Pelargir" quantity="2" owner="Gondor" />
       <unitPlacement unitType="man_at_arms" territory="Pelargir" quantity="2" owner="Gondor" />
+      <unitPlacement unitType="ancient_wall" territory="Pelargir" quantity="2" owner="Gondor" />
       <unitPlacement unitType="ranger" territory="Emyn Arnen" quantity="1" owner="Gondor" />
       <unitPlacement unitType="ranger" territory="South Ithilien" quantity="2" owner="Gondor" />
       <unitPlacement unitType="factory" territory="Edhellond" quantity="1" owner="Gondor" />
       <unitPlacement unitType="spearman" territory="Edhellond" quantity="1" owner="Gondor" />
+      <unitPlacement unitType="wall" territory="Edhellond" quantity="2" owner="Gondor" />
       <unitPlacement unitType="wall" territory="Cair Andros" quantity="2" owner="Gondor" />
       <unitPlacement unitType="spearman" territory="Cair Andros" quantity="2" owner="Gondor" />
       <unitPlacement unitType="ranger" territory="Cair Andros" quantity="2" owner="Gondor" />
@@ -8325,9 +8328,10 @@
       <unitPlacement unitType="spearman" territory="Ethring" quantity="1" owner="Gondor" />
       <unitPlacement unitType="ancient_tower" territory="Minas Tirith" quantity="1" owner="Gondor" />
       <unitPlacement unitType="factory" territory="Minas Tirith" quantity="1" owner="Gondor" />
-      <unitPlacement unitType="wall" territory="Minas Tirith" quantity="4" owner="Gondor" />
+      <unitPlacement unitType="wall" territory="Minas Tirith" quantity="3" owner="Gondor" />
       <unitPlacement unitType="tower_guard" territory="Minas Tirith" quantity="6" owner="Gondor" />
       <unitPlacement unitType="man_at_arms" territory="Minas Tirith" quantity="2" owner="Gondor" />
+      <unitPlacement unitType="ancient_wall" territory="Minas Tirith" quantity="3" owner="Gondor" />
       <unitPlacement unitType="man_at_arms" territory="Lebennin" quantity="2" owner="Gondor" />
       <unitPlacement unitType="factory" territory="Erech" quantity="1" owner="Gondor" />
       <unitPlacement unitType="spearman" territory="Erech" quantity="2" owner="Gondor" />
@@ -8347,8 +8351,8 @@
       <unitPlacement unitType="uruk_swordsman" territory="Minas Morgul" quantity="2" owner="Mordor" />
       <unitPlacement unitType="winged_nazgul" territory="Minas Morgul" quantity="1" owner="Mordor" />
       <unitPlacement unitType="factory" territory="Minas Morgul" quantity="1" owner="Mordor" />
-      <unitPlacement unitType="wall" territory="Minas Morgul" quantity="4" owner="Mordor" />
       <unitPlacement unitType="orc_marauder" territory="Minas Morgul" quantity="3" owner="Mordor" />
+      <unitPlacement unitType="ancient_wall" territory="Minas Morgul" quantity="4" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="South Nurn" quantity="2" owner="Mordor" />
       <unitPlacement unitType="orc_marauder" territory="South Nurn" quantity="3" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="Plateau of Gorgoroth" quantity="3" owner="Mordor" />
@@ -8361,19 +8365,21 @@
       <unitPlacement unitType="fortress" territory="Morannon" quantity="1" owner="Mordor" />
       <unitPlacement unitType="olog_hai" territory="Morannon" quantity="1" owner="Mordor" />
       <unitPlacement unitType="factory" territory="Morannon" quantity="1" owner="Mordor" />
-      <unitPlacement unitType="wall" territory="Morannon" quantity="4" owner="Mordor" />
+      <unitPlacement unitType="wall" territory="Morannon" quantity="2" owner="Mordor" />
+      <unitPlacement unitType="ancient_wall" territory="Morannon" quantity="2" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="Carchost" quantity="1" owner="Mordor" />
       <unitPlacement unitType="fortress" territory="Carchost" quantity="1" owner="Mordor" />
       <unitPlacement unitType="ancient_tower" territory="Barad-dûr" quantity="1" owner="Mordor" />
       <unitPlacement unitType="winged_nazgul" territory="Barad-dûr" quantity="1" owner="Mordor" />
       <unitPlacement unitType="factory" territory="Barad-dûr" quantity="1" owner="Mordor" />
-      <unitPlacement unitType="wall" territory="Barad-dûr" quantity="3" owner="Mordor" />
+      <unitPlacement unitType="ancient_wall" territory="Barad-dûr" quantity="4" owner="Mordor" />
       <unitPlacement unitType="fortress" territory="Narchost" quantity="1" owner="Mordor" />
       <unitPlacement unitType="orc_marauder" territory="Narchost" quantity="2" owner="Mordor" />
       <unitPlacement unitType="ancient_tower" territory="Cirith Ungol" quantity="1" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="Cirith Ungol" quantity="3" owner="Mordor" />
       <unitPlacement unitType="factory" territory="Cirith Ungol" quantity="1" owner="Mordor" />
       <unitPlacement unitType="spider" territory="Cirith Ungol" quantity="1" owner="Mordor" />
+      <unitPlacement unitType="ancient_wall" territory="Cirith Ungol" quantity="1" owner="Mordor" />
       <unitPlacement unitType="olog_hai" territory="Lithlad" quantity="1" owner="Mordor" />
       <unitPlacement unitType="orc_marauder" territory="Lithlad" quantity="2" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="Ash Mountains" quantity="2" owner="Mordor" />
@@ -8393,7 +8399,7 @@
       <unitPlacement unitType="bowman" territory="Harad Road" quantity="1" owner="Harad" />
       <unitPlacement unitType="factory" territory="City of Corsairs" quantity="1" owner="Harad" />
       <unitPlacement unitType="wall" territory="City of Corsairs" quantity="2" owner="Harad" />
-      <unitPlacement unitType="ancient_wall" territory="City of Corsairs" quantity="3" owner="Harad" />
+      <unitPlacement unitType="ancient_wall" territory="City of Corsairs" quantity="4" owner="Harad" />
       <unitPlacement unitType="fortress" territory="City of Corsairs" quantity="1" owner="Harad" />
       <unitPlacement unitType="corsair" territory="City of Corsairs" quantity="3" owner="Harad" />
       <unitPlacement unitType="bowman" territory="City of Corsairs" quantity="1" owner="Harad" />
@@ -8409,7 +8415,7 @@
       <unitPlacement unitType="beorning_warrior" territory="Beorn's Hall" quantity="3" owner="Northmen" />
       <unitPlacement unitType="factory" territory="Framsburg" quantity="1" owner="Northmen" />
       <unitPlacement unitType="eotheod_cavalry" territory="Framsburg" quantity="2" owner="Northmen" />
-      <unitPlacement unitType="wall" territory="Framsburg" quantity="3" owner="Northmen" />
+      <unitPlacement unitType="wall" territory="Framsburg" quantity="2" owner="Northmen" />
       <unitPlacement unitType="beorning_warrior" territory="Langwell" quantity="1" owner="Northmen" />
       <unitPlacement unitType="eotheod_cavalry" territory="Lands of the Éothéod" quantity="3" owner="Northmen" />
       <unitPlacement unitType="beorning_warrior" territory="Lands of the Beornings" quantity="3" owner="Northmen" />
@@ -8418,6 +8424,7 @@
       <unitPlacement unitType="woodman" territory="Upper Forest River" quantity="2" owner="Northmen" />
       <unitPlacement unitType="axeman" territory="Dunharrow" quantity="2" owner="Rohan" />
       <unitPlacement unitType="factory" territory="Dunharrow" quantity="1" owner="Rohan" />
+      <unitPlacement unitType="wall" territory="Dunharrow" quantity="4" owner="Rohan" />
       <unitPlacement unitType="horsearcher" territory="East Emnet" quantity="2" owner="Rohan" />
       <unitPlacement unitType="light_cavalry" territory="East Emnet" quantity="1" owner="Rohan" />
       <unitPlacement unitType="horsearcher" territory="The Wold" quantity="1" owner="Rohan" />
@@ -8429,6 +8436,7 @@
       <unitPlacement unitType="factory" territory="Aldburg" quantity="1" owner="Rohan" />
       <unitPlacement unitType="light_cavalry" territory="Aldburg" quantity="1" owner="Rohan" />
       <unitPlacement unitType="swordsman" territory="Aldburg" quantity="1" owner="Rohan" />
+      <unitPlacement unitType="wall" territory="Aldburg" quantity="2" owner="Rohan" />
       <unitPlacement unitType="archer" territory="Hornburg" quantity="4" owner="Rohan" />
       <unitPlacement unitType="fortress" territory="Hornburg" quantity="1" owner="Rohan" />
       <unitPlacement unitType="factory" territory="Hornburg" quantity="1" owner="Rohan" />
@@ -8458,8 +8466,9 @@
       <unitPlacement unitType="factory" territory="Moria" quantity="1" owner="Orcs" />
       <unitPlacement unitType="bat" territory="Moria" quantity="1" owner="Orcs" />
       <unitPlacement unitType="balrog" territory="Moria" quantity="1" owner="Orcs" />
-      <unitPlacement unitType="wall" territory="Moria" quantity="5" owner="Orcs" />
+      <unitPlacement unitType="wall" territory="Moria" quantity="4" owner="Orcs" />
       <unitPlacement unitType="orc_marauder" territory="Moria" quantity="6" owner="Orcs" />
+      <unitPlacement unitType="ancient_wall" territory="Moria" quantity="2" owner="Orcs" />
       <unitPlacement unitType="goblin_stabber" territory="Front Porch" quantity="3" owner="Orcs" />
       <unitPlacement unitType="goblin_archer" territory="Front Porch" quantity="1" owner="Orcs" />
       <unitPlacement unitType="warg_rider" territory="Hollin Ridge" quantity="2" owner="Orcs" />
@@ -8476,9 +8485,10 @@
       <unitPlacement unitType="archer" territory="Annúminas" quantity="4" owner="Arnor" />
       <unitPlacement unitType="spearman" territory="Annúminas" quantity="3" owner="Arnor" />
       <unitPlacement unitType="factory" territory="Annúminas" quantity="1" owner="Arnor" />
-      <unitPlacement unitType="wall" territory="Annúminas" quantity="3" owner="Arnor" />
+      <unitPlacement unitType="wall" territory="Annúminas" quantity="2" owner="Arnor" />
       <unitPlacement unitType="swordsman" territory="Annúminas" quantity="2" owner="Arnor" />
       <unitPlacement unitType="knight" territory="Annúminas" quantity="1" owner="Arnor" />
+      <unitPlacement unitType="ancient_wall" territory="Annúminas" quantity="2" owner="Arnor" />
       <unitPlacement unitType="peasant" territory="Baranduin East Bank" quantity="2" owner="Arnor" />
       <unitPlacement unitType="archer" territory="Amon Sûl" quantity="2" owner="Arnor" />
       <unitPlacement unitType="ancient_tower" territory="Amon Sûl" quantity="1" owner="Arnor" />
@@ -8492,7 +8502,8 @@
       <unitPlacement unitType="spearman" territory="Fornost" quantity="2" owner="Arnor" />
       <unitPlacement unitType="axeman" territory="Fornost" quantity="1" owner="Arnor" />
       <unitPlacement unitType="factory" territory="Fornost" quantity="1" owner="Arnor" />
-      <unitPlacement unitType="wall" territory="Fornost" quantity="3" owner="Arnor" />
+      <unitPlacement unitType="wall" territory="Fornost" quantity="2" owner="Arnor" />
+      <unitPlacement unitType="ancient_wall" territory="Fornost" quantity="2" owner="Arnor" />
       <unitPlacement unitType="orc_marauder" territory="East Angmar" quantity="1" owner="Angmar" />
       <unitPlacement unitType="warg_rider" territory="East Angmar" quantity="2" owner="Angmar" />
       <unitPlacement unitType="snaga_skirmisher" territory="West Mountains of Angmar" quantity="1" owner="Angmar" />
@@ -8627,6 +8638,7 @@
       <unitPlacement unitType="wainrider_chieftain" territory="Southeast Rhûn" quantity="1" owner="Rhun" />
       <unitPlacement unitType="dwarven_axethrower" territory="Grey Mountains" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="factory" territory="Glittering Caves" quantity="1" owner="Rohan" />
+      <unitPlacement unitType="wall" territory="Glittering Caves" quantity="2" owner="Rohan" />
     </unitInitialize>
     <resourceInitialize>
       <resourceGiven player="Dwarves" resource="PUs" quantity="33" />
