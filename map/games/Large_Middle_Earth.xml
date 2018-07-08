@@ -5311,7 +5311,7 @@
       <option name="unitsNotAllowed" value="dunlending_wildman:spearman:halforc:uruk_pikeman:uruk_warrior:beorning_warrior:balchoth_tribesman:dunadan_guard:barding_infantry:elven_warden:man_at_arms:oathbreaker:corsair:black_numenorean:tower_guard:dwarven_axeman:dwarven_pikeman:dwarven_halberdier:noldorin_warrior:trollman:hobbit_archer:woodman:bowman:ranger:elven_hunter:galadhrim_longbowman:elven_archer:dwarven_axethrower:raider:variag_raider:pony_rider:scout:elven_cavalry:easterling_cavalry:eotheod_cavalry:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:warg_rider:eagle:crebain:raven:bat:dragon:troll:olog_hai:spider:huorn:ent:oliphaunt:oliphaunt_hit2:wizard:nazgul:winged_nazgul:balrog:hobbit:peasant:swordsman:axeman:archer:knight:lancer:horsearcher:axe_cavalry:light_cavalry:goblin_stabber:goblin_archer:uruk_swordsman:snaga_skirmisher:orc_marauder:war_wagon:dwarven_phalangite:bear:oliphant:warg_scout:morannon_guard:fire_of_orthanc:wall:ancient_wall:ancient_tower:fortress:factory:catapult:trebuchet:swan_boat:caravel:merchant_ship:flood_of_Bruinen:none" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Grey Mountains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
@@ -5327,7 +5327,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Folde" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5364,12 +5364,12 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eagle's Eyrie" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lands of the Lossoth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5390,7 +5390,7 @@
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5415,7 +5415,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Northeast Rhûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5425,7 +5425,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Celduin North Bank" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5440,7 +5440,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Realm of Vidugavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5450,7 +5450,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Kingdom of Rhovanion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5465,7 +5465,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Rhûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5485,12 +5485,12 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Grey Mountains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Ered Mithrin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
@@ -5506,19 +5506,19 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ered Mithrin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Erebor" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="12" />
+      <option name="production" value="8" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="cave" />
       <option name="territoryEffect" value="settlement" />
       <option name="capital" value="Dwarves" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Iron Hills" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
@@ -5528,18 +5528,18 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Dáin's Halls" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="3" />
+      <option name="production" value="4" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="cave" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Iron Hills" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Blue Mountains" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
       <option name="territoryEffect" value="forest" />
@@ -5670,7 +5670,7 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Mirkwood" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -5687,7 +5687,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Narrows of Mirkwood" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -5697,7 +5697,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Mirkwood" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -5815,7 +5815,7 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Dunland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5835,17 +5835,17 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Dunland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Nan Curunír" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Dunland Hills" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
@@ -5861,7 +5861,7 @@
       <option name="capital" value="Saruman" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Dunland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -5876,7 +5876,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Henneth Annûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="forest" />
       <option name="territoryEffect" value="settlement" />
@@ -5897,12 +5897,12 @@
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Ithilien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Edhellond" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="river" />
       <option name="territoryEffect" value="settlement" />
@@ -5986,7 +5986,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Belfalas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6024,12 +6024,12 @@
       <option name="capital" value="Gondor" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lebennin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Erech" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="river" />
       <option name="territoryEffect" value="settlement" />
@@ -6046,7 +6046,7 @@
       <option name="territoryEffect" value="pass" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Ithilien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6066,12 +6066,12 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lossarnach" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Anórien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6086,12 +6086,12 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Orodruin" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Nurn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="river" />
     </attachment>
@@ -6101,7 +6101,7 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Morgai" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6111,7 +6111,7 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Nurn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="river" />
     </attachment>
@@ -6121,22 +6121,22 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Nurn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Plateau of Gorgoroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Carach Angren" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Udûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6151,12 +6151,12 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Morannon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="5" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Gorgoroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6199,7 +6199,7 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lithlad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6214,7 +6214,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Caras Galadhon" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="8" />
+      <option name="production" value="6" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="forest" />
       <option name="territoryEffect" value="river" />
@@ -6232,25 +6232,25 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Cerin Amroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="3" />
+      <option name="production" value="4" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="hill" />
       <option name="territoryEffect" value="forest" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Naith" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Lórien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Lórien" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6271,7 +6271,7 @@
       <option name="capital" value="Harad" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="South Umbar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6281,7 +6281,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Harondor" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6291,7 +6291,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Near Harad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6301,17 +6301,17 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Umbar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Far Harad" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Khand" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6342,12 +6342,12 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lands of the Éothéod" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lands of the Beornings" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6384,7 +6384,7 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Emnet" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6440,13 +6440,13 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Edoras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="8" />
+      <option name="production" value="6" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="settlement" />
       <option name="capital" value="Rohan" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eastfold" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6461,17 +6461,17 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Helms Deep" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Emnet" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Westfold" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6487,7 +6487,7 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eregion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6509,22 +6509,22 @@
       <option name="capital" value="Orcs" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Celebdil" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Front Porch" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="cave" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Hollin Ridge" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Fanuidhol" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
     </attachment>
@@ -6590,7 +6590,7 @@
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Rhudaur" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6605,7 +6605,7 @@
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Annúminas" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="12" />
+      <option name="production" value="6" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="settlement" />
       <option name="capital" value="Arnor" />
@@ -6616,7 +6616,7 @@
       <option name="territoryEffect" value="hill" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Arnor" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6652,23 +6652,23 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Arthedain" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Fornost" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="3" />
+      <option name="production" value="4" />
       <option name="unitProduction" value="5" />
       <option name="territoryEffect" value="hill" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Angmar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ettendales" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
@@ -6678,7 +6678,7 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Angmar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6693,7 +6693,7 @@
       <option name="territoryEffect" value="cave" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Carn Dûm" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="10" />
+      <option name="production" value="12" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="cave" />
       <option name="capital" value="Angmar" />
@@ -6704,7 +6704,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Trollfells" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
@@ -6724,7 +6724,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ettenmoors" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="hill" />
     </attachment>
@@ -6734,18 +6734,18 @@
       <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Kingdom of Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Dale" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="6" />
+      <option name="production" value="4" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="river" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Esgaroth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="8" />
+      <option name="production" value="6" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="river" />
       <option name="territoryEffect" value="settlement" />
@@ -6762,7 +6762,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lands of Dorwinion" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6779,7 +6779,7 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Lands of the Balcoth" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
@@ -6794,7 +6794,7 @@
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Wellinghall" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6815,12 +6815,12 @@
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eryn Galen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Woodland Realm" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6831,7 +6831,7 @@
       <option name="territoryEffect" value="forest" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Elvenkings Halls" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="8" />
+      <option name="production" value="6" />
       <option name="unitProduction" value="8" />
       <option name="territoryEffect" value="forest" />
       <option name="territoryEffect" value="river" />
@@ -6845,7 +6845,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Greenwood the Great" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="forest" />
     </attachment>
@@ -6882,7 +6882,7 @@
       <option name="territoryEffect" value="river" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ost-in-Edhil" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
@@ -6897,7 +6897,7 @@
       <option name="isImpassable" value="true" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="North Rhûn" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
