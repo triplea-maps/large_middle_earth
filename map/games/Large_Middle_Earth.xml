@@ -7422,6 +7422,8 @@
       <territoryOwner territory="South Wilderland" owner="Rhun" />
       <territoryOwner territory="Sea of Rhûn Coast" owner="Rhun" />
       <territoryOwner territory="Southeast Rhûn" owner="Rhun" />
+      <territoryOwner territory="Trollshaws" owner="Orcs" />
+      <territoryOwner territory="Last Bridge" owner="HighElves" />
     </ownerInitialize>
     <unitInitialize>
       <unitPlacement unitType="dwarven_axethrower" territory="South Ered Mithrin" quantity="1" owner="Dwarves" />
