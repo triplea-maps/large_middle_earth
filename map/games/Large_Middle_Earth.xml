@@ -6687,6 +6687,13 @@
       <option name="gameProperty" value="Sea Units" />
       <option name="invert" value="true" />
     </attachment>
+    <attachment name="conditionAttachment_BF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="gameProperty" value="Buildable Fortress" />
+    </attachment>
+    <attachment name="conditionAttachment_noUUU" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+      <option name="gameProperty" value="Unlimited Unique Units" />
+      <option name="invert" value="true" />
+    </attachment>
     <attachment name="triggerAttachment_FortPrevCF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_FortPrevCF" />
       <option name="when" value="before:sarumanPurchase" />
@@ -6884,6 +6891,120 @@
 						<option name="placement" value="sz Celduin 3:merchant_ship" count="1"/>
 						<option name="uses" value="1"/>
 					</attachment>-->
+    <attachment name="triggerAttachment_Angmar_BF" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="AngmarFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Arnor_BF" attachTo="Arnor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="ArnorFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Dwarves_BF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="DwarvesFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Orcs_BF" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="OrcsFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Rohan_BF" attachTo="Rohan" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="RohanFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Gondor_BF" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="GondorFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Mordor_BF" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="MordorFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Harad_BF" attachTo="Harad" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="HaradFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Rhun_BF" attachTo="Rhun" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="RhunFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_DolGuldur_BF" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="DolGuldurFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Saruman_BF" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_BF" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="SarumanFrontier:buy_fortress" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Angmar_Not_UUU" attachTo="Angmar" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="AngmarFrontier:-buy_nazgul" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_HighElves_Not_UUU" attachTo="HighElves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="HighElvesFrontier:-buy_wizard" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_WoodlandRealm_Not_UUU" attachTo="WoodlandRealm" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="WoodlandRealmFrontier:-buy_wizard" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Saruman_Not_UUU" attachTo="Saruman" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="SarumanFrontier:-buy_wizard" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Orcs_Not_UUU" attachTo="Orcs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="OrcsFrontier:-buy_balrog" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Gondor_Not_UUU" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="GondorFrontier:-buy_oathbreaker" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_DolGuldur_Not_UUU" attachTo="DolGuldur" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="DolGuldurFrontier:-buy_nazgul" />
+      <option name="uses" value="1" />
+    </attachment>
+    <attachment name="triggerAttachment_Mordor_Not_UUU" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_noUUU" />
+      <option name="when" value="before:sarumanPurchase" />
+      <option name="productionRule" value="MordorFrontier:-buy_winged_nazgul" />
+      <option name="uses" value="1" />
+    </attachment>
     <attachment name="rulesAttachment" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
       <option name="unlimitedProduction" value="true" />
     </attachment>
@@ -8320,6 +8441,12 @@
       <boolean />
     </property>
     <property name="Free For All" value="false" editable="true">
+      <boolean />
+    </property>
+    <property name="Unlimited Unique Units" value="true" editable="true">
+      <boolean />
+    </property>
+    <property name="Buildable Fortress" value="false" editable="true">
       <boolean />
     </property>
     <!--<property name="Sea Units" value="false" editable="true">
