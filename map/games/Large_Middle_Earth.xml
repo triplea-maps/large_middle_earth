@@ -8839,48 +8839,54 @@
       <unitPlacement unitType="wizard" territory="Rhosgobel" quantity="1" owner="WoodlandRealm" />
       <unitPlacement unitType="elven_archer" territory="Rhosgobel" quantity="4" owner="WoodlandRealm" />
       <unitPlacement unitType="elven_hunter" territory="Elf Path" quantity="2" owner="WoodlandRealm" />
-      <unitPlacement unitType="axeman" territory="Last Bridge" quantity="2" />
+      <unitPlacement unitType="elven_hunter" territory="Last Bridge" quantity="1" owner="HighElves" />
       <unitPlacement unitType="factory" territory="Ost-in-Edhil" quantity="1" />
       <unitPlacement unitType="wall" territory="Ost-in-Edhil" quantity="2" />
+      <unitPlacement unitType="bowman" territory="Ost-in-Edhil" quantity="1" />
       <unitPlacement unitType="spearman" territory="North Rhûn" quantity="1" owner="Rhun" />
       <unitPlacement unitType="chariot" territory="North Rhûn" quantity="2" owner="Rhun" />
-      <unitPlacement unitType="peasant" territory="Lefnui Vale" quantity="1" />
-      <unitPlacement unitType="axeman" territory="Barrow Downs" quantity="5" />
-      <unitPlacement unitType="troll" territory="Trollshaws" quantity="3" />
-      <unitPlacement unitType="peasant" territory="West Cardolan" quantity="4" />
-      <unitPlacement unitType="archer" territory="Tharbad" quantity="2" />
+      <unitPlacement unitType="bowman" territory="Lefnui Vale" quantity="1" />
+      <unitPlacement unitType="troll" territory="Trollshaws" quantity="2" owner="Orcs" />
+      <unitPlacement unitType="spearman" territory="Lower Lefnui" quantity="1" />
+      <unitPlacement unitType="bowman" territory="West Cardolan" quantity="2" />
+      <unitPlacement unitType="spearman" territory="West Cardolan" quantity="2" />
+      <unitPlacement unitType="scout" territory="West Cardolan" quantity="1" />
       <unitPlacement unitType="factory" territory="Tharbad" quantity="1" />
       <unitPlacement unitType="wall" territory="Tharbad" quantity="2" />
-      <unitPlacement unitType="peasant" territory="Tharbad" quantity="1" />
-      <unitPlacement unitType="archer" territory="East Forochel Coast" quantity="1" />
-      <unitPlacement unitType="axeman" territory="East Forochel Coast" quantity="1" />
-      <unitPlacement unitType="axeman" territory="Eryn Vorn" quantity="5" />
-      <unitPlacement unitType="axeman" territory="South Minhiriath" quantity="1" />
-      <unitPlacement unitType="light_cavalry" territory="South Minhiriath" quantity="2" />
-      <unitPlacement unitType="axeman" territory="Drúadan Forest" quantity="4" />
-      <unitPlacement unitType="peasant" territory="North Enedwaith" quantity="1" />
+      <unitPlacement unitType="bowman" territory="Tharbad" quantity="2" />
+      <unitPlacement unitType="spearman" territory="Tharbad" quantity="2" />
+      <unitPlacement unitType="scout" territory="North Undeep" quantity="1" />
+      <unitPlacement unitType="bowman" territory="East Forochel Coast" quantity="2" />
+      <unitPlacement unitType="bowman" territory="Eryn Vorn" quantity="7" />
+      <unitPlacement unitType="spearman" territory="South Minhiriath" quantity="1" />
+      <unitPlacement unitType="scout" territory="South Minhiriath" quantity="2" />
+      <unitPlacement unitType="bowman" territory="Drúadan Forest" quantity="6" />
+      <unitPlacement unitType="bowman" territory="Greenway" quantity="1" />
+      <unitPlacement unitType="spearman" territory="North Enedwaith" quantity="1" />
       <unitPlacement unitType="ranger" territory="Pinnath Gelin" quantity="1" owner="Gondor" />
-      <unitPlacement unitType="peasant" territory="West Brown Lands" quantity="4" />
-      <unitPlacement unitType="peasant" territory="East Lone Lands" quantity="2" />
-      <unitPlacement unitType="axe_cavalry" territory="North Minhiriath" quantity="1" />
-      <unitPlacement unitType="peasant" territory="North Minhiriath" quantity="2" />
-      <unitPlacement unitType="archer" territory="West Forochel Coast" quantity="2" />
-      <unitPlacement unitType="axeman" territory="West Forochel Coast" quantity="1" />
-      <unitPlacement unitType="peasant" territory="South Enedwaith" quantity="2" />
-      <unitPlacement unitType="peasant" territory="West Lone Lands" quantity="1" />
-      <unitPlacement unitType="axeman" territory="Drúwaith Iaur" quantity="3" />
-      <unitPlacement unitType="peasant" territory="East Brown Lands" quantity="2" />
+      <unitPlacement unitType="scout" territory="East Lone Lands" quantity="1" />
+      <unitPlacement unitType="bowman" territory="North Minhiriath" quantity="1" />
+      <unitPlacement unitType="spearman" territory="North Minhiriath" quantity="1" />
+      <unitPlacement unitType="scout" territory="North Minhiriath" quantity="1" />
+      <unitPlacement unitType="bowman" territory="West Forochel Coast" quantity="3" />
+      <unitPlacement unitType="scout" territory="South Enedwaith" quantity="1" />
+      <unitPlacement unitType="bowman" territory="South Undeep" quantity="1" />
+      <unitPlacement unitType="scout" territory="South Undeep" quantity="1" />
+      <unitPlacement unitType="spearman" territory="West Lone Lands" quantity="1" />
+      <unitPlacement unitType="bowman" territory="Drúwaith Iaur" quantity="5" />
       <unitPlacement unitType="factory" territory="Lond Daer" quantity="1" />
       <unitPlacement unitType="wall" territory="Lond Daer" quantity="1" />
-      <unitPlacement unitType="peasant" territory="North Brown Lands" quantity="2" />
+      <unitPlacement unitType="bowman" territory="Lond Daer" quantity="1" />
       <unitPlacement unitType="huorn" territory="Old Forest" quantity="4" />
-      <unitPlacement unitType="peasant" territory="South Cardolan" quantity="3" />
+      <unitPlacement unitType="bowman" territory="South Cardolan" quantity="1" />
+      <unitPlacement unitType="scout" territory="South Cardolan" quantity="2" />
       <unitPlacement unitType="bowman" territory="Firienholt" quantity="2" owner="Rohan" />
       <unitPlacement unitType="orc_marauder" territory="South Misty Mountains" quantity="1" owner="Orcs" />
       <unitPlacement unitType="eagle" territory="Eagle's Eyrie" quantity="2" owner="HighElves" />
       <unitPlacement unitType="elven_hunter" territory="Eagle's Eyrie" quantity="2" owner="HighElves" />
       <unitPlacement unitType="orc_marauder" territory="Lands of the Lossoth" quantity="3" owner="Angmar" />
-      <unitPlacement unitType="peasant" territory="South Forodwaith" quantity="1" />
+      <unitPlacement unitType="bowman" territory="Northern Waste" quantity="1" />
+      <unitPlacement unitType="bowman" territory="South Forodwaith" quantity="2" />
       <unitPlacement unitType="factory" territory="Halls of Grór" quantity="1" owner="Dwarves" />
       <unitPlacement unitType="wall" territory="Halls of Grór" quantity="4" owner="Dwarves" />
       <unitPlacement unitType="fortress" territory="Halls of Grór" quantity="1" owner="Dwarves" />
@@ -8896,8 +8902,9 @@
       <unitPlacement unitType="beorning_warrior" territory="North Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="woodman" territory="North Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="raider" territory="Realm of Vidugavia" quantity="3" owner="Northmen" />
-      <unitPlacement unitType="axeman" territory="East Wilderland" quantity="1" />
-      <unitPlacement unitType="archer" territory="East Wilderland" quantity="1" />
+      <unitPlacement unitType="bowman" territory="East Wilderland" quantity="2" />
+      <unitPlacement unitType="spearman" territory="East Wilderland" quantity="1" />
+      <unitPlacement unitType="scout" territory="East Wilderland" quantity="1" />
       <unitPlacement unitType="raider" territory="Kingdom of Rhovanion" quantity="3" owner="Northmen" />
       <unitPlacement unitType="raider" territory="South Rhovanion" quantity="1" owner="Northmen" />
       <unitPlacement unitType="balchoth_tribesman" territory="South Wilderland" quantity="1" owner="Rhun" />
