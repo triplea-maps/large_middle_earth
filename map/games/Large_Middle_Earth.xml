@@ -7521,6 +7521,7 @@
       <unitPlacement unitType="elven_hunter" territory="The Angle" quantity="1" owner="HighElves" />
       <unitPlacement unitType="elven_cavalry" territory="The Angle" quantity="1" owner="HighElves" />
       <unitPlacement unitType="dunlending_wildman" territory="West Methedras" quantity="1" owner="Saruman" />
+      <unitPlacement unitType="dunlending_wildman" territory="Methedras" quantity="2" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="1" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="East Methedras" quantity="2" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="Isen" quantity="5" owner="Saruman" />
@@ -7529,13 +7530,13 @@
       <unitPlacement unitType="halforc" territory="North-South Road" quantity="4" owner="Saruman" />
       <unitPlacement unitType="dunlending_wildman" territory="North Dunland" quantity="2" owner="Saruman" />
       <unitPlacement unitType="uruk_warrior" territory="North Dunland" quantity="2" owner="Saruman" />
-      <unitPlacement unitType="dunlending_wildman" territory="Dunland Hills" quantity="3" owner="Saruman" />
+      <unitPlacement unitType="dunlending_wildman" territory="Dunland Hills" quantity="5" owner="Saruman" />
       <unitPlacement unitType="warg_rider" territory="Dunland Hills" quantity="2" owner="Saruman" />
       <unitPlacement unitType="crebain" territory="Dunland Hills" quantity="1" owner="Saruman" />
       <unitPlacement unitType="halforc" territory="Fords of Isen" quantity="2" owner="Saruman" />
-      <unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="6" owner="Saruman" />
+      <unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="8" owner="Saruman" />
       <unitPlacement unitType="ancient_tower" territory="Isengard" quantity="1" owner="Saruman" />
-      <unitPlacement unitType="uruk_warrior" territory="Isengard" quantity="9" owner="Saruman" />
+      <unitPlacement unitType="uruk_warrior" territory="Isengard" quantity="15" owner="Saruman" />
       <unitPlacement unitType="warg_rider" territory="Isengard" quantity="2" owner="Saruman" />
       <unitPlacement unitType="factory" territory="Isengard" quantity="1" owner="Saruman" />
       <unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman" />
@@ -7621,6 +7622,8 @@
       <unitPlacement unitType="wall" territory="Morannon" quantity="4" owner="Mordor" />
       <unitPlacement unitType="ancient_wall" territory="Morannon" quantity="2" owner="Mordor" />
       <unitPlacement unitType="uruk_pikeman" territory="Morannon" quantity="3" owner="Mordor" />
+      <unitPlacement unitType="snaga_skirmisher" territory="Morannon" quantity="4" owner="Mordor" />
+      <unitPlacement unitType="orc_marauder" territory="Morannon" quantity="6" owner="Mordor" />
       <unitPlacement unitType="olog_hai" territory="Gorgoroth" quantity="2" owner="Mordor" />
       <unitPlacement unitType="snaga_skirmisher" territory="Carchost" quantity="1" owner="Mordor" />
       <unitPlacement unitType="fortress" territory="Carchost" quantity="1" owner="Mordor" />
@@ -7862,7 +7865,7 @@
       <unitPlacement unitType="spearman" territory="North Rhûn" quantity="1" owner="Rhun" />
       <unitPlacement unitType="chariot" territory="North Rhûn" quantity="2" owner="Rhun" />
       <unitPlacement unitType="bowman" territory="Lefnui Vale" quantity="1" />
-      <unitPlacement unitType="troll" territory="Trollshaws" quantity="2" owner="Orcs" />
+      <unitPlacement unitType="troll" territory="Trollshaws" quantity="3" owner="Orcs" />
       <unitPlacement unitType="spearman" territory="Lower Lefnui" quantity="1" />
       <unitPlacement unitType="bowman" territory="West Cardolan" quantity="2" />
       <unitPlacement unitType="spearman" territory="West Cardolan" quantity="2" />
