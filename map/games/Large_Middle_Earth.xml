@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd"[]>
 <game>
-  <info name="Large Middle Earth - The Battle for Arda" version="2.0" />
+  <info name="Large Middle Earth - The Battle for Arda" version="2.0.1" />
   <loader javaClass="games.strategy.triplea.TripleA" />
   <triplea minimumVersion="1.9" />
   <diceSides value="12" />
@@ -5645,7 +5645,7 @@
       <option name="territoryEffect" value="settlement" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Hornburg" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
+      <option name="production" value="3" />
       <option name="unitProduction" value="3" />
       <option name="territoryEffect" value="settlement" />
     </attachment>
