@@ -3147,7 +3147,7 @@
       <option name="isAir" value="true" />
       <option name="movement" value="4" />
       <option name="hitPoints" value="3" />
-      <option name="whenHitPointsDamagedChangesInto" value="2:true:dragon_hit2" />
+      <!--<option name="whenHitPointsDamagedChangesInto" value="2:true:dragon_hit2"/>-->
       <option name="attack" value="7" />
       <option name="attackRolls" value="2" />
       <option name="defense" value="6" />
