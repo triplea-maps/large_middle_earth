@@ -2070,7 +2070,7 @@
       <result resourceOrUnit="wizard" quantity="1" />
     </productionRule>
     <productionRule name="buy_fire_of_orthanc">
-      <cost resource="PUs" quantity="18" />
+      <cost resource="PUs" quantity="14" />
       <result resourceOrUnit="fire_of_orthanc" quantity="1" />
     </productionRule>
     <productionRule name="buy_dunadan_guard">
@@ -2150,7 +2150,7 @@
       <result resourceOrUnit="huorn" quantity="1" />
     </productionRule>
     <productionRule name="buy_ent">
-      <cost resource="PUs" quantity="28" />
+      <cost resource="PUs" quantity="24" />
       <result resourceOrUnit="ent" quantity="1" />
     </productionRule>
     <productionRule name="buy_balchoth_tribesman">
@@ -2290,7 +2290,7 @@
       <result resourceOrUnit="balrog" quantity="1" />
     </productionRule>
     <productionRule name="buy_dragon">
-      <cost resource="PUs" quantity="42" />
+      <cost resource="PUs" quantity="36" />
       <result resourceOrUnit="dragon" quantity="1" />
     </productionRule>
     <productionRule name="buy_riddermark_militia">
@@ -2314,19 +2314,19 @@
       <result resourceOrUnit="kings_company" quantity="1" />
     </productionRule>
     <productionRule name="buy_catapult">
-      <cost resource="PUs" quantity="14" />
+      <cost resource="PUs" quantity="11" />
       <result resourceOrUnit="catapult" quantity="1" />
     </productionRule>
     <productionRule name="buy_trebuchet">
-      <cost resource="PUs" quantity="20" />
+      <cost resource="PUs" quantity="15" />
       <result resourceOrUnit="trebuchet" quantity="1" />
     </productionRule>
     <productionRule name="buy_wall">
-      <cost resource="PUs" quantity="9" />
+      <cost resource="PUs" quantity="8" />
       <result resourceOrUnit="wall" quantity="1" />
     </productionRule>
     <productionRule name="buy_fortress">
-      <cost resource="PUs" quantity="40" />
+      <cost resource="PUs" quantity="32" />
       <result resourceOrUnit="fortress" quantity="1" />
     </productionRule>
     <productionFrontier name="SarumanFrontier">
@@ -3163,7 +3163,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="3" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="dragon_hit2" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="isAir" value="true" />
@@ -3186,7 +3186,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="3" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="troll" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
@@ -3239,7 +3239,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="3" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="oliphaunt" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
@@ -3376,7 +3376,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="5" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="catapult" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
@@ -3389,7 +3389,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="2" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="trebuchet" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
@@ -3402,7 +3402,7 @@
       <option name="mayOverStackAA" value="true" />
       <option name="damageableAA" value="false" />
       <option name="maxAAattacks" value="3" />
-      <option name="maxRoundsAA" value="-1" />
+      <option name="maxRoundsAA" value="1" />
     </attachment>
     <attachment name="unitAttachment" attachTo="war_wagon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="transportCost" value="1" />
