@@ -2183,7 +2183,7 @@
       <result resourceOrUnit="noldorin_warrior" quantity="1" />
     </productionRule>
     <productionRule name="buy_eagle">
-      <cost resource="PUs" quantity="20" />
+      <cost resource="PUs" quantity="24" />
       <result resourceOrUnit="eagle" quantity="1" />
     </productionRule>
     <productionRule name="buy_corsair">
@@ -2279,7 +2279,7 @@
       <result resourceOrUnit="troll" quantity="1" />
     </productionRule>
     <productionRule name="buy_nazgul">
-      <cost resource="PUs" quantity="13" />
+      <cost resource="PUs" quantity="15" />
       <result resourceOrUnit="nazgul" quantity="1" />
     </productionRule>
     <productionRule name="buy_winged_nazgul">
