@@ -1928,113 +1928,177 @@
       <step name="sarumanPurchase" delegate="purchase" player="Saruman" />
       <step name="sarumanCombatMove" delegate="move" player="Saruman" />
       <step name="sarumanBattle" delegate="battle" player="Saruman" />
-      <step name="sarumanNonCombatMove" delegate="move" player="Saruman" display="Non Combat Move" />
-      <step name="sarumanPlace" delegate="place" player="Saruman" />
+      <step name="sarumanNonCombatMove" delegate="move" player="Saruman" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="sarumanPlace" delegate="place" player="Saruman">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="sarumanEndTurn" delegate="endTurn" player="Saruman" />
       <!-- Angmar Game Sequence -->
       <step name="angmarPurchase" delegate="purchase" player="Angmar" />
       <step name="angmarCombatMove" delegate="move" player="Angmar" />
       <step name="angmarBattle" delegate="battle" player="Angmar" />
-      <step name="angmarNonCombatMove" delegate="move" player="Angmar" display="Non Combat Move" />
-      <step name="angmarPlace" delegate="place" player="Angmar" />
+      <step name="angmarNonCombatMove" delegate="move" player="Angmar" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="angmarPlace" delegate="place" player="Angmar">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="angmarEndTurn" delegate="endTurn" player="Angmar" />
       <!-- Mordor Game Sequence -->
       <step name="mordorPurchase" delegate="purchase" player="Mordor" />
       <step name="mordorCombatMove" delegate="move" player="Mordor" />
       <step name="mordorBattle" delegate="battle" player="Mordor" />
-      <step name="mordorNonCombatMove" delegate="move" player="Mordor" display="Non Combat Move" />
-      <step name="mordorPlace" delegate="place" player="Mordor" />
+      <step name="mordorNonCombatMove" delegate="move" player="Mordor" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="mordorPlace" delegate="place" player="Mordor">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="mordorEndTurn" delegate="endTurn" player="Mordor" />
       <!-- Arnor Game Sequence -->
       <step name="arnorPurchase" delegate="purchase" player="Arnor" />
       <step name="arnorCombatMove" delegate="move" player="Arnor" />
       <step name="arnorBattle" delegate="battle" player="Arnor" />
-      <step name="arnorNonCombatMove" delegate="move" player="Arnor" display="Non Combat Move" />
-      <step name="arnorPlace" delegate="place" player="Arnor" />
+      <step name="arnorNonCombatMove" delegate="move" player="Arnor" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="arnorPlace" delegate="place" player="Arnor">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="arnorEndTurn" delegate="endTurn" player="Arnor" />
       <!-- Gondor Game Sequence -->
       <step name="gondorPurchase" delegate="purchase" player="Gondor" />
       <step name="gondorCombatMove" delegate="move" player="Gondor" />
       <step name="gondorBattle" delegate="battle" player="Gondor" />
-      <step name="gondorNonCombatMove" delegate="move" player="Gondor" display="Non Combat Move" />
-      <step name="gondorPlace" delegate="place" player="Gondor" />
+      <step name="gondorNonCombatMove" delegate="move" player="Gondor" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="gondorPlace" delegate="place" player="Gondor">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="gondorEndTurn" delegate="endTurn" player="Gondor" />
       <!-- Northmen Game Sequence -->
       <step name="northmenPurchase" delegate="purchase" player="Northmen" />
       <step name="northmenCombatMove" delegate="move" player="Northmen" />
       <step name="northmenBattle" delegate="battle" player="Northmen" />
-      <step name="northmenNonCombatMove" delegate="move" player="Northmen" display="Non Combat Move" />
-      <step name="northmenPlace" delegate="place" player="Northmen" />
+      <step name="northmenNonCombatMove" delegate="move" player="Northmen" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="northmenPlace" delegate="place" player="Northmen">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="northmenEndTurn" delegate="endTurn" player="Northmen" />
       <!-- Lorien Game Sequence -->
       <step name="lorienPurchase" delegate="purchase" player="Lorien" />
       <step name="lorienCombatMove" delegate="move" player="Lorien" />
       <step name="lorienBattle" delegate="battle" player="Lorien" />
-      <step name="lorienNonCombatMove" delegate="move" player="Lorien" display="Non Combat Move" />
-      <step name="lorienPlace" delegate="place" player="Lorien" />
+      <step name="lorienNonCombatMove" delegate="move" player="Lorien" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="lorienPlace" delegate="place" player="Lorien">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="lorienEndTurn" delegate="endTurn" player="Lorien" />
       <!-- Orcs Game Sequence -->
       <step name="orcsPurchase" delegate="purchase" player="Orcs" />
       <step name="orcsCombatMove" delegate="move" player="Orcs" />
       <step name="orcsBattle" delegate="battle" player="Orcs" />
-      <step name="orcsNonCombatMove" delegate="move" player="Orcs" display="Non Combat Move" />
-      <step name="orcsPlace" delegate="place" player="Orcs" />
+      <step name="orcsNonCombatMove" delegate="move" player="Orcs" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="orcsPlace" delegate="place" player="Orcs">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="orcsEndTurn" delegate="endTurn" player="Orcs" />
       <!-- Rhun Game Sequence -->
       <step name="rhunPurchase" delegate="purchase" player="Rhun" />
       <step name="rhunCombatMove" delegate="move" player="Rhun" />
       <step name="rhunBattle" delegate="battle" player="Rhun" />
-      <step name="rhunNonCombatMove" delegate="move" player="Rhun" display="Non Combat Move" />
-      <step name="rhunPlace" delegate="place" player="Rhun" />
+      <step name="rhunNonCombatMove" delegate="move" player="Rhun" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="rhunPlace" delegate="place" player="Rhun">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="rhunEndTurn" delegate="endTurn" player="Rhun" />
       <!-- HighElves Game Sequence -->
       <step name="highElvesPurchase" delegate="purchase" player="HighElves" />
       <step name="highElvesCombatMove" delegate="move" player="HighElves" />
       <step name="highElvesBattle" delegate="battle" player="HighElves" />
-      <step name="highElvesNonCombatMove" delegate="move" player="HighElves" display="Non Combat Move" />
-      <step name="highElvesPlace" delegate="place" player="HighElves" />
+      <step name="highElvesNonCombatMove" delegate="move" player="HighElves" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="highElvesPlace" delegate="place" player="HighElves">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="highElvesEndTurn" delegate="endTurn" player="HighElves" />
       <!-- WoodlandRealm Game Sequence -->
       <step name="woodlandRealmPurchase" delegate="purchase" player="WoodlandRealm" />
       <step name="woodlandRealmCombatMove" delegate="move" player="WoodlandRealm" />
       <step name="woodlandRealmBattle" delegate="battle" player="WoodlandRealm" />
-      <step name="woodlandRealmNonCombatMove" delegate="move" player="WoodlandRealm" display="Non Combat Move" />
-      <step name="woodlandRealmPlace" delegate="place" player="WoodlandRealm" />
+      <step name="woodlandRealmNonCombatMove" delegate="move" player="WoodlandRealm" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="woodlandRealmPlace" delegate="place" player="WoodlandRealm">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="woodlandRealmEndTurn" delegate="endTurn" player="WoodlandRealm" />
       <!-- Harad Game Sequence -->
       <step name="haradPurchase" delegate="purchase" player="Harad" />
       <step name="haradCombatMove" delegate="move" player="Harad" />
       <step name="haradBattle" delegate="battle" player="Harad" />
-      <step name="haradNonCombatMove" delegate="move" player="Harad" display="Non Combat Move" />
-      <step name="haradPlace" delegate="place" player="Harad" />
+      <step name="haradNonCombatMove" delegate="move" player="Harad" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="haradPlace" delegate="place" player="Harad">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="haradEndTurn" delegate="endTurn" player="Harad" />
       <!-- DolGuldur Game Sequence -->
       <step name="dolGuldurPurchase" delegate="purchase" player="DolGuldur" />
       <step name="dolGuldurCombatMove" delegate="move" player="DolGuldur" />
       <step name="dolGuldurBattle" delegate="battle" player="DolGuldur" />
-      <step name="dolGuldurNonCombatMove" delegate="move" player="DolGuldur" display="Non Combat Move" />
-      <step name="dolGuldurPlace" delegate="place" player="DolGuldur" />
+      <step name="dolGuldurNonCombatMove" delegate="move" player="DolGuldur" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="dolGuldurPlace" delegate="place" player="DolGuldur">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="dolGuldurEndTurn" delegate="endTurn" player="DolGuldur" />
       <!-- Freefolk Game Sequence -->
       <step name="freefolkPurchase" delegate="purchase" player="Freefolk" />
       <step name="freefolkCombatMove" delegate="move" player="Freefolk" />
       <step name="freefolkBattle" delegate="battle" player="Freefolk" />
-      <step name="freefolkNonCombatMove" delegate="move" player="Freefolk" display="Non Combat Move" />
-      <step name="freefolkPlace" delegate="place" player="Freefolk" />
+      <step name="freefolkNonCombatMove" delegate="move" player="Freefolk" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="freefolkPlace" delegate="place" player="Freefolk">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="freefolkEndTurn" delegate="endTurn" player="Freefolk" />
       <!-- Dwarves Game Sequence -->
       <step name="dwarvesPurchase" delegate="purchase" player="Dwarves" />
       <step name="dwarvesCombatMove" delegate="move" player="Dwarves" />
       <step name="dwarvesBattle" delegate="battle" player="Dwarves" />
-      <step name="dwarvesNonCombatMove" delegate="move" player="Dwarves" display="Non Combat Move" />
-      <step name="dwarvesPlace" delegate="place" player="Dwarves" />
+      <step name="dwarvesNonCombatMove" delegate="move" player="Dwarves" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="dwarvesPlace" delegate="place" player="Dwarves">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="dwarvesEndTurn" delegate="endTurn" player="Dwarves" />
       <!-- Rohan Game Sequence -->
       <step name="rohanPurchase" delegate="purchase" player="Rohan" />
       <step name="rohanCombatMove" delegate="move" player="Rohan" />
       <step name="rohanBattle" delegate="battle" player="Rohan" />
-      <step name="rohanNonCombatMove" delegate="move" player="Rohan" display="Non Combat Move" />
-      <step name="rohanPlace" delegate="place" player="Rohan" />
+      <step name="rohanNonCombatMove" delegate="move" player="Rohan" display="Non Combat Move">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
+      <step name="rohanPlace" delegate="place" player="Rohan">
+        <stepProperty name="removeAirThatCanNotLand" value="false" />
+      </step>
       <step name="rohanEndTurn" delegate="endTurn" player="Rohan" />
       <step name="endRoundStep" delegate="endRound" />
     </sequence>
