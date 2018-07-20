@@ -7,17 +7,28 @@
   <diceSides value="12" />
   <map>
     <!-- Territory Definitions -->
-    <territory name="South Ered Mithrin" />
-    <territory name="Thorin's Halls" />
-    <territory name="North Ered Luin" />
-    <territory name="Ered Mithrin" />
-    <territory name="Erebor" />
-    <territory name="East Iron Hills" />
+    <territory name="West Methedras" />
+    <territory name="Methedras" />
+    <territory name="East Methedras" />
+    <territory name="West Ephel Dúath" />
+    <territory name="Ephel Dúath" />
+    <territory name="East Ephel Dúath" />
     <territory name="North Ered Mithrin" />
-    <territory name="Dáin's Halls" />
-    <territory name="West Iron Hills" />
+    <territory name="Ered Mithrin" />
+    <territory name="South Ered Mithrin" />
     <territory name="Blue Mountains" />
     <territory name="Ered Luin" />
+    <territory name="North Ered Luin" />
+    <territory name="South Ered Luin" />
+    <territory name="East Ered Lithui" />
+    <territory name="Ered Lithui" />
+    <territory name="West Ered Nimrais" />
+    <territory name="Ered Nimrais" />
+    <territory name="Thorin's Halls" />
+    <territory name="Erebor" />
+    <territory name="East Iron Hills" />
+    <territory name="Dáin's Halls" />
+    <territory name="West Iron Hills" />
     <territory name="Bree" />
     <territory name="Staddle" />
     <territory name="Far Downs" />
@@ -67,10 +78,7 @@
     <territory name="Bruinen Bank" />
     <territory name="South Harlindon" />
     <territory name="The Angle" />
-    <territory name="West Methedras" />
-    <territory name="Methedras" />
     <territory name="South Dunland" />
-    <territory name="East Methedras" />
     <territory name="Isen" />
     <territory name="North-South Road" />
     <territory name="North Dunland" />
@@ -120,14 +128,11 @@
     <territory name="Lossarnach" />
     <territory name="Anórien" />
     <territory name="Durthang" />
-    <territory name="West Ephel Dúath" />
     <territory name="Orodruin" />
     <territory name="East Nurn" />
-    <territory name="Ephel Dúath" />
     <territory name="Morgai" />
     <territory name="Minas Morgul" />
     <territory name="South Nurn" />
-    <territory name="East Ered Lithui" />
     <territory name="Nurn" />
     <territory name="Plateau of Gorgoroth" />
     <territory name="Carach Angren" />
@@ -141,8 +146,6 @@
     <territory name="Barad-dûr" />
     <territory name="Narchost" />
     <territory name="Cirith Ungol" />
-    <territory name="East Ephel Dúath" />
-    <territory name="Ered Lithui" />
     <territory name="Lithlad" />
     <territory name="Ash Mountains" />
     <territory name="Fields of Celebrant" />
@@ -336,7 +339,6 @@
     <territory name="Drúadan Forest" />
     <territory name="Ered Luin Foothills" />
     <territory name="Ras Morthil" />
-    <territory name="South Ered Luin" />
     <territory name="Greenway" />
     <territory name="East Bight" />
     <territory name="Nindalf" />
@@ -387,7 +389,6 @@
     <territory name="Lond Daer" />
     <territory name="North Brown Lands" />
     <territory name="sz Nenuial" water="true" />
-    <territory name="West Ered Nimrais" />
     <territory name="Swanfleet" />
     <territory name="sz Ethir Anduin" water="true" />
     <territory name="sz Icebay of Forochel" water="true" />
@@ -397,7 +398,6 @@
     <territory name="sz Mitheithel 2" water="true" />
     <territory name="Baranduin South Bank" />
     <territory name="South Cardolan" />
-    <territory name="Ered Nimrais" />
     <territory name="Halifirien" />
     <territory name="Amon Dîn" />
     <territory name="Firienholt" />
@@ -585,12 +585,6 @@
     <connection t1="The Undeeps" t2="sz Upper Anduin 1" />
     <connection t1="The Undeeps" t2="sz Upper Anduin 2" />
     <connection t1="East Osgiliath" t2="West Osgiliath" />
-    <connection t1="South Misty Mountains" t2="Nimrodel" />
-    <connection t1="South Misty Mountains" t2="Celebdil" />
-    <connection t1="South Misty Mountains" t2="Glanduin" />
-    <connection t1="South Misty Mountains" t2="Methedras" />
-    <connection t1="South Misty Mountains" t2="North Fangorn" />
-    <connection t1="South Misty Mountains" t2="Limlight" />
     <connection t1="West Grey Mountains" t2="Greylin" />
     <connection t1="West Grey Mountains" t2="Langwell" />
     <connection t1="West Grey Mountains" t2="Mount Gundabad" />
@@ -762,27 +756,10 @@
     <connection t1="Bruinen Bank" t2="Hithaeglir" />
     <connection t1="Bruinen Bank" t2="sz Bruinen" />
     <connection t1="The Angle" t2="sz Mitheithel 1" />
-    <connection t1="West Methedras" t2="Methedras" />
-    <connection t1="West Methedras" t2="North-South Road" />
-    <connection t1="West Methedras" t2="Nan Curunír" />
-    <connection t1="West Methedras" t2="Dunland Hills" />
-    <connection t1="West Methedras" t2="Fords of Isen" />
-    <connection t1="West Methedras" t2="Isengard" />
-    <connection t1="Methedras" t2="North Fangorn" />
-    <connection t1="Methedras" t2="Wellinghall" />
-    <connection t1="Methedras" t2="East Methedras" />
-    <connection t1="Methedras" t2="Dunland Hills" />
-    <connection t1="Methedras" t2="Glanduin" />
-    <connection t1="Methedras" t2="Isengard" />
     <connection t1="South Dunland" t2="Isen" />
     <connection t1="South Dunland" t2="North-South Road" />
     <connection t1="South Dunland" t2="Isen North Bank" />
     <connection t1="South Dunland" t2="South Enedwaith" />
-    <connection t1="South Dunland" t2="West Dunland" />
-    <connection t1="East Methedras" t2="Nan Curunír" />
-    <connection t1="East Methedras" t2="South Fangorn" />
-    <connection t1="East Methedras" t2="Westfold" />
-    <connection t1="East Methedras" t2="Isengard" />
     <connection t1="Isen" t2="North-South Road" />
     <connection t1="Isen" t2="Isen North Bank" />
     <connection t1="Isen" t2="sz Isen" />
@@ -800,7 +777,6 @@
     <connection t1="Nan Curunír" t2="Isengard" />
     <connection t1="Dunland Hills" t2="Glanduin" />
     <connection t1="Dunland Hills" t2="West Dunland" />
-    <connection t1="Crossings of Poros" t2="West Ephel Dúath" />
     <connection t1="Crossings of Poros" t2="Harad Road" />
     <connection t1="Crossings of Poros" t2="South Ithilien" />
     <connection t1="Crossings of Poros" t2="sz Poros" />
@@ -912,12 +888,6 @@
     <connection t1="Durthang" t2="Field of Cormallen" />
     <connection t1="Durthang" t2="Narchost" />
     <connection t1="Durthang" t2="Cirith Ungol" />
-    <connection t1="West Ephel Dúath" t2="Harad Road" />
-    <connection t1="West Ephel Dúath" t2="Emyn Arnen" />
-    <connection t1="West Ephel Dúath" t2="Ephel Dúath" />
-    <connection t1="West Ephel Dúath" t2="South Ithilien" />
-    <connection t1="West Ephel Dúath" t2="Nurn" />
-    <connection t1="West Ephel Dúath" t2="Mountains of Shadow" />
     <connection t1="Orodruin" t2="Morgai" />
     <connection t1="Orodruin" t2="Plateau of Gorgoroth" />
     <connection t1="Orodruin" t2="Gorgoroth" />
@@ -927,11 +897,6 @@
     <connection t1="East Nurn" t2="sz Sea of Núrnen" />
     <connection t1="East Nurn" t2="Nurn" />
     <connection t1="East Nurn" t2="Plateau of Gorgoroth" />
-    <connection t1="East Nurn" t2="Ash Mountains" />
-    <connection t1="Ephel Dúath" t2="South Nurn" />
-    <connection t1="Ephel Dúath" t2="Nurn" />
-    <connection t1="Ephel Dúath" t2="Harondor" />
-    <connection t1="Ephel Dúath" t2="East Ephel Dúath" />
     <connection t1="Morgai" t2="Carach Angren" />
     <connection t1="Morgai" t2="Gorgoroth" />
     <connection t1="Morgai" t2="West Plateau of Gorgoroth" />
@@ -942,7 +907,6 @@
     <connection t1="Minas Morgul" t2="Cirith Ungol" />
     <connection t1="South Nurn" t2="sz Sea of Núrnen" />
     <connection t1="South Nurn" t2="Nurn" />
-    <connection t1="South Nurn" t2="East Ephel Dúath" />
     <connection t1="East Ered Lithui" t2="South Rhûn" />
     <connection t1="East Ered Lithui" t2="Ered Lithui" />
     <connection t1="East Ered Lithui" t2="Lithlad" />
@@ -980,7 +944,6 @@
     <connection t1="Carchost" t2="Ered Lithui" />
     <connection t1="Barad-dûr" t2="Ered Lithui" />
     <connection t1="Barad-dûr" t2="Lithlad" />
-    <connection t1="East Ephel Dúath" t2="Khand" />
     <connection t1="Ered Lithui" t2="Lithlad" />
     <connection t1="Lithlad" t2="Ash Mountains" />
     <connection t1="Fields of Celebrant" t2="sz Upper Anduin 2" />
@@ -1009,7 +972,6 @@
     <connection t1="Harnen Bank" t2="Near Harad" />
     <connection t1="Harnen Bank" t2="Crossings of Harnen" />
     <connection t1="Harnen Bank" t2="North Umbar" />
-    <connection t1="Harad Road" t2="Ephel Dúath" />
     <connection t1="Harad Road" t2="sz Poros" />
     <connection t1="Harad Road" t2="Harondor" />
     <connection t1="Harad Road" t2="South Gondor" />
@@ -1026,7 +988,6 @@
     <connection t1="South Gondor" t2="sz Ethir Anduin" />
     <connection t1="Near Harad" t2="Crossings of Harnen" />
     <connection t1="Near Harad" t2="Far Harad" />
-    <connection t1="Near Harad" t2="East Ephel Dúath" />
     <connection t1="Near Harad" t2="Khand" />
     <connection t1="Far Harad" t2="Khand" />
     <connection t1="Misty Mountains Foothills" t2="High Pass" />
@@ -1084,7 +1045,6 @@
     <connection t1="Starkhorn" t2="Helms Deep" />
     <connection t1="Starkhorn" t2="Ered Nimrais" />
     <connection t1="Gap of Rohan" t2="Trihyrne" />
-    <connection t1="Gap of Rohan" t2="East Methedras" />
     <connection t1="Gap of Rohan" t2="Nan Curunír" />
     <connection t1="Gap of Rohan" t2="Hornburg" />
     <connection t1="Gap of Rohan" t2="Fords of Isen" />
@@ -1278,7 +1238,6 @@
     <connection t1="North Fangorn" t2="Limlight" />
     <connection t1="North Fangorn" t2="Derndingle" />
     <connection t1="North Fangorn" t2="Treebeards Hill" />
-    <connection t1="Wellinghall" t2="East Methedras" />
     <connection t1="Wellinghall" t2="Derndingle" />
     <connection t1="Wellinghall" t2="South Fangorn" />
     <connection t1="Derndingle" t2="Treebeards Hill" />
@@ -1681,6 +1640,46 @@
     <connection t1="West Ered Nimrais" t2="Ered Nimrais" />
     <connection t1="sz Bruinen" t2="The Angle" />
     <connection t1="sz Bruinen" t2="sz Mitheithel 1" />
+    <connection t1="South Misty Mountains" t2="Nimrodel" />
+    <connection t1="South Misty Mountains" t2="Celebdil" />
+    <connection t1="South Misty Mountains" t2="Glanduin" />
+    <connection t1="South Misty Mountains" t2="Methedras" />
+    <connection t1="South Misty Mountains" t2="North Fangorn" />
+    <connection t1="South Misty Mountains" t2="Limlight" />
+    <connection t1="West Methedras" t2="Methedras" />
+    <connection t1="West Methedras" t2="North-South Road" />
+    <connection t1="West Methedras" t2="Nan Curunír" />
+    <connection t1="West Methedras" t2="Dunland Hills" />
+    <connection t1="West Methedras" t2="Fords of Isen" />
+    <connection t1="West Methedras" t2="Isengard" />
+    <connection t1="Methedras" t2="North Fangorn" />
+    <connection t1="Methedras" t2="Wellinghall" />
+    <connection t1="Methedras" t2="East Methedras" />
+    <connection t1="Methedras" t2="Dunland Hills" />
+    <connection t1="Methedras" t2="Glanduin" />
+    <connection t1="Methedras" t2="Isengard" />
+    <connection t1="East Methedras" t2="Nan Curunír" />
+    <connection t1="East Methedras" t2="South Fangorn" />
+    <connection t1="East Methedras" t2="Westfold" />
+    <connection t1="East Methedras" t2="Isengard" />
+    <connection t1="Wellinghall" t2="East Methedras" />
+    <connection t1="Gap of Rohan" t2="East Methedras" />
+    <connection t1="Near Harad" t2="East Ephel Dúath" />
+    <connection t1="Harad Road" t2="Ephel Dúath" />
+    <connection t1="East Ephel Dúath" t2="Khand" />
+    <connection t1="South Nurn" t2="East Ephel Dúath" />
+    <connection t1="East Nurn" t2="Ash Mountains" />
+    <connection t1="Ephel Dúath" t2="South Nurn" />
+    <connection t1="Ephel Dúath" t2="Nurn" />
+    <connection t1="Ephel Dúath" t2="Harondor" />
+    <connection t1="Ephel Dúath" t2="East Ephel Dúath" />
+    <connection t1="Crossings of Poros" t2="West Ephel Dúath" />
+    <connection t1="West Ephel Dúath" t2="Harad Road" />
+    <connection t1="West Ephel Dúath" t2="Emyn Arnen" />
+    <connection t1="West Ephel Dúath" t2="Ephel Dúath" />
+    <connection t1="West Ephel Dúath" t2="South Ithilien" />
+    <connection t1="West Ephel Dúath" t2="Nurn" />
+    <connection t1="West Ephel Dúath" t2="Mountains of Shadow" />
     <!--CANALS-->
     <connection t1="sz Lhûn" t2="sz Gulf of Lhûn" />
     <connection t1="sz Baranduin 3" t2="sz Baranduin 4" />
@@ -5027,25 +5026,10 @@
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
     </attachment>
-    <attachment name="territoryAttachment" attachTo="West Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
-      <option name="unitProduction" value="0" />
-      <option name="territoryEffect" value="mountain" />
-    </attachment>
-    <attachment name="territoryAttachment" attachTo="Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
-      <option name="unitProduction" value="0" />
-      <option name="territoryEffect" value="mountain" />
-    </attachment>
     <attachment name="territoryAttachment" attachTo="South Dunland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="plains" />
-    </attachment>
-    <attachment name="territoryAttachment" attachTo="East Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="production" value="1" />
-      <option name="unitProduction" value="0" />
-      <option name="territoryEffect" value="mountain" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Isen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1" />
@@ -6413,6 +6397,21 @@
       <option name="territoryEffect" value="plains" />
     </attachment>
     <attachment name="territoryAttachment" attachTo="Ered Nimrais" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+      <option name="production" value="1" />
+      <option name="unitProduction" value="0" />
+      <option name="territoryEffect" value="mountain" />
+    </attachment>
+    <attachment name="territoryAttachment" attachTo="West Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+      <option name="production" value="1" />
+      <option name="unitProduction" value="0" />
+      <option name="territoryEffect" value="mountain" />
+    </attachment>
+    <attachment name="territoryAttachment" attachTo="Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+      <option name="production" value="1" />
+      <option name="unitProduction" value="0" />
+      <option name="territoryEffect" value="mountain" />
+    </attachment>
+    <attachment name="territoryAttachment" attachTo="East Methedras" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1" />
       <option name="unitProduction" value="0" />
       <option name="territoryEffect" value="mountain" />
