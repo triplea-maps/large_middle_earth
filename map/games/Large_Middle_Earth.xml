@@ -968,6 +968,7 @@
     <connection t1="Desolation of the Morannon" t2="Morannon" />
     <connection t1="Desolation of the Morannon" t2="Carchost" />
     <connection t1="Desolation of the Morannon" t2="Dead Marshes" />
+    <connection t1="Emyn Muil" t2="Dead Marshes" />
     <connection t1="Desolation of the Morannon" t2="North Ithilien" />
     <connection t1="Desolation of the Morannon" t2="Narchost" />
     <connection t1="Morannon" t2="Carchost" />
