@@ -2656,7 +2656,6 @@
 						<option name="defense" value="2"/>
 						<tag name="melee"/>
 						<tag name="infantry"/>
-						<tag name="raider"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_wilderness"/>
@@ -2794,7 +2793,6 @@
 						<tag name="infantry"/>
 						<tag name="armor2"/>
 						<tag name="shield1"/>
-						<tag name="raider"/>
 						<tag name="combatunit"/>
 						<tag name="tp_relentless"/>
 					</attachment>
@@ -2899,7 +2897,6 @@
 						<tag name="infantry"/>
 						<tag name="shield2"/>
 						<tag name="unseen"/>
-						<tag name="forestdweller"/>
 						<tag name="combatunit"/>
 						<tag name="tp_woodland"/>
 					</attachment>
@@ -2961,7 +2958,6 @@
 						<tag name="melee"/>
 						<tag name="infantry"/>
 						<tag name="armor2"/>
-						<tag name="garrison"/>
 						<tag name="combatunit"/>
 						<tag name="tp_unyielding"/>
 					</attachment>
@@ -2974,7 +2970,6 @@
 						<tag name="melee"/>
 						<tag name="infantry"/>
 						<tag name="shield3"/>
-						<tag name="cavedweller"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_dwarven"/>
@@ -2997,7 +2992,6 @@
 						<tag name="melee"/>
 						<tag name="infantry"/>
 						<tag name="armor2"/>
-						<tag name="cavedweller"/>
 						<tag name="combatunit"/>
 						<tag name="tp_dwarven"/>
 					</attachment>
@@ -3010,7 +3004,6 @@
 						<tag name="melee"/>
 						<tag name="infantry"/>
 						<tag name="armor3"/>
-						<tag name="cavedweller"/>
 						<tag name="combatunit"/>
 						<tag name="tp_unyielding"/>
 					</attachment>
@@ -3109,7 +3102,6 @@
 						<tag name="ranged"/>
 						<tag name="infantry"/>
 						<tag name="ranged2"/>
-						<tag name="forestdweller"/>
 						<tag name="combatunit"/>
 						<tag name="tp_ambusher"/>
 					</attachment>
@@ -3174,7 +3166,6 @@
 						<tag name="ranged"/>
 						<tag name="infantry"/>
 						<tag name="ranged1"/>
-						<tag name="forestdweller"/>
 						<tag name="unseen"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
@@ -3199,7 +3190,6 @@
 						<tag name="infantry"/>
 						<tag name="ranged3"/>
 						<tag name="armor2"/>
-						<tag name="forestdweller"/>
 						<tag name="unseen"/>
 						<tag name="combatunit"/>
 						<tag name="tp_woodland"/>
@@ -3225,7 +3215,6 @@
 						<tag name="ranged2"/>
 						<tag name="armor1"/>
 						<tag name="infantry"/>
-						<tag name="forestdweller"/>
 						<tag name="unseen"/>
 						<tag name="combatunit"/>
 						<tag name="tp_woodland"/>
@@ -3240,7 +3229,6 @@
 						<tag name="infantry"/>
 						<tag name="ranged1"/>
 						<tag name="armor1"/>
-						<tag name="cavedweller"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_dwarven"/>
@@ -3265,7 +3253,6 @@
 						<tag name="melee"/>
 						<tag name="cavalry"/>
 						<tag name="flank"/>
-						<tag name="raider"/>
 						<tag name="combatunit"/>
 						<tag name="tp_open"/>
 					</attachment>
@@ -3420,7 +3407,6 @@
 						<tag name="cavalry"/>
 						<tag name="flank"/>
 						<tag name="ranged2"/>
-						<tag name="raider"/>
 						<tag name="combatunit"/>
 						<tag name="tp_open"/>
 					</attachment>
@@ -3595,7 +3581,8 @@
 						<option name="damageableAA" value="true"/>
 						<option name="maxAAattacks" value="1"/>
 						<option name="maxRoundsAA" value="1"/>
-						<tag name="creature"/>
+						<tag name="melee"/>
+						<tag name="cavalry"/>
 						<tag name="charge"/>
 						<tag name="combatunit"/>
 						<tag name="tp_wilderness"/>
@@ -3786,7 +3773,6 @@
 						
 						<tag name="creature"/>
 						<tag name="terror2"/>
-						<tag name="forestdweller"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_woodland"/>
@@ -3811,7 +3797,6 @@
 						
 						<tag name="creature"/>
 						<tag name="leadership8"/>
-						<tag name="forestdweller"/>
 						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_woodland"/>
