@@ -2394,7 +2394,7 @@
 				<result resourceOrUnit="nazgul" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_winged_nazgul">
-				<cost resource="PUs" quantity="24" />
+				<cost resource="PUs" quantity="28" />
 				<result resourceOrUnit="winged_nazgul" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_balrog">
@@ -3082,7 +3082,7 @@
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
 						<option name="attack" value="2"/>
-						<option name="defense" value="1"/>
+						<option name="defense" value="2"/>
 						
 						<tag name="ranged"/>
 						<tag name="infantry"/>
@@ -3760,7 +3760,6 @@
 						
 						<tag name="creature"/>
 						<tag name="armor3"/>
-						<tag name="mountainwalk"/>
 						<tag name="combatunit"/>
 						<tag name="tp_wilderness"/>
 					</attachment>
