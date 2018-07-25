@@ -2440,6 +2440,7 @@
       <frontierRules name="buy_oathbreaker" />
       <frontierRules name="buy_ranger" />
       <frontierRules name="buy_tower_guard" />
+      <frontierRules name="buy_dunadan_lancer" />
       <frontierRules name="buy_swan_knight" />
       <frontierRules name="buy_wall" />
       <frontierRules name="buy_trebuchet" />
