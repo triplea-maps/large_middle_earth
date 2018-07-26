@@ -8537,7 +8537,131 @@
 				</tr>
 			</table>
 		</div>
-		Game notes to be done.
+		<br/>Game notes to be done.
+		<br/>Territory effect table:
+		
+		<table border="1"bgcolor="757780">
+		<tbody>
+		<tr>
+		<td>&nbsp;</td>
+		<td>Levy</td>
+		<td>Open</td>
+		<td>Wilderness</td>
+		<td>Woodland</td>
+		<td>Dwarven</td>
+		<td>Ambusher</td>
+		<td>Relentless</td>
+		<td>Unyielding</td>
+		<td>Air</td>
+		<td>Fortification</td>
+		</tr>
+		<tr>
+		<td>Mountain</td>
+		<td>-1 | 0</td>
+		<td>-2 | -1</td>
+		<td>1 | 2</td>
+		<td>-2 | -1</td>
+		<td>1 | 2</td>
+		<td>0 | 2</td>
+		<td>0 | 0</td>
+		<td>0 | 2</td>
+		<td>1 | 1</td>
+		<td>0 | 3</td>
+		</tr>
+		<tr>
+		<td>Hill</td>
+		<td>-1 | 0</td>
+		<td>-1 | 0</td>
+		<td>1 | 1</td>
+		<td>-1 | 0</td>
+		<td>1 | 2</td>
+		<td>0 | 2</td>
+		<td>0 | 0</td>
+		<td>0 | 1</td>
+		<td>1 | 1</td>
+		<td>0 | 3</td>
+		</tr>
+		<tr>
+		<td>Cave</td>
+		<td>-1 | 0</td>
+		<td>-2 | -1</td>
+		<td>-1 | 0</td>
+		<td>-2 | -1</td>
+		<td>1 | 2</td>
+		<td>0 | 2</td>
+		<td>0 | 0</td>
+		<td>0 | 1</td>
+		<td>-2 | -2</td>
+		<td>0 | 3</td>
+		</tr>
+		<tr>
+		<td>Marsh</td>
+		<td>-1 | 0</td>
+		<td>-1 | 0</td>
+		<td>1 | 1</td>
+		<td>0 | 1</td>
+		<td>-2 | -1</td>
+		<td>-1 | 0</td>
+		<td>0 | 0</td>
+		<td>-1 | 0</td>
+		<td>1 | 1</td>
+		<td>0 | 0</td>
+		</tr>
+		<tr>
+		<td>Forest</td>
+		<td>-1 | 0</td>
+		<td>-2 | -1</td>
+		<td>1 | 2</td>
+		<td>2 | 3</td>
+		<td>-2 | -1</td>
+		<td>0 | 2</td>
+		<td>0 | 0</td>
+		<td>-1 | 0</td>
+		<td>-2 | -2</td>
+		<td>0 | 0</td>
+		</tr>
+		<tr>
+		<td>River</td>
+		<td>0 | 1</td>
+		<td>-1 | 0</td>
+		<td>-1 | 0</td>
+		<td>-1 | 0</td>
+		<td>-2 | 0</td>
+		<td>-1 | 0</td>
+		<td>0 | 0</td>
+		<td>0 | 1</td>
+		<td>0 | 0</td>
+		<td>0 | 0</td>
+		</tr>
+		<tr>
+		<td>Settlement</td>
+		<td>0 | 1</td>
+		<td>-1 | 0</td>
+		<td>-2 | -2</td>
+		<td>0 | 1</td>
+		<td>0 | 1</td>
+		<td>-1 | 0</td>
+		<td>2 | 0</td>
+		<td>0 | 3</td>
+		<td>0 | 0</td>
+		<td>0 | 3</td>
+		</tr>
+		<tr>
+		<td>Plains</td>
+		<td>1 | 0</td>
+		<td>3 | 1</td>
+		<td>-1 | -1</td>
+		<td>0 | -1</td>
+		<td>0 | -1</td>
+		<td>0 | -1</td>
+		<td>0 | -1</td>
+		<td>0 | -1</td>
+		<td>0 | 0</td>
+		<td>0 |0</td>
+		</tr>
+		</tbody>
+		</table>
+
 	</body>
 </html>
 						]]></value>
