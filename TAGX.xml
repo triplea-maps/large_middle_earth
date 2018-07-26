@@ -8383,7 +8383,7 @@
 				</property>
 
 				<!-- Kamikaze Airplanes will allow all air units on the map to use all their movement to get to a battle -->
-				<property name="Kamikaze Airplanes" value="false" editable="false">
+				<property name="Kamikaze Airplanes" value="true" editable="false">
 					<boolean/>
 				</property>
 
