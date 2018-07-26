@@ -3746,6 +3746,7 @@
 						<option name="maxRoundsAA" value="1"/>
 						
 						<tag name="creature"/>
+						<tag name="trample"/>
 						<tag name="armor3"/>
 						<tag name="combatunit"/>
 						<tag name="tp_wilderness"/>
@@ -3824,6 +3825,7 @@
 						<option name="maxRoundsAA" value="1"/>
 						
 						<tag name="creature"/>
+						<tag name="trample"/>
 						<tag name="ranged2x2"/>
 						<tag name="combatunit"/>
 						<tag name="tp_open"/>
@@ -3847,6 +3849,7 @@
 						<option name="maxRoundsAA" value="1"/>
 						
 						<tag name="creature"/>
+						<tag name="trample"/>
 						<tag name="combatunit"/>
 						<tag name="tp_wilderness"/>
 					</attachment>
@@ -3874,6 +3877,7 @@
 						<option name="maxRoundsAA" value="1"/>
 						
 						<tag name="creature"/>
+						<tag name="trample"/>
 						<tag name="ranged2x2"/>
 						<tag name="combatunit"/>
 						<tag name="tp_open"/>
@@ -7045,7 +7049,7 @@
 					<attachment name="triggerAttachment_FortPrevCF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
 						<option name="conditions" value="conditionAttachment_FortPrevCF"/>
 						<option name="when" value="before:sarumanPurchase"/>
-						<option name="unitType" value="@chargeˇflank@"/>
+						<option name="unitType" value="@chargeˇflankˇtrample@"/>
 						<option name="unitProperty" value="willNotFireIfPresent" count="@fortification@"/>
 						<option name="uses" value="1"/>
 					</attachment>

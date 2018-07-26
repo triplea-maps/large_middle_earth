@@ -6762,7 +6762,7 @@
     <attachment name="triggerAttachment_FortPrevCF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="conditions" value="conditionAttachment_FortPrevCF" />
       <option name="when" value="before:sarumanPurchase" />
-      <option name="unitType" value="pony_rider:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:warg_rider:raider:variag_raider:scout:rohirric_scout:warg_scout:elven_cavalry:easterling_cavalry" />
+      <option name="unitType" value="pony_rider:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:warg_rider:raider:variag_raider:scout:rohirric_scout:warg_scout:elven_cavalry:easterling_cavalry:olog_hai:oliphaunt:bear:oliphaunt_hit2" />
       <option name="unitProperty" value="willNotFireIfPresent" count="war_wagon:wall:ancient_wall:ancient_tower:fortress" />
       <option name="uses" value="1" />
     </attachment>
