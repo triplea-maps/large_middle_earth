@@ -7010,15 +7010,16 @@
 					<!--CONDITIONS-->
 					<attachment name="conditionAttachment_FortPrevCF" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<!--<option name="turns" value="1"/>-->
-						<option name="gameProperty" value="Fortification prevents charge and flank"/>
+						<option name="gameProperty" value="Fortification Protects Against Targeted Attacks"/>
 					</attachment>
 					<attachment name="conditionAttachment_AllBlitz" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<!--<option name="turns" value="1"/>-->
-						<option name="gameProperty" value="All units Blitz"/>
+						<option name="gameProperty" value="All Units Blitz"/>
 					</attachment>
 					<attachment name="conditionAttachment_TEAAU" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<!--<option name="turns" value="1"/>-->
-						<option name="gameProperty" value="Territory effects allow all units"/>
+						<option name="gameProperty" value="Mountains Restrict Movement"/>
+						<option name="invert" value="true"/>
 					</attachment>
 					<!--<attachment name="conditionAttachment_FFA" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="gameProperty" value="Free For All"/>
@@ -8340,11 +8341,11 @@
 					<boolean/>
 				</property>
 
-				<property name="National Objectives" value="true" editable="true">
+				<property name="National Objectives" value="true" editable="false">
 					<boolean/>
 				</property>
 
-				<property name="Use Triggers" value="true" editable="true">
+				<property name="Use Triggers" value="true" editable="false">
 					<boolean/>
 				</property>
 
@@ -8880,6 +8881,7 @@
 				</property>
 
 				<!-- AI related -->
+				<!--
 				<property name="AI Bonus Income Flat Rate" value="0" editable="true">
 					<number min="-10" max="30"/>
 				</property>
@@ -8895,20 +8897,21 @@
 				<property name="AI Bonus Defense" value="0" editable="true">
 					<number min="0" max="2"/>
 				</property>
-				
-				<property name="Fortification prevents charge and flank" value="false" editable="true">
-					<boolean/>
-				</property>
-				
-				<property name="All units Blitz" value="false" editable="true">
-					<boolean/>
-				</property>
-				
-				<property name="Territory effects allow all units" value="false" editable="true">
-					<boolean/>
-				</property>
+				-->
 				
 				<property name="Free For All" value="false" editable="true">
+					<boolean/>
+				</property>
+				
+				<property name="Fortification Protects Against Targeted Attacks" value="true" editable="true">
+					<boolean/>
+				</property>
+				
+				<property name="All Units Blitz" value="false" editable="true">
+					<boolean/>
+				</property>
+				
+				<property name="Mountains Restrict Movement" value="true" editable="true">
 					<boolean/>
 				</property>
 				
